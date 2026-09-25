@@ -5,7 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Youtopia Life — Live Longer. Live Better. Live More.</title>
   <meta name="description" content="Youtopia Life is a future-focused discovery platform exploring longevity, biohacking, wellbeing, emerging science and better ways to live." />
-  
+  <link rel="canonical" href="https://youtopialife.com/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://youtopialife.com/" />
+  <meta property="og:title" content="Youtopia Life — Live Longer. Live Better. Live More." />
+  <meta property="og:description" content="Explore the ideas, discoveries and technologies shaping the future of human wellbeing." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:site_name" content="Youtopia Life" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Youtopia Life — Live Longer. Live Better. Live More." />
+  <meta name="twitter:description" content="Explore the ideas, discoveries and technologies shaping the future of human wellbeing." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Favicon (simple SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -451,6 +467,20 @@
       opacity: 0.7;
     }
 
+    .form-success {
+      display: none;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-top: 8px;
+      font-size: 1rem;
+    }
+
+    .form-success.show {
+      display: block;
+    }
+
     /* ========== FOOTER ========== */
     footer {
       background: var(--bg-alt);
@@ -558,7 +588,7 @@
   <!-- Header -->
   <header id="header">
     <div class="container header-inner">
-      <a href="#" class="logo">Youtopia <span>Life</span></a>
+      <a href="/" class="logo">Youtopia <span>Life</span></a>
       <a href="#join" class="nav-cta">Join the Journey</a>
     </div>
   </header>
@@ -566,7 +596,7 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-bg">
-      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1920&q=80" alt="Person practicing mindful movement in nature at sunrise" />
+      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1920&q=80" alt="Person practicing mindful movement in nature at sunrise" loading="eager" />
       <div class="hero-overlay"></div>
     </div>
     <div class="container">
@@ -584,7 +614,7 @@
     <div class="container">
       <div class="what-is-grid">
         <div class="what-is-image">
-          <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=900&q=80" alt="Calm morning wellness ritual outdoors" />
+          <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=900&q=80" alt="Calm morning wellness ritual outdoors" loading="lazy" />
         </div>
         <div class="what-is-text">
           <div class="section-label">What is Youtopia Life?</div>
@@ -727,10 +757,17 @@
         <h2>The future of living is already here.</h2>
         <p>Join Youtopia Life as we explore the people, ideas, discoveries and technologies changing the way we live.</p>
         
-        <form class="signup-form" action="#" method="POST" onsubmit="return handleSubmit(event)">
+        <form class="signup-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="newsletter" />
+          <p style="display:none;">
+            <label>Don’t fill this out: <input name="bot-field" /></label>
+          </p>
           <input type="email" name="email" placeholder="Email Address" required aria-label="Email Address" />
           <button type="submit" class="btn">Keep Me Updated</button>
         </form>
+        <div class="form-success" id="form-success">
+          Thank you! You’re on the list. We’ll be in touch.
+        </div>
         <p class="form-note">No spam. Just thoughtful updates as we grow.</p>
       </div>
     </div>
@@ -742,8 +779,7 @@
       <div class="footer-inner">
         <div class="footer-brand">Youtopia Life</div>
         <div class="footer-links">
-          <a href="#">Youtopia Australia</a>
-          <a href="https://www.facebook.com/profile.php?id=61594678834652" target="_blank" rel="noopener">Youtopia Life Facebook</a>
+          <a href="https://www.facebook.com/profile.php?id=61594678834652" target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href="mailto:info@youtopialife.com">info@youtopialife.com</a>
         </div>
       </div>
@@ -764,14 +800,12 @@
       }
     });
 
-    // Simple form handler (replace with real endpoint later)
-    function handleSubmit(e) {
-      e.preventDefault();
-      const email = e.target.email.value;
-      // For now just show a friendly message
-      alert('Thank you! We’ll keep you updated at: ' + email + '\n\n(You can later connect this form to Formspree, Netlify Forms or ConvertKit for free.)');
-      e.target.reset();
-      return false;
+    // Show success message after Netlify form redirect (or handle locally)
+    if (window.location.search.includes('success') || window.location.hash === '#success') {
+      const form = document.querySelector('.signup-form');
+      const success = document.getElementById('form-success');
+      if (form) form.style.display = 'none';
+      if (success) success.classList.add('show');
     }
   </script>
 </body>

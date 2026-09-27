@@ -1,9 +1,10 @@
 import OpenAI from "openai";
+import { getUser } from "@netlify/identity";
 const DAILY_LIMIT=5;
 const buckets=new Map();
 export default async (req, context) => {
   if(req.method!=="POST") return new Response(JSON.stringify({error:"Method not allowed"}),{status:405,headers:{"content-type":"application/json"}});
-  const user=context?.clientContext?.user || context?.user;
+  const user=await getUser();
   if(!user?.email) return new Response(JSON.stringify({error:"Please sign in to Ask Youtopia."}),{status:401,headers:{"content-type":"application/json"}});
   const body=await req.json().catch(()=>({})); const question=String(body.question||"").trim().slice(0,600);
   if(!question) return new Response(JSON.stringify({error:"Ask a question first."}),{status:400,headers:{"content-type":"application/json"}});

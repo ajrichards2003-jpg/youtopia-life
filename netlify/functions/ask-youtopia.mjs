@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 import { getUser } from "@netlify/identity";
-const DAILY_LIMIT=5;
+const DAILY_LIMIT=3;
 const buckets=new Map();
 export default async (req, context) => {
   if(req.method!=="POST") return new Response(JSON.stringify({error:"Method not allowed"}),{status:405,headers:{"content-type":"application/json"}});
@@ -9,7 +9,7 @@ export default async (req, context) => {
   const body=await req.json().catch(()=>({})); const question=String(body.question||"").trim().slice(0,600);
   if(!question) return new Response(JSON.stringify({error:"Ask a question first."}),{status:400,headers:{"content-type":"application/json"}});
   const day=new Date().toISOString().slice(0,10), key=user.email+"|"+day, used=buckets.get(key)||0;
-  if(used>=DAILY_LIMIT) return new Response(JSON.stringify({error:"You've used today's 5 launch questions. Come back tomorrow."}),{status:429,headers:{"content-type":"application/json"}});
+  if(used>=DAILY_LIMIT) return new Response(JSON.stringify({error:"Your three Youtopia wishes are used for today. The genie resets tomorrow. 🧞"}),{status:429,headers:{"content-type":"application/json"}});
   const client=new OpenAI();
   const response=await client.responses.create({model:"gpt-5.6-luna",input:[
     {role:"system",content:"You are Ask Youtopia, the evidence-aware discovery guide for Youtopia Life. Be concise, curious and useful. Distinguish established evidence, promising evidence, emerging research, anecdote and unresolved claims. Never treat a product claim as proof. Do not diagnose or prescribe. When relevant suggest what primary-source evidence the user should inspect and note uncertainty. Youtopia philosophy: curious enough to investigate, rigorous enough to question, independent enough to change our minds."},

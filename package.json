@@ -1,1 +1,1 @@
-{"name":"youtopia-life","private":true,"type":"module","dependencies":{"@netlify/identity":"^2.0.0","openai":"latest"}}
+{"name":"youtopia-life","private":true,"type":"module","dependencies":{"@netlify/identity":"^2.0.0","@netlify/blobs":"^9.0.0","openai":"latest"}}

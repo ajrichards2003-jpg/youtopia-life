@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/api/ask-youtopia"
+  to = "/.netlify/functions/ask-youtopia"
+  status = 200

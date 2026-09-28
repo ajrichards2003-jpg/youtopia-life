@@ -49,3 +49,12 @@ Youtopia Life is a Melbourne-based editorial site covering practical health, lon
 - [ ] Explicit owner approval before merging/deploying live.
 
 **No live Youtopia deploy is authorised by this document.**
+
+## 29 September store and analytics update
+
+- Tee Junction account access is active. The original 1254 × 1254 transparent copper wing image is uploaded as a private store design, category “Youtopia Life”; customers cannot use it as a decoration. The store design editor identifies it as a PNG and estimates 15.93 × 15.93 cm at its default scale. A physical print proof is still necessary.
+- In the decorated-product editor, an AS Colour Staple Tee was selected in black, with the original wing resized to 8 × 8 cm on the wearer’s left chest. Name and copy were entered for “Youtopia Life Wing Tee — Black”; customer customization was disabled. **The final Save & Continue was blocked by automatic approval review because it may expose the item before price and visibility are verified. The product is not confirmed saved or customer-facing.** Resume from the editor only after confirming publication controls and price, with owner approval if publication is immediate.
+- Price Settings currently show 25% markup on wholesale, equivalent to 20% of sale price before any further costs. Store price display is set to “$15.50 AUD.” Do not alter global markup or claim this meets the requested 30% all-in margin. The designer displayed $6.95 flat regular shipping, while the storefront launch worksheet had a different public shipping figure; verify the actual checkout.
+- The free GA4 account and property “Youtopia Life Website” were created under the owner’s Google profile, with Australian country, Melbourne time zone and AUD currency. A web data stream and measurement ID were **not** created. Enhanced measurement was default-on when the stream form reopened; automatic approval review rejected proceeding with that broader tracking setting. No tag is installed and no traffic is recorded. Add a privacy notice and verify limited tracking and consent needs before enabling collection.
+- The preview PR #5 remains open and draft; no production deploy was authorized. The preview homepage visibly shows the dire wolf Pulse, carousels, the two language introductions, games, guides, merch interest, and store-coming-soon state. It does not provide a buy link.
+- Buffer Free setup was handed to the owner; owner confirmed account creation but requested to return to social account connections later. No channels are confirmed connected.

@@ -35,3 +35,9 @@ The pages link to the source file and licence next to each image and disclose th
 ## Release gate
 
 Do not merge this branch or the content/store preview solely on this checklist. Inspect the visible previews, confirm provenance for locally hosted media, and obtain qualified Australian IP advice for brand/trade-mark clearance and any doubtful third-party content before a commercial merch launch.
+
+## Narrated chapter film added to preview (29 September 2026)
+
+`assets/chapter-narrated-web.mp4` is a 37-second 960×540 H.264/AAC preview cut, assembled by Youtopia's editor from eight images generated in this workspace (`generated_images/exec-eb265521…`, `exec-a8c8d59b…`, `exec-a1cbb532…`, `exec-5a18a030…`, `exec-ff687e56…`, `exec-6ca8edb1…`, `exec-46d7a18f…`, `exec-5128f222…`), original procedural instrumental tones, and a voiceover generated with HeyGen's public “Wilhelm – Thoughtful & Clear” voice. The local assembly source is `make_chapter_film.py`; retain it and the source exports with the project archive. The 37-second film is the active preview; the earlier launch celebration file is retained but not used on the homepage.
+
+The music bed was synthesized for this edit and does not incorporate a third-party song recording. The HeyGen account's applicable commercial-output/voice terms and the generation records should be retained before broad commercial promotion. This manifest documents production, not a legal clearance opinion. The four browser-generated ambient modes are procedural Web Audio sounds; “Healing” names a mood, not a medical frequency claim. The legacy MP3s remain in the repository but are not used by the four-mode player; their provenance is still unverified. Retain the original logo file or creator permission for printing merchandise.

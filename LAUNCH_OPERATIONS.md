@@ -4,7 +4,7 @@
 
 **Product draft:** Youtopia Life Limitless Youth Tee, black AS Colour Staple Tee (AS_5001_STAPLE), regular unisex fit, a restrained bronze wing mark on the left chest. Describe it as an everyday tee, not "premium". Sizes and print method must follow Tee Junction's real product proof. Do not use the editorial hoodie/tee mockups as a print file or product photograph.
 
-**Store found:** https://youtopialife.tshirts.net.au/ exists and displays AUD, but its public homepage currently says "WE GOT THE GOODS" and exposes a generic blank-product catalogue. No Youtopia design or finished product is visible. The old secure-decoration URL redirects to the tshirts.net.au host. A sign-in is required to edit the store; secure cloud-browser login did not complete. Do not link this unfinished store from Youtopia.
+**Store found:** https://youtopialife.tshirts.net.au/ exists and displays AUD, but its public homepage currently says "WE GOT THE GOODS" and exposes a generic blank-product catalogue. No Youtopia design or finished product is visible. The old secure-decoration URL redirects to the tshirts.net.au host. Store admin access is active. A private design was uploaded, but no decorated product is saved or customer-facing. Do not link this unfinished store from Youtopia.
 
 **Public comparison snapshot:** the store itself lists AS Colour Staple Tee from A$29.95, Classic Tee from A$32.95 and Men's Heavy Tee from A$39.95, before a Youtopia design is selected. These are customer-facing "from" figures, **not Youtopia's base cost or profit**. The store's shipping page says standard delivery starts A$9.99 for one item (8–15 business days), express A$15 (5–10 business days), and Alphington pickup 4–7 business days. Verify actual checkout and conditions for the finished tee.
 
@@ -12,10 +12,10 @@
 
 | Required dashboard evidence | Value |
 |---|---|
-| Exact AS Colour blank/colour/sizes/stock | Pending sign-in |
-| Left-chest printing method, dimensions and print cost | Pending sign-in |
-| Base cost, platform commission, transaction deductions | Pending sign-in |
-| Seller-set retail price and payout at one unit | Pending sign-in |
+| Exact AS Colour blank/colour/sizes/stock | Pending product save/proof |
+| Left-chest printing method, dimensions and print cost | Pending product save/proof |
+| Base cost, platform commission, transaction deductions | Pending product save/proof |
+| Seller-set retail price and payout at one unit | Pending product save/proof |
 | AUD customer checkout + Melbourne postcode shipping | Pending test cart |
 | Returns/faults handling and customer support owner | Pending review |
 | Print proof and physical sample | Pending order |
@@ -58,3 +58,12 @@ Youtopia Life is a Melbourne-based editorial site covering practical health, lon
 - The free GA4 account and property “Youtopia Life Website” were created under the owner’s Google profile, with Australian country, Melbourne time zone and AUD currency. A web data stream and measurement ID were **not** created. Enhanced measurement was default-on when the stream form reopened; automatic approval review rejected proceeding with that broader tracking setting. No tag is installed and no traffic is recorded. Add a privacy notice and verify limited tracking and consent needs before enabling collection.
 - The preview PR #5 remains open and draft; no production deploy was authorized. The preview homepage visibly shows the dire wolf Pulse, carousels, the two language introductions, games, guides, merch interest, and store-coming-soon state. It does not provide a buy link.
 - Buffer Free setup was handed to the owner; owner confirmed account creation but requested to return to social account connections later. No channels are confirmed connected.
+
+## 29 September final checks
+
+- The preview privacy page is accessible at `/privacy/`, linked in the homepage footer and the merchandise interest form. The form explicitly separates interest from a purchase and requires contact consent for the first drop. This does not itself activate Google Analytics or replace a consent review.
+- Tee Junction admin confirms zero decorated products and zero orders; commission payout is unconfigured. The 25% wholesale markup is 20% of retail before further costs. The requested 30% gross margin on the delivered checkout cannot be certified without a finished product quote, a test cart and payout terms. A previous final product-save action was rejected by automatic approval review because it could make the listing customer-facing before price and visibility were verified. Do not retry the same action by another route; keep the store unlinked from Youtopia for now.
+- Awin's Myprotein AU merchant profile (ID 19155) is verified as the Australian/New Zealand programme, with a 30-day cookie. It shows a “Login And Join Programme” route, not an active Youtopia membership. The browser is at Awin sign-in. No approval, unique tracking URL, commission rate or supplier creative licence is confirmed.
+- The 37-second chapter film's HeyGen narration has an unresolved commercial licence under the current Free Plan wording. It remains preview-only, even if other site content is approved. See `CONTENT_RIGHTS.md`. Legacy music files and other generated/source assets also need provenance records.
+- Google Analytics property exists but no stream, ID or tag is active. A privacy page was staged; Google stream's default enhanced measurement could not be turned off and saved in this UI, and automatic approval review rejected enabling the broader collection. No visitor reporting can be claimed yet.
+- **No live deploy, product publication, affiliate commission claim or analytics collection is approved or completed by these checks.**

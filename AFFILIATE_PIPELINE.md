@@ -42,7 +42,7 @@ Snapshot 28 September 2026. "Free" means no required monthly platform subscripti
 | BigCommerce | Capable scaling platform, excessive cost for one first-drop tee. | Trial then paid plan. Defer. https://www.bigcommerce.com/pricing/ |
 | TikTok Shop | Social discovery could work with product video. | Printify onboarding labels this US only; do not treat as Australian launch option. |
 
-**Order:** Printify Pop-Up → sample and validated AUD customer experience → Etsy or Big Cartel/Square test → larger paid platform only when sales warrant it. Do not duplicate listings across channels until stock/fulfilment, price and returns are coherent. Keep Youtopia Life as the editorial home and link to the chosen checkout.
+**Updated AUD launch order:** Tee Junction free hosted store or another confirmed AUD checkout → verify exact customer checkout and sample → compare product and shipping against Printify → consider Etsy/Big Cartel/Square later. Printify Pop-Up is a USD-only fallback for a future global phase; no USD checkout for the Australian launch. Do not duplicate listings across channels until stock/fulfilment, price and returns are coherent. Keep Youtopia Life as the editorial home and link to the chosen checkout.
 
 ## Australian production and AUD checkout alternatives
 
@@ -53,3 +53,17 @@ Snapshot 28 September 2026. "Free" means no required monthly platform subscripti
 - **Gelato/Printful:** free fulfilment accounts and Australian production options, but require a sales channel/checkout. They are alternatives for future quality and shipping tests, not automatically a free hosted AUD store. https://www.gelato.com/print-on-demand/australia ; https://www.printful.com/au/print-on-demand-australia
 
 Compare a one-tee checkout to Melbourne for each: exact garment, print method, price in AUD, production/tax/processing, shipping, delivery range, returns, packaging branding, merchant/customer data ownership, and sample quality. Never assume “printed in Australia” means the blank garment was manufactured in Australia.
+
+## AUD launch decision and review evidence (28 September 2026)
+
+Owner requirement: Australian customers must see and pay in AUD until a later global phase. Do not link the current Printify Pop-Up Store as the Australian checkout; Printify states its Pop-Up Store transacts only in USD. https://help.printify.com/hc/en-us/articles/12051129478417-What-is-Printify-Pop-Up-Store
+
+Tee Junction's free hosted affiliate store is the strongest no-monthly-cost AUD candidate. An example hosted store displays AUD prices: https://valhallastrengthtsv.teejunction.com.au/ . Verify the actual checkout currency, Youtopia store branding, exact base/markup/profit and shipping in a test order before publishing. The free store is under Tee Junction's umbrella, with Tee Junction branding in order emails and monthly PayPal payout. https://www.teejunction.com.au/page/services/open-a-store
+
+Public review samples are small and mixed, so ratings do not certify fulfilment:
+- Tee Junction: ProductReview 3.1/5 from 10 reviews. Positive mentions of AS Colour shirt/print quality and service; negatives about delayed delivery, mismatched print/sizing and response to faults. https://www.productreview.com.au/listings/tee-junction
+- The Print Bar: ProductReview 3.1/5 from 19 reviews, with praise for prints/service and complaints about order accuracy, quality control and support. Shopify app listing has 5/5 from six reviews, which assesses the integration rather than all customer orders. https://www.productreview.com.au/listings/the-print-bar ; https://apps.shopify.com/theprintbar/reviews
+- OGO: Shopify app 1.8/5 from six reviews at the time checked; several sellers describe slow delivery/damage/support issues, one praises AS Colour print and support. It requires Shopify for the automated route. https://apps.shopify.com/ogo-australian-print-on-demand/reviews
+- Printify: broad network reviews cannot establish the quality of a particular printer or garment. Pop-Up USD checkout alone rules it out for the current AU launch.
+
+No customer-facing purchase link is ready yet. Need physical sample, exact AUD delivered price and margin, print-ready artwork, warranty/returns and test checkout. Do not publish the store or Youtopia site without owner approval.

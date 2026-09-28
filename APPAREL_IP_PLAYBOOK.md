@@ -44,3 +44,9 @@ Official references:
 - https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-are-classes-of-goods-and-services
 - https://www.ipaustralia.gov.au/tools-and-research/professional-resources/data-research-and-reports/australian-ip-report-2026/copyright
 - https://www.heygen.com/terms
+
+## Preliminary Australian word-mark search — 29 September 2026
+
+IP Australia's quick search returned no exact results for “YOUTOPIA LIFE” and “LIMITLESS YOUTH.” Searching “YOUTOPIA” returned seven records, including **registered word mark 2190260** owned by Beautopia Hair and Beauty Pty Limited in class 35 for promotional marketing, advertising, sales promotion and loyalty/incentive schemes. Its register shows a 2025 non-use removal application and an opposition discontinued in 2026; the mark remains “Currently registered” in the record viewed. Sources: https://search.ipaustralia.gov.au/trademarks/search/quick/result?q=YOUTOPIA+LIFE ; https://search.ipaustralia.gov.au/trademarks/search/quick/result?q=LIMITLESS+YOUTH ; https://search.ipaustralia.gov.au/trademarks/search/view/2190260?q=YOUTOPIA .
+
+This is **not clearance** for Youtopia Life's editorial/retail business or future apparel brand. The class 35 registration is a material overlap to review, even though it does not itself list class 25 garments. Search close spellings (including Yootopia), similar device marks, unregistered use and the relevant goods/services before any registration filing or customer-facing apparel listing. Have an Australian trade mark attorney assess risk and the right applicant entity. Record the professional opinion and any registration strategy in this file. No ® claim or exclusivity claim is authorised by the quick search.

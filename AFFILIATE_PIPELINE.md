@@ -67,3 +67,15 @@ Public review samples are small and mixed, so ratings do not certify fulfilment:
 - Printify: broad network reviews cannot establish the quality of a particular printer or garment. Pop-Up USD checkout alone rules it out for the current AU launch.
 
 No customer-facing purchase link is ready yet. Need physical sample, exact AUD delivered price and margin, print-ready artwork, warranty/returns and test checkout. Do not publish the store or Youtopia site without owner approval.
+
+## Tee Junction selected — setup handoff
+
+Owner selected Tee Junction for AUD first launch on 28 September 2026. Signup: https://www.teejunction.com.au/affiliate?as=1 . Proposed account/store slug: `youtopialife` if available; owner uses Youtopia business email and owns credentials. No signup, term acceptance or public listing has been completed by Codex. Do not link a shop until its test order and launch approval.
+
+Read the actual affiliate agreement before accepting: https://www.teejunction.com.au/affiliateagree . It requires a PayPal payout account, provided within seven days of the first delivered order or commissions may lapse after 60 days; pays monthly after delivery, with banking costs deducted. It requires affiliate local customer support, compliance and adequate insurance including product liability, and contains broad indemnities for content and customer disputes. These are material business obligations; owner should review and obtain Australian advice if needed. The agreement says the affiliate retains its IP, but the shop is under the fulfilment platform with limited control. Tee Junction's overview says some of its branding appears in emails. The marketing page's “20% from every sale” is not the same thing as a guaranteed 30% gross margin; confirm exact dashboard payout and all fees.
+
+**First product draft:** Youtopia Life black AS Colour Staple Tee, regular unisex fit, small single-colour wing mark at left chest, no “premium” claim. Choose official blank/style, available sizes, ink method and print placement in actual catalogue. Current website mark is 340×340 and cannot be assumed print-ready; request/use a high-resolution original or vector and proof the artwork. Compare a black boxy style only if sample and economics support it. Do not copy the editorial concept mockup as a manufacturing file.
+
+**Pricing:** On Tee Junction hosted store, confirm base merchandise + decoration + taxes/transaction/banking deductions and whether shipping is charged separately. Target 30% gross margin on combined customer checkout, not merely 30% markup: selling amount = all-in variable cost / 0.70 when all costs scale on order amount as assumed; solve percentage fees explicitly if present. Verify displayed AUD, checkout AUD, shipping to Melbourne, returns and expected delivery, then sample. Avoid claiming exact retail price from its public base figures.
+
+**Live-site hold:** Youtopia store remains concept/interest in draft PR #5. Add actual AUD buy link only after sample and owner approval; never merge/deploy without explicit owner signoff.

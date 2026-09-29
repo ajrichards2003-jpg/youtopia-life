@@ -63,6 +63,10 @@
 .intro-carousel{position:relative;min-height:100svh;overflow:hidden;background:#020706}.intro-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.1s ease;display:flex;align-items:flex-end;isolation:isolate}.intro-slide.active{opacity:1}.intro-slide img,.intro-slide video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-3}.intro-slide:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#03100dcf,#03100d55 58%,#03100d1c),linear-gradient(0deg,#03100ddd,transparent 65%);z-index:-2}.intro-copy{width:min(1180px,100%);margin:0 auto;padding:0 24px 9vh}.intro-copy .eyebrow{letter-spacing:.22em}.intro-copy h1{font-size:clamp(3.8rem,10vw,8.5rem);line-height:.85;letter-spacing:-.07em;margin:16px 0;color:#f5f2e9}.intro-copy h1 span{color:#55dfb8}.intro-copy p{max-width:610px;font-size:1.12rem;color:#e2ebe6}.intro-dots{position:absolute;z-index:5;right:24px;bottom:28px;display:flex;gap:9px}.intro-dot{width:32px;height:3px;border:0;background:#ffffff55;padding:0;cursor:pointer}.intro-dot.active{background:#55dfb8}
 </style><style id="final-polish">.nav{top:0!important;z-index:9999!important}.brand-logo img{background:transparent!important;mix-blend-mode:normal}.brand-word{color:#f5f2e9!important}.brand-word b{color:#55dfb8!important}.discovery-card img,.card .series-image{border-radius:14px 14px 0 0;object-fit:cover}.article-nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}</style><style>
 /* Release candidate visual rules — 29 Sep 2026 */
+/* Keep the header controls visible at laptop widths. */
+.nav .wrap{max-width:1600px}
+@media(max-width:1450px){.navin .links{display:none}}
+
 .nav{top:0!important;z-index:9999!important}
 .carousel{width:100%}
 .carousel .card{min-width:0}

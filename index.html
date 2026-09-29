@@ -37,8 +37,32 @@
 #ambient-track{max-width:130px;background:#10251f;color:#f5f2e9;border:1px solid #426758;border-radius:999px;padding:8px 10px;font:inherit;font-size:.8rem;cursor:pointer}
 #ambient-controls .ambient-toggle{position:static;left:auto;bottom:auto;z-index:auto;padding:8px 12px;white-space:nowrap;box-shadow:none;font-size:.8rem}
 @media(max-width:600px){#ambient-controls{left:12px;bottom:78px;max-width:calc(100vw - 24px)}#ambient-track{max-width:108px}#ambient-controls .ambient-toggle{padding:7px 9px}}
-</style>
+</style><style>
+/* Collection 01 preview — cinematic entry */
+.cinematic-entry{position:relative;min-height:100svh;display:grid;place-items:center;overflow:hidden;background:#020706;color:#fff}
+.cinematic-entry video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cinematic-entry:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#02070666 0%,#02070610 38%,#02070680 100%)}
+.cinematic-entry__content{position:relative;z-index:2;width:min(92vw,900px);text-align:center;padding:32px 20px}
+.cinematic-entry__mark{width:clamp(78px,10vw,118px);height:auto;filter:drop-shadow(0 4px 24px #0008)}
+.cinematic-entry__brand{margin:18px 0 0;font-size:clamp(2.3rem,7vw,6.2rem);line-height:.9;letter-spacing:.12em;font-weight:500}
+.cinematic-entry__tagline{margin:18px 0 34px;font-size:clamp(.8rem,1.8vw,1.2rem);letter-spacing:.38em;text-transform:uppercase}
+.cinematic-entry__enter{display:inline-flex;align-items:center;justify-content:center;min-width:170px;padding:13px 22px;border:1px solid #ffffffaa;border-radius:999px;background:#0002;color:#fff;backdrop-filter:blur(8px);transition:.25s}
+.cinematic-entry__enter:hover,.cinematic-entry__enter:focus-visible{background:#fff;color:#07110f;outline:none}
+.cinematic-entry__hint{position:absolute;z-index:2;bottom:22px;left:50%;transform:translateX(-50%);font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;opacity:.75;white-space:nowrap}
+@media(prefers-reduced-motion:reduce){.cinematic-entry video{display:none}.cinematic-entry{background:linear-gradient(145deg,#07110f,#174f40)}}
+@media(max-width:600px){.cinematic-entry__brand{letter-spacing:.08em}.cinematic-entry__tagline{letter-spacing:.24em}.cinematic-entry__hint{bottom:16px}}
+
 </head><body>
+<section class="cinematic-entry" id="top" aria-label="Welcome to Youtopia Life">
+  <video autoplay muted loop playsinline preload="metadata" poster="/assets/welcome-poster.jpg" aria-hidden="true"><source src="/assets/youtopia-welcome-web.mp4" type="video/mp4"></video>
+  <div class="cinematic-entry__content">
+    <img class="cinematic-entry__mark" src="/assets/youtopia-mark-transparent.png" alt="Youtopia Life">
+    <h1 class="cinematic-entry__brand">YOUTOPIA LIFE</h1>
+    <p class="cinematic-entry__tagline">Limitless Youth</p>
+    <a class="cinematic-entry__enter" href="#discover">Enter Youtopia</a>
+  </div>
+  <div class="cinematic-entry__hint">Explore · Question · Become</div>
+</section>
 <nav class="nav"><div class="wrap navin"><a class="brand brand-logo" href="#top" aria-label="Youtopia Life home"><img src="/assets/youtopia-mark-transparent.png" alt=""><span class="brand-word">YOUTOPIA <b>LIFE</b></span></a><label class="category-label" for="category-nav">Explore <select id="category-nav" aria-label="Explore Youtopia categories"><option value="">Choose a category</option><optgroup label="Discover"><option value="#discover">Discovery stories</option><option value="#research">Research</option><option value="#frontier">Frontier science</option><option value="#ai-frontier">AI &amp; human potential</option><option value="/pulse/">Pulse films</option><option value="#product-films">Product films</option></optgroup><optgroup label="Everyday life"><option value="/guides/">Field guides</option><option value="/supplements/">Vitamins &amp; supplements</option><option value="/recipes/">15 recipes</option><option value="/kids/">Youtopia Kids</option><option value="/wallpapers/">Free wallpapers</option><option value="/games/">Brain games</option><option value="/guides/heartmath.html">HeartMath guide</option></optgroup><optgroup label="People &amp; products"><option value="#minds">Minds of Youtopia</option><option value="/books.html">Books</option><option value="#picks">Youtopia Picks</option><option value="/wearables/">Wearables &amp; glucose monitors</option><option value="/store/">First collection</option></optgroup><optgroup label="Youtopia"><option value="/about/">About us</option><option value="/contact/">Contact us</option></optgroup></select></label><div class="links"><a href="/about/">About</a><a href="#discover">Discover</a><a href="/guides/">Guides</a><a href="/games/">Games</a><a href="/recipes/">Recipes</a><a href="/pulse/">Pulse</a><a href="#picks">Picks</a><a href="/contact/">Contact</a></div><button class="pill" onclick="openAI()">✨ Ask Youtopia</button></div></nav><script>document.getElementById('category-nav').addEventListener('change',function(){if(this.value)location.href=this.value})</script>
 <section class="welcome-film" aria-label="Youtopia Life welcome film"><div class="wrap"><div class="welcome-heading"><div><span class="eyebrow">A Youtopia Life original · 16 seconds</span><h2>Welcome to what comes next.</h2></div><p>Explore with curiosity. Question with care. Keep becoming.</p></div><video id="welcome-video" controls playsinline preload="metadata" poster="/assets/welcome-poster.jpg" aria-label="Youtopia Life welcome film"><source src="/assets/youtopia-welcome-web.mp4" type="video/mp4">Your browser does not support video. <a href="/assets/youtopia-welcome-web.mp4">Download the welcome film</a>.</video></div></section>
 <header class="hero" id="top"><div class="wrap"><div class="eyebrow">Explore what is possible</div><h1>LIMITLESS<br><span>YOUTH.</span></h1><p class="lede">A discovery platform for people curious about living longer, feeling better and understanding what is coming next — from established science to the edge of human potential.</p><div class="actions"><a class="btn primary" href="#discover">Start exploring</a><button class="btn" onclick="openAI()">Ask Youtopia AI</button><a class="btn" href="#weekly">Join The Youtopia Weekly</a><a class="btn" href="/wallpapers/">Free phone wallpapers</a></div></div></header>

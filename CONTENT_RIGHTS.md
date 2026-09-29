@@ -35,3 +35,20 @@ The pages link to the source file and licence next to each image and disclose th
 ## Release gate
 
 Do not merge this branch or the content/store preview solely on this checklist. Inspect the visible previews, confirm provenance for locally hosted media, and obtain qualified Australian IP advice for brand/trade-mark clearance and any doubtful third-party content before a commercial merch launch.
+
+## Optional launch soundtrack (29 September 2026)
+
+Four tracks selected from Mixkit's Chillout collection for the opt-in site player. Mixkit's free stock music licence permits website public performance and commercial use; review the current licence before repurposing tracks elsewhere. Audio is streamed from Mixkit's CDN and is not stored in this repository. The player advances through all four before repeating.
+
+| Track | Artist | Duration | Asset |
+| --- | --- | --- | --- |
+| Roses | Andrew Ev | 4:27 | https://assets.mixkit.co/music/183/183.mp3 |
+| You | Andrew Ev | 4:24 | https://assets.mixkit.co/music/185/185.mp3 |
+| Closer | Andrew Ev | 3:28 | https://assets.mixkit.co/music/189/189.mp3 |
+| R&B vibes 1 | Grigoriy Nuzhny | 3:01 | https://assets.mixkit.co/music/685/685.mp3 |
+
+Source: https://mixkit.co/free-stock-music/chillout/ ; licence: https://mixkit.co/license/#musicFree . The earlier generated ambient recordings remain preserved in Git history but are not used by the current player.
+
+## Portrait release note
+
+A social-profile portrait of Dr Rhonda Patrick was tested in preview, but no reuse permission was documented. The production candidate restores the prior research image and profile graphic until permission or a verified licence is recorded. The portrait edit remains recoverable in Git history.

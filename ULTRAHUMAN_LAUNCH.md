@@ -28,3 +28,13 @@ Preview only. Do not merge to main or publish production until Adam reviews and 
 
 ## Body Explorer product vision (development paused)
 Preserve existing prototypes; do not delete. Build a medically reviewed, G-rated experience for children and adults. Show all organs in position; select an organ or system and focus/zoom into it. Teach normal function, hormone/nerve/blood-flow communication and interdependencies. Show food journeys, starting with sugar: digestion and monosaccharide absorption, portal circulation, liver processing, pancreatic insulin signalling, uptake and energy/storage, with glucose and fructose distinguished. Model timings qualitatively unless validated; label simulated quantities. Explain chronic context separately from an individual meal; avoid implying any sugar automatically causes inflammation or disease. Cover changes due to inflammation or dysfunction, possible symptoms and clinical assessment without presenting symptoms as a diagnosis. Provide age-appropriate depth, accessible text alternatives and expert-reviewed scenarios. Resume interactive development only after the experience and scientific model are agreed; current task is the holding page and specification.
+
+
+## Account verification completed 3 October 2026
+Secure Awin authentication completed. Account profile confirms Joined, Online, date joined 1 October, 45-day attribution and 50-day auto validation. Commission Manager current group: Default 7.00%. Programme-wide chart 7–20% is not our default rate. Account Link Builder generated the AU buy deep link below. Browser redirect reached AU Ring AIR buy page with publisher sv_campaign_id=3106417 and Awin click identifier. No checkout, purchase or sale attribution was tested.
+
+https://www.awin1.com/cread.php?awinmid=69428&awinaffid=3106417&ued=https%3A%2F%2Fwww.ultrahuman.com%2Fau%2Fring%2Fbuy%2F
+
+Product image replaced with advertiser-supplied My Creative 4052113, Bionic Gold 3840×2160: https://static.shareasale.com/image/149763/Ringlisting-03.jpg. Original media unaltered. Do not use the earlier manufacturer-store asset in production. Custom campaign copy or new branding may still need advertiser approval under programme branding terms; preserve that review before production. Purchase CTA enabled in preview.
+
+Preview build ready at https://deploy-preview-14--playful-basbousa-781f5f.netlify.app/ . Direct CLI login is no longer needed: draft PR 14 triggers the preview without production publication. No production deploy performed. Desktop browser QA verified images, pause/slide controls, product guide and Body Explorer holding page; mobile visual QA remains outstanding.

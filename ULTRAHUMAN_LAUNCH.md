@@ -38,3 +38,7 @@ https://www.awin1.com/cread.php?awinmid=69428&awinaffid=3106417&ued=https%3A%2F%
 Product image replaced with advertiser-supplied My Creative 4052113, Bionic Gold 3840×2160: https://static.shareasale.com/image/149763/Ringlisting-03.jpg. Original media unaltered. Do not use the earlier manufacturer-store asset in production. Custom campaign copy or new branding may still need advertiser approval under programme branding terms; preserve that review before production. Purchase CTA enabled in preview.
 
 Preview build ready at https://deploy-preview-14--playful-basbousa-781f5f.netlify.app/ . Direct CLI login is no longer needed: draft PR 14 triggers the preview without production publication. No production deploy performed. Desktop browser QA verified images, pause/slide controls, product guide and Body Explorer holding page; mobile visual QA remains outstanding.
+
+
+## 3 October — coherent campaign revision
+Five unique AI-assisted product-reference campaign images replace mixed generic imagery: hero, sleep, heart rate/recovery, activity and compact titanium/no mandatory core subscription. Source product reference remains the advertiser-supplied Ring AIR Bionic Gold image. Images are campaign visualisations, not customer testimonials or documentary photos; keep manufacturer campaign approval before publication. Generated with built-in ImageGen. See assets/ultrahuman/*-campaign.webp. Mobile composition explicitly keeps a top product picture and copy below. All original images and prototypes retained.

@@ -65,3 +65,6 @@ New field-guide images verified on individual free Unsplash photo pages (not Uns
 - Red-light illustrative photo: Julius Toltesi, https://unsplash.com/photos/person-with-red-light-therapy-device-on-arm-KrTnPwtdZ9s ; photo-1754941622117-97957c5d669b; free Unsplash licence verified; caption says not BON CHARGE product.
 - New algae still life and laboratory scene: original built-in ImageGen illustrations, no third-party brand/person or copied scientific diagram; captioned AI-generated, not a real study. Originals preserved.
 - Ring AIR campaign artwork remains subject to prior supplier approval before production use. Existing locally hosted legacy films and artwork with missing provenance are still unresolved; this audit does not retroactively establish their rights.
+
+## iHerb introduction preview
+Uses existing AI-generated algae/laboratory illustrations and the already documented licensed guide photographs: Andrew Valdivia (Unsplash photo-1591202585597-839c6965c443) and Ahmed Nishaath (Unsplash photo-1761957883290-c37d9ce7c5d2). Credits appear on each slide. These are illustrative editorial scenes, not branded product images or endorsements. No new supplier packshots copied.

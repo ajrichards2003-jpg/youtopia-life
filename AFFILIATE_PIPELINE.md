@@ -1,6 +1,6 @@
 # Affiliate pipeline — 28 September 2026
 
-No affiliate agreement or tracking link is active. Ordinary official product links on /store/ currently earn Youtopia Life no commission. Do not call them affiliate links until accepted, and do not replace them with a personal referral code where public/business use is restricted.
+Ultrahuman is joined with an account-issued tracking link and verified Default 7% commission. Ordinary untracked product links on /store/ earn no commission. Do not call them affiliate links until accepted, and do not replace them with a personal referral code where public/business use is restricted.
 
 | Priority | Partner | Fit / first product | Official application | Status and check |
 |---|---|---|---|---|
@@ -79,3 +79,11 @@ Read the actual affiliate agreement before accepting: https://www.teejunction.co
 **Pricing:** On Tee Junction hosted store, confirm base merchandise + decoration + taxes/transaction/banking deductions and whether shipping is charged separately. Target 30% gross margin on combined customer checkout, not merely 30% markup: selling amount = all-in variable cost / 0.70 when all costs scale on order amount as assumed; solve percentage fees explicitly if present. Verify displayed AUD, checkout AUD, shipping to Melbourne, returns and expected delivery, then sample. Avoid claiming exact retail price from its public base figures.
 
 **Live-site hold:** Youtopia store remains concept/interest in draft PR #5. Add actual AUD buy link only after sample and owner approval; never merge/deploy without explicit owner signoff.
+
+
+## 3 October 2026 — Ultrahuman joined
+Owner screenshot confirms Joined and active link status. Launch candidate on preview/ultrahuman-launch-2026-10-03. Account-issued tracking link and assigned rate still require verification. See ULTRAHUMAN_LAUNCH.md. Body Explorer development is paused; preview serves a work-in-progress holding page.
+
+
+## iHerb — next partner, 3 October 2026
+Prioritised by Adam after Ultrahuman. Official AU page points to Awin ROW advertiser 76736. Published default 5% for content publishers, 7-day cookie, limited campaigns up to 25% (not our assigned rate). No application submitted or terms accepted yet. Build a curated comparison range from magnesium, plain creatine, omega-3, vitamin D and gut-health products, then inspect specific labels, AU availability, quality evidence and suitability before recommending. Do not recommend a blanket supplement stack or market supplements to children. Do not use personal Rewards codes; they can override affiliate attribution. Official sources: https://au.iherb.com/info/affiliates ; https://ui.awin.com/merchant-profile/76736 ; https://au.iherb.com/lp/affiliate-terms-and-conditions

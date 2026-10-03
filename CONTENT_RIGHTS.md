@@ -52,3 +52,16 @@ Source: https://mixkit.co/free-stock-music/chillout/ ; licence: https://mixkit.c
 ## Portrait release note
 
 A social-profile portrait of Dr Rhonda Patrick was tested in preview, but no reuse permission was documented. The production candidate restores the prior research image and profile graphic until permission or a verified licence is recorded. The portrait edit remains recoverable in Git history.
+
+
+## 3 October 2026 — image and layout audit
+
+New field-guide images verified on individual free Unsplash photo pages (not Unsplash+); licence https://unsplash.com/license checked. Used in educational context without claiming endorsement.
+
+- Ahmed Nishaath: https://unsplash.com/photos/a-bed-with-pillows-near-a-window-ZR102ZpCsGA; image ID photo-1761957883290-c37d9ce7c5d2; guide use: sleep.
+- Johan Mouchet: https://unsplash.com/photos/a-bright-sunrise-over-a-lush-landscape-zjDdRMCdB0I; image ID photo-1749039413788-53dbbd8a70cb; guide use: sun.
+- Ksenia Makagonova: https://unsplash.com/photos/person-doing-meditation-outdoors-V-TIPBoC_2M; image ID photo-1528319725582-ddc096101511; guide use: calm.
+- Andrew Valdivia: https://unsplash.com/photos/person-holding-black-dumbbell-in-black-gym-PzNvaCoG0T4; image ID photo-1591202585597-839c6965c443; guide use: workout.
+- Red-light illustrative photo: Julius Toltesi, https://unsplash.com/photos/person-with-red-light-therapy-device-on-arm-KrTnPwtdZ9s ; photo-1754941622117-97957c5d669b; free Unsplash licence verified; caption says not BON CHARGE product.
+- New algae still life and laboratory scene: original built-in ImageGen illustrations, no third-party brand/person or copied scientific diagram; captioned AI-generated, not a real study. Originals preserved.
+- Ring AIR campaign artwork remains subject to prior supplier approval before production use. Existing locally hosted legacy films and artwork with missing provenance are still unresolved; this audit does not retroactively establish their rights.

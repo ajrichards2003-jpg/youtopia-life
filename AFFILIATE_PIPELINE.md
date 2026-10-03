@@ -87,3 +87,6 @@ Owner screenshot confirms Joined and active link status. Launch candidate on pre
 
 ## iHerb — next partner, 3 October 2026
 Prioritised by Adam after Ultrahuman. Official AU page points to Awin ROW advertiser 76736. Published default 5% for content publishers, 7-day cookie, limited campaigns up to 25% (not our assigned rate). No application submitted or terms accepted yet. Build a curated comparison range from magnesium, plain creatine, omega-3, vitamin D and gut-health products, then inspect specific labels, AU availability, quality evidence and suitability before recommending. Do not recommend a blanket supplement stack or market supplements to children. Do not use personal Rewards codes; they can override affiliate attribution. Official sources: https://au.iherb.com/info/affiliates ; https://ui.awin.com/merchant-profile/76736 ; https://au.iherb.com/lp/affiliate-terms-and-conditions
+
+## iHerb Impact update — 3 October 2026
+Website connected confirmed by owner screenshot; Adam reports application complete. Approval and assigned contract terms not yet observed. Public default 5% is a planning assumption, not account confirmation. New 20-product editorial shortlist spans nine themes; ordinary supplier links only until account-issued links are verified. Keep Ultrahuman featured and iHerb in preview until owner reviews.

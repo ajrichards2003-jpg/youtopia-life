@@ -24,6 +24,14 @@
     document.head.append(tag);
   }
 
+  document.addEventListener('click', event => {
+    const link = event.target.closest('a[href]');
+    if (choice !== 'yes' || !loaded || !link || typeof window.gtag !== 'function') return;
+    let url; try { url = new URL(link.href); } catch (_) { return; }
+    const affiliate = /(^|\.)(awin1\.com|iherb\.com|ultrahuman\.com)$/.test(url.hostname);
+    if (affiliate) window.gtag('event', 'supplier_click', { supplier: url.hostname.includes('iherb') ? 'iherb' : 'ultrahuman', link_url: url.href, link_text: link.textContent.trim().slice(0,100), transport_type: 'beacon' });
+  });
+
   function save(value) {
     try { localStorage.setItem(key, value); } catch (_) { /* Session choice still applies. */ }
     choice = value;

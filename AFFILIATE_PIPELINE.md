@@ -79,3 +79,7 @@ Read the actual affiliate agreement before accepting: https://www.teejunction.co
 **Pricing:** On Tee Junction hosted store, confirm base merchandise + decoration + taxes/transaction/banking deductions and whether shipping is charged separately. Target 30% gross margin on combined customer checkout, not merely 30% markup: selling amount = all-in variable cost / 0.70 when all costs scale on order amount as assumed; solve percentage fees explicitly if present. Verify displayed AUD, checkout AUD, shipping to Melbourne, returns and expected delivery, then sample. Avoid claiming exact retail price from its public base figures.
 
 **Live-site hold:** Youtopia store remains concept/interest in draft PR #5. Add actual AUD buy link only after sample and owner approval; never merge/deploy without explicit owner signoff.
+
+
+## 3 October 2026 — Ultrahuman joined
+Owner screenshot confirms Joined and active link status. Launch candidate on preview/ultrahuman-launch-2026-10-03. Account-issued tracking link and assigned rate still require verification. See ULTRAHUMAN_LAUNCH.md. Body Explorer development is paused; preview serves a work-in-progress holding page.

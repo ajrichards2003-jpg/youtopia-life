@@ -29,7 +29,13 @@
     if (choice !== 'yes' || !loaded || !link || typeof window.gtag !== 'function') return;
     let url; try { url = new URL(link.href); } catch (_) { return; }
     const affiliate = /(^|\.)(awin1\.com|iherb\.com|ultrahuman\.com)$/.test(url.hostname);
-    if (affiliate) window.gtag('event', 'supplier_click', { supplier: url.hostname.includes('iherb') ? 'iherb' : 'ultrahuman', link_url: url.href, link_text: link.textContent.trim().slice(0,100), transport_type: 'beacon' });
+    if (affiliate) {
+      const merchant = url.searchParams.get('awinmid');
+      const supplier = url.hostname.includes('iherb') || merchant === '76736' ? 'iherb' : url.hostname.includes('ultrahuman') || merchant === '69428' ? 'ultrahuman' : 'other';
+      window.gtag('event', 'supplier_click', { supplier, link_url: url.href, link_text: link.textContent.trim().slice(0,100), transport_type: 'beacon' });
+    } else if (url.origin === location.origin) {
+      window.gtag('event', 'site_navigation_click', { link_path: url.pathname + url.hash, link_text: link.textContent.trim().slice(0,100), transport_type: 'beacon' });
+    }
   });
 
   function save(value) {

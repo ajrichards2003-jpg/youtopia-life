@@ -42,3 +42,17 @@ Preview build ready at https://deploy-preview-14--playful-basbousa-781f5f.netlif
 
 ## 3 October — coherent campaign revision
 Five unique AI-assisted product-reference campaign images replace mixed generic imagery: hero, sleep, heart rate/recovery, activity and compact titanium/no mandatory core subscription. Source product reference remains the advertiser-supplied Ring AIR Bionic Gold image. Images are campaign visualisations, not customer testimonials or documentary photos; keep manufacturer campaign approval before publication. Generated with built-in ImageGen. See assets/ultrahuman/*-campaign.webp. Mobile composition explicitly keeps a top product picture and copy below. All original images and prototypes retained.
+
+
+## Ring AIR offer update — 5 October 2026
+
+Verified against Adam’s affiliate landing screenshot and the current Ultrahuman AU purchase page: A$599 reduced to A$479.20, saving A$119.80 (20%). Supplier labels this “EXCLUSIVE OFFER APPLIED”. The direct page also displays the offer; do not claim it is available only through Youtopia. No expiry or scarcity claim is established. Confirm current price before reusing price-specific social content.
+
+Master purchase link: https://www.awin1.com/cread.php?awinmid=69428&awinaffid=3106417&ued=https%3A%2F%2Fwww.ultrahuman.com%2Fau%2Fring%2Fbuy%2F
+
+Homepage opening slide, Shop, Ring AIR product page and wearable listing show EXCLUSIVE OFFER, 20% OFF and the AUD saving. Affiliate CTAs use this verified destination with sponsored/noopener attributes. Existing analytics records supplier clicks only after consent. Informational supplier links remain informational.
+
+Campaign copy for review:
+EXCLUSIVE OFFER: Ultrahuman Ring AIR is currently A$479.20, down from A$599. Save A$119.80 (20%) and explore sleep, recovery and everyday movement insights in a compact ring. View the offer through Youtopia Life. Price checked 5 October 2026; offer may change. Confirm the final AUD total, shipping and optional extras at Ultrahuman. Affiliate disclosure: Youtopia Life may earn commission on qualifying purchases.
+
+Preview first; production publication awaits Adam’s approval. No Buffer posts changed in this update.

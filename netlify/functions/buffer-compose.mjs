@@ -56,13 +56,13 @@ export default async (request) => {
     });
   }
 
-  // Write execution remains disabled during this preview stage.
+  // Confirmation has been received, but live API execution remains isolated from this public preview endpoint.
   return json({
-    ok: false,
+    ok: true,
     executed: false,
-    mode: "write-disabled",
+    mode: "approved-for-scheduling",
     target: target.name,
     proposedInput,
-    message: "Approved channel, but Buffer write execution is intentionally disabled in this preview.",
-  }, 409);
+    message: "Payload approved and ready for the private scheduling executor.",
+  });
 };

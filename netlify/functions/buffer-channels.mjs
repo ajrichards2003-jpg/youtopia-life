@@ -65,7 +65,10 @@ export default async () => {
 
       results.push({
         organization: { id: organization.id, name: organization.name },
-        channels: (channelData?.channels || []).map((channel) => ({\n          ...channel,\n          automationAccess: ALLOWED_CHANNEL_IDS.has(channel.id) ? "allowed" : BLOCKED_CHANNEL_IDS.has(channel.id) ? "blocked" : "blocked-by-default",\n        })),
+        channels: (channelData?.channels || []).map((channel) => ({
+          ...channel,
+          automationAccess: ALLOWED_CHANNEL_IDS.has(channel.id) ? "allowed" : BLOCKED_CHANNEL_IDS.has(channel.id) ? "blocked" : "blocked-by-default",
+        })),
       });
     }
 

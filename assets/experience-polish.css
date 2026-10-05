@@ -1,0 +1,19 @@
+/* Youtopia Life — tactile, restrained controls. */
+.btn,.signup button,.intro-pause,.intro-replay,.ultra-film-toolbar button,.privacy-choice button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:12px 22px;border:1px solid #789a8b88;border-radius:12px;background:linear-gradient(145deg,#15392edf,#09241c);color:#f5f2e9;font-weight:700;font-size:.93rem;line-height:1.3;letter-spacing:.015em;box-shadow:inset 0 1px 0 #ffffff12,0 6px 16px #0002;text-decoration:none;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;cursor:pointer}
+.btn.primary,.signup button{background:linear-gradient(125deg,#92f1d4,#53dcb2 70%,#32bc94);border-color:#adf7df;color:#062019;box-shadow:inset 0 1px 0 #ffffff70,0 6px 22px #4bd9ae20}
+a.btn::after{content:'↗';font-size:1.15em;line-height:1;opacity:.8;margin-left:6px}
+.btn:hover,.signup button:hover,.intro-pause:hover,.intro-replay:hover{transform:translateY(-2px);border-color:#b4f7df;box-shadow:inset 0 1px 0 #ffffff25,0 10px 28px #55dfb825}
+.btn:active,.signup button:active{transform:translateY(0)}
+.btn:focus-visible,button:focus-visible,.quick-paths a:focus-visible{outline:2px solid #ebd09b;outline-offset:5px}
+.rail-arrow{border-radius:12px;min-width:44px;min-height:44px;background:linear-gradient(145deg,#173b30,#0a211a);border:1px solid #527665;color:#a6f5d8;box-shadow:inset 0 1px 0 #ffffff15}
+.quick-paths nav a{border-radius:10px;box-shadow:inset 0 1px 0 #ffffff08;transition:border-color .18s ease,background .18s ease}
+.quick-paths nav a:hover{background:#1c4435}
+#top .intro-copy h2{font-size:clamp(2.8rem,7vw,6.6rem);line-height:.95;letter-spacing:-.045em;margin:22px 0}#top .intro-copy h2 span{color:#55dfb8}
+#top .youtopia-feature::after{background:linear-gradient(90deg,#03100deb,#03100d77 60%,#03100d22),linear-gradient(0deg,#03100dbb,transparent 80%)}
+#top .intro-controls{align-items:center;flex-wrap:wrap}#top .intro-controls .intro-dots{margin-left:auto;display:flex;gap:5px}#top .intro-dot{width:30px;min-height:40px;cursor:pointer}#top .intro-counter{color:#d4e7dd;font:600 .75rem system-ui;letter-spacing:.1em}
+#pulse .video-poster{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:18px}#pulse .video-poster>img{width:100%;height:100%;object-fit:cover}#pulse .pulse-title{position:absolute;left:24px;bottom:22px;text-align:left;z-index:2;max-width:70%;text-shadow:0 2px 15px #000}#pulse .pulse-title small{display:block;text-transform:uppercase;letter-spacing:.2em;color:#91edca}#pulse .pulse-title strong{display:block;color:#fff;font-size:clamp(1.3rem,2.8vw,2.4rem);line-height:1.1;margin-top:8px}#pulse .video-poster::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#00150fd9,transparent 75%);pointer-events:none}#pulse .play{z-index:3}
+.hosting-credit{padding:18px 24px;background:#050e0b;border-top:1px solid #253e33;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#91a79d;font:500 .72rem/1.4 system-ui;letter-spacing:.08em}.hosting-credit>a{color:#a5c0b2;text-decoration:none;letter-spacing:0}.hosting-credit>a:hover{color:#68e3bc}
+@media(max-width:700px){#top.ultra-intro{height:auto;min-height:0;max-height:none}#top .intro-copy h2{font-size:clamp(2rem,8.2vw,3.2rem);line-height:1.02;margin:16px 0}#top .intro-copy{padding-bottom:160px}#top .intro-controls{justify-content:flex-start;gap:8px;bottom:18px}#top .intro-controls .intro-dots{order:3;width:100%;justify-content:center;margin:0}#top .intro-dot{width:25px}#top .intro-counter{margin-left:auto}.btn{padding:12px 18px;font-size:.88rem}.hosting-credit{padding:16px 20px}}
+@media(prefers-reduced-motion:reduce){.btn,.signup button,.intro-slide{transition:none!important}.btn:hover,.signup button:hover{transform:none}html{scroll-behavior:auto}}
+
+.video-poster[hidden]{display:none!important}

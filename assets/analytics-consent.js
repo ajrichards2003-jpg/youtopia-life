@@ -4,7 +4,7 @@
   const key = 'youtopia-analytics-choice-v1';
   const measurementId = 'G-0W7LG09JBP';
   const style = document.createElement('style');
-  style.textContent = `.privacy-choice{position:fixed;left:16px;right:16px;bottom:max(12px,env(safe-area-inset-bottom));z-index:2147483647;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 12px;border:1px solid #42665d;border-radius:12px;background:#082019f5;color:#f7f1e6;box-shadow:0 6px 24px #0005;font:12px/1.4 system-ui,sans-serif}.privacy-choice p{margin:0;max-width:780px}.privacy-choice a{color:#a7ead4;text-underline-offset:3px}.privacy-choice-actions{display:flex;gap:8px;flex-shrink:0}.privacy-choice button,.privacy-reopen{border:1px solid #719c8f;border-radius:7px;padding:10px 16px;min-height:44px;background:#153c30;color:#f7f1e6;font:600 13px system-ui;cursor:pointer}.privacy-choice button:hover{background:#205542}.privacy-choice button:focus-visible,.privacy-choice a:focus-visible,.privacy-reopen:focus-visible{outline:2px solid #66dfb9;outline-offset:3px}.privacy-reopen{position:fixed;left:12px;right:auto;bottom:max(12px,env(safe-area-inset-bottom));z-index:9998;padding:7px 10px;min-height:36px;background:#10271ee8;font-size:12px}@media(max-width:650px){.privacy-choice{left:8px;right:8px;gap:8px;padding:5px 8px;font-size:11px;line-height:1.35}.privacy-choice p{flex:1;min-width:0}.privacy-choice-actions{margin-left:auto}.privacy-choice button{padding:8px 10px;font-size:12px}.privacy-reopen{left:12px;right:auto}}`;
+  style.textContent = `.privacy-choice{position:fixed;left:16px;right:16px;bottom:max(12px,env(safe-area-inset-bottom));z-index:2147483647;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 12px;border:1px solid #42665d;border-radius:12px;background:#082019f5;color:#f7f1e6;box-shadow:0 6px 24px #0005;font:12px/1.4 system-ui,sans-serif}.privacy-choice p{margin:0;max-width:780px}.privacy-choice a{color:#a7ead4;text-underline-offset:3px}.privacy-choice-actions{display:flex;gap:8px;flex-shrink:0}.privacy-choice button,.privacy-reopen{border:1px solid #719c8f;border-radius:7px;padding:10px 16px;min-height:44px;background:#153c30;color:#f7f1e6;font:600 13px system-ui;cursor:pointer}.privacy-choice button:hover{background:#205542}.privacy-choice button:focus-visible,.privacy-choice a:focus-visible,.privacy-reopen:focus-visible{outline:2px solid #66dfb9;outline-offset:3px}.privacy-reopen{position:static;display:inline-flex;margin:12px 0;padding:7px 10px;min-height:36px;background:#10271ee8;font-size:12px}@media(max-width:650px){.privacy-choice{left:8px;right:8px;gap:8px;padding:5px 8px;font-size:11px;line-height:1.35}.privacy-choice p{flex:1;min-width:0}.privacy-choice-actions{margin-left:auto}.privacy-choice button{padding:8px 10px;font-size:12px}.privacy-reopen{left:12px;right:auto}}`;
   document.head.append(style);
 
   let choice;
@@ -59,7 +59,7 @@
       reopen.type = 'button';
       reopen.textContent = 'Privacy choices';
       reopen.addEventListener('click', () => render(true));
-      document.body.append(reopen);
+      const footer = document.querySelector('footer') || document.querySelector('.hosting-credit') || document.body; footer.append(reopen);
       return;
     }
     panel = document.createElement('aside');

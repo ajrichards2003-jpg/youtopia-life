@@ -1,0 +1,7 @@
+{
+  "appId": "com.youtopialife.app",
+  "appName": "Youtopia Life",
+  "webDir": "www",
+  "backgroundColor": "#071713",
+  "loggingBehavior": "debug"
+}

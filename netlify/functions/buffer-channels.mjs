@@ -1,3 +1,11 @@
+const ALLOWED_CHANNEL_IDS = new Set([
+  "6ac242196a5c39ccb60f2f0b", // Biohacker Australia
+  "6ac242196a5c39ccb60f2f0a", // Youtopia Life
+]);
+const BLOCKED_CHANNEL_IDS = new Set([
+  "6ac242196a5c39ccb60f2f0c", // Cardinia Tigers Junior Football Club
+]);
+
 const BUFFER_API_URL = "https://api.buffer.com";
 
 async function bufferQuery(apiKey, query, variables = {}) {
@@ -57,7 +65,7 @@ export default async () => {
 
       results.push({
         organization: { id: organization.id, name: organization.name },
-        channels: channelData?.channels || [],
+        channels: (channelData?.channels || []).map((channel) => ({\n          ...channel,\n          automationAccess: ALLOWED_CHANNEL_IDS.has(channel.id) ? "allowed" : BLOCKED_CHANNEL_IDS.has(channel.id) ? "blocked" : "blocked-by-default",\n        })),
       });
     }
 

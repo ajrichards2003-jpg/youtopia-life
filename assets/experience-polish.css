@@ -15,3 +15,5 @@ a.btn::after{content:'↗';font-size:1.15em;line-height:1;opacity:.8;margin-left
 .hosting-credit{padding:18px 24px;background:#050e0b;border-top:1px solid #253e33;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#91a79d;font:500 .72rem/1.4 system-ui;letter-spacing:.08em}.hosting-credit>a{color:#a5c0b2;text-decoration:none;letter-spacing:0}.hosting-credit>a:hover{color:#68e3bc}
 @media(max-width:700px){#top.ultra-intro{height:auto;min-height:0;max-height:none}#top .intro-copy h2{font-size:clamp(2rem,8.2vw,3.2rem);line-height:1.02;margin:16px 0}#top .intro-copy{padding-bottom:160px}#top .intro-controls{justify-content:flex-start;gap:8px;bottom:18px}#top .intro-controls .intro-dots{order:3;width:100%;justify-content:center;margin:0}#top .intro-dot{width:25px}#top .intro-counter{margin-left:auto}.btn{padding:12px 18px;font-size:.88rem}.hosting-credit{padding:16px 20px}}
 @media(prefers-reduced-motion:reduce){.btn,.signup button,.intro-slide{transition:none!important}.btn:hover,.signup button:hover{transform:none}html{scroll-behavior:auto}}
+
+.video-poster[hidden]{display:none!important}

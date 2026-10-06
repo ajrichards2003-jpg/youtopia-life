@@ -31,8 +31,6 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-      - name: Install main dependencies for shared native bridge
-        run: npm ci --prefix mobile --no-audit --no-fund
       - name: Game paths
         run: |
           node tests/ascent-check.cjs
@@ -65,8 +63,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Install main app dependencies for shared bridge
-        run: npm ci --prefix mobile --no-audit --no-fund
       - name: Package and sync
         working-directory: ${{ matrix.app }}
         run: |

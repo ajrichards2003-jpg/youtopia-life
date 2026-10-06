@@ -95,7 +95,7 @@
   $('start').addEventListener('click', () => start('challenge'));
   $('practice').addEventListener('click', () => start('practice'));
   $('restart').addEventListener('click', () => start(lastMode));
-  $('home').addEventListener('click', () => { $('result').hidden = true; $('intro').hidden = false; refreshHome(); $('start').focus(); });
+  $('home').addEventListener('click', () => { $('result').hidden = true; $('intro').hidden = false; $('level').textContent = 'Your seat is ready'; ladder(); refreshHome(); $('start').focus(); });
   $('resume').addEventListener('click', () => { const s = read(runKey()); if (valid(s)) { state = s; lastMode = s.mode; draw(); } else { remove(runKey()); refreshHome(); } });
   $('bank').addEventListener('click', () => { if (state.phase === 'question') finish('bank'); });
   $('lock').addEventListener('click', () => {
@@ -117,7 +117,7 @@
     $('practice').textContent = 'Practice all ' + bank.length;
     $('mode-copy').textContent = audience === 'kids' ? 'Kids · suggested ages 7–12. A fresh 15-question climb from 30 discovery questions. Every answer teaches something; mistakes let you keep going. A grown-up can help with reading.' : audience === 'teen' ? 'Teen · suggested ages 13–17. A fresh 15-question mix from 30 questions about science, online safety and thinking clearly. Checkpoints protect your progress.' : 'Adult · a fresh 15-question mix from 30 health, wellness and evidence questions.';
     $('rules-copy').textContent = audience === 'kids' ? 'No timer. Mistakes are part of learning: read the answer and keep exploring. Each mode saves its own progress.' : 'Earn a protected rank every three questions. A wrong answer ends the run at your last checkpoint. Bank your rank whenever you choose. No timer.';
-    state = null; lastMode = 'challenge'; $('play').hidden = true; $('result').hidden = true; $('intro').hidden = false; ladder(); refreshHome();
+    state = null; lastMode = 'challenge'; $('level').textContent = 'Your seat is ready'; $('play').hidden = true; $('result').hidden = true; $('intro').hidden = false; ladder(); refreshHome();
   }
   $('audience').addEventListener('change', chooseAudience);
   for (const id of ['start','practice','resume']) $(id).disabled = true;

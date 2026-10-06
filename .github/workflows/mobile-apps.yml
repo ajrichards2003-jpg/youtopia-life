@@ -35,6 +35,7 @@ jobs:
         run: |
           node tests/ascent-check.cjs
           node tests/vital-rush-check.cjs
+          node tests/offline-check.cjs
       - name: Package and sync
         working-directory: ${{ matrix.app }}
         run: |

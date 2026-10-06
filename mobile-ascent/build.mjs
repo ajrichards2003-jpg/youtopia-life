@@ -4,8 +4,7 @@ import path from 'node:path';
 import {build} from 'esbuild';
 const here=path.dirname(fileURLToPath(import.meta.url));
 const root=path.resolve(here,'..'),source=path.join(root,'ascent-app'),out=path.join(here,'www');
-// Shared bank and engine keep the main app and standalone game in agreement.
-for(const name of ['game.js','questions.json'])await cp(path.join(root,'app/ascent',name),path.join(source,name));
+// The standalone edition owns its bank and engine; do not overwrite it from the paused main app.
 await rm(out,{recursive:true,force:true});await mkdir(out,{recursive:true});await cp(source,out,{recursive:true});
 await mkdir(path.join(out,'assets'),{recursive:true});
 for(const name of ['youtopia-mark-transparent.png','experience-polish.css'])await cp(path.join(root,'assets',name),path.join(out,'assets',name));

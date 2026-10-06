@@ -1,4 +1,4 @@
-const CACHE='youtopia-ascent-app-v2';
+const CACHE='youtopia-ascent-app-v3';
 const FILES=['./','./index.html','./game.js','./family.js','./questions.json','./style.css','./standalone.js','./manifest.webmanifest','./icon-192.png','./icon-512.png','./privacy.html','./privacy.css','/assets/youtopia-mark-transparent.png','/assets/experience-polish.css?v=20261005'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES))));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith('youtopia-ascent-app-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));

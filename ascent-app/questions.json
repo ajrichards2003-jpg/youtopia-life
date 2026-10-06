@@ -1,7 +1,7 @@
 [
   {
     "topic": "Sleep",
-    "text": "What does \u201ccircadian rhythm\u201d describe?",
+    "text": "What does “circadian rhythm” describe?",
     "answers": [
       "An approximately 24-hour body rhythm",
       "A five-minute breathing cycle",
@@ -10,9 +10,9 @@
     ],
     "correct": 0,
     "explanation": "Circadian rhythms help coordinate daily sleep and wake patterns. Light and darkness are important timing cues.",
-    "clue": "Think of your body\u2019s daily clock.",
+    "clue": "Think of your body’s daily clock.",
     "source": "https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle",
-    "sourceLabel": "NIH \u00b7 Your sleep/wake cycle",
+    "sourceLabel": "NIH · Your sleep/wake cycle",
     "id": "q1",
     "tier": 1,
     "audience": "adult"
@@ -27,17 +27,17 @@
       "Only competitive sport"
     ],
     "correct": 0,
-    "explanation": "Physical activity includes everyday movement, active travel, chores and recreation\u2014not just formal workouts.",
+    "explanation": "Physical activity includes everyday movement, active travel, chores and recreation—not just formal workouts.",
     "clue": "It can be part of an ordinary day.",
     "source": "https://www.who.int/europe/news-room/fact-sheets/item/physical-activity",
-    "sourceLabel": "WHO \u00b7 Physical activity",
+    "sourceLabel": "WHO · Physical activity",
     "id": "q2",
     "tier": 1,
     "audience": "adult"
   },
   {
     "topic": "Supplement sense",
-    "text": "A supplement is labelled \u201cnatural\u201d. What can you safely conclude?",
+    "text": "A supplement is labelled “natural”. What can you safely conclude?",
     "answers": [
       "The label alone does not establish safety",
       "It cannot interact with medicine",
@@ -48,7 +48,7 @@
     "explanation": "Natural origin does not guarantee safety. Supplements can have side effects and interactions with medicines.",
     "clue": "A plant origin is not a safety test.",
     "source": "https://www.nccih.nih.gov/health/using-dietary-supplements-wisely/",
-    "sourceLabel": "NIH NCCIH \u00b7 Supplements wisely",
+    "sourceLabel": "NIH NCCIH · Supplements wisely",
     "id": "q3",
     "tier": 1,
     "audience": "adult"
@@ -57,23 +57,23 @@
     "topic": "Healthy foundations",
     "text": "For adults, what weekly moderate aerobic activity range does WHO recommend?",
     "answers": [
-      "150\u2013300 minutes",
-      "10\u201320 minutes",
-      "30\u201340 minutes",
-      "900\u20131,200 minutes"
+      "150–300 minutes",
+      "10–20 minutes",
+      "30–40 minutes",
+      "900–1,200 minutes"
     ],
     "correct": 0,
-    "explanation": "WHO recommends 150\u2013300 minutes of moderate activity, or an equivalent vigorous mix, each week for adults. This is general population guidance, not a personalised exercise plan.",
+    "explanation": "WHO recommends 150–300 minutes of moderate activity, or an equivalent vigorous mix, each week for adults. This is general population guidance, not a personalised exercise plan.",
     "clue": "The lower end is two and a half hours.",
     "source": "https://www.who.int/europe/news-room/fact-sheets/item/physical-activity",
-    "sourceLabel": "WHO \u00b7 Adult activity guidance",
+    "sourceLabel": "WHO · Adult activity guidance",
     "id": "q4",
     "tier": 1,
     "audience": "adult"
   },
   {
     "topic": "Strength",
-    "text": "In addition to aerobic activity, WHO recommends adult muscle-strengthening work on\u2026",
+    "text": "In addition to aerobic activity, WHO recommends adult muscle-strengthening work on…",
     "answers": [
       "At least 2 days each week",
       "One day each year",
@@ -84,7 +84,7 @@
     "explanation": "The adult recommendation includes major muscle groups on two or more days a week. Activities should suit individual ability and circumstances.",
     "clue": "More than once a week; daily is not the minimum.",
     "source": "https://www.who.int/europe/news-room/fact-sheets/item/physical-activity",
-    "sourceLabel": "WHO \u00b7 Strength guidance",
+    "sourceLabel": "WHO · Strength guidance",
     "id": "q5",
     "tier": 1,
     "audience": "adult"
@@ -95,21 +95,21 @@
     "answers": [
       "Light signals help synchronise the body clock",
       "It removes the need for sleep",
-      "It makes every person\u2019s clock identical",
+      "It makes every person’s clock identical",
       "It guarantees eight hours of deep sleep"
     ],
     "correct": 0,
     "explanation": "Light and darkness help align internal rhythms. People differ in their natural timing, and artificial light can affect wakefulness cues.",
     "clue": "Your clock takes cues from its environment.",
     "source": "https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle",
-    "sourceLabel": "NIH \u00b7 Your sleep/wake cycle",
+    "sourceLabel": "NIH · Your sleep/wake cycle",
     "id": "q6",
     "tier": 2,
     "audience": "adult"
   },
   {
     "topic": "Study design",
-    "text": "What does \u201crandomised\u201d mean in a clinical trial?",
+    "text": "What does “randomised” mean in a clinical trial?",
     "answers": [
       "Treatment groups are assigned by chance",
       "Researchers choose the healthiest group",
@@ -120,7 +120,7 @@
     "explanation": "Random allocation reduces bias in assigning treatments. It does not guarantee a flawless study.",
     "clue": "It describes how people enter treatment groups.",
     "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
-    "sourceLabel": "NIH \u00b7 Clinical trial basics",
+    "sourceLabel": "NIH · Clinical trial basics",
     "id": "q7",
     "tier": 2,
     "audience": "adult"
@@ -138,7 +138,7 @@
     "explanation": "Blinding can reduce the influence of expectations and assessment bias. Trial design, follow-up and outcome choice still matter.",
     "clue": "Knowing the treatment could influence behaviour or judgement.",
     "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
-    "sourceLabel": "NIH \u00b7 Blinding and trials",
+    "sourceLabel": "NIH · Blinding and trials",
     "id": "q8",
     "tier": 2,
     "audience": "adult"
@@ -156,7 +156,7 @@
     "explanation": "Animal findings can motivate clinical research. They do not establish human benefit, dose or safety.",
     "clue": "The next research step involves a different population.",
     "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
-    "sourceLabel": "NIH \u00b7 How research progresses",
+    "sourceLabel": "NIH · How research progresses",
     "id": "q9",
     "tier": 2,
     "audience": "adult"
@@ -174,7 +174,7 @@
     "explanation": "Without a comparison group, change over time cannot be confidently attributed to the product. This is an interpretation of the hypothetical design.",
     "clue": "What might have happened without the product?",
     "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
-    "sourceLabel": "NIH \u00b7 Comparing treatments",
+    "sourceLabel": "NIH · Comparing treatments",
     "id": "q10",
     "tier": 2,
     "audience": "adult"
@@ -192,14 +192,14 @@
     "explanation": "Subtract 5% from 10%: 5 percentage points. The relative reduction is 50%. The numbers describe this fictional trial only.",
     "clue": "Subtract the two risks; do not divide them.",
     "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/absolute-risk",
-    "sourceLabel": "NCI \u00b7 Absolute risk; worked example",
+    "sourceLabel": "NCI · Absolute risk; worked example",
     "id": "q11",
     "tier": 3,
     "audience": "adult"
   },
   {
     "topic": "Risk maths",
-    "text": "That same 10%-to-5% change is a relative risk reduction of\u2026",
+    "text": "That same 10%-to-5% change is a relative risk reduction of…",
     "answers": [
       "50%",
       "5%",
@@ -207,10 +207,10 @@
       "200%"
     ],
     "correct": 0,
-    "explanation": "The reduction is 5 out of the original 10: 5 \u00f7 10 = 50%. Relative percentages need their baseline risk for context.",
+    "explanation": "The reduction is 5 out of the original 10: 5 ÷ 10 = 50%. Relative percentages need their baseline risk for context.",
     "clue": "Compare the reduction with the starting risk.",
     "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/relative-risk",
-    "sourceLabel": "NCI \u00b7 Relative risk; worked example",
+    "sourceLabel": "NCI · Relative risk; worked example",
     "id": "q12",
     "tier": 3,
     "audience": "adult"
@@ -228,7 +228,7 @@
     "explanation": "A surrogate endpoint is a substitute measure. A marker change alone does not establish a meaningful clinical benefit.",
     "clue": "A laboratory number and a lived outcome are different measurements.",
     "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/surrogate-endpoint",
-    "sourceLabel": "NCI \u00b7 Surrogate endpoints",
+    "sourceLabel": "NCI · Surrogate endpoints",
     "id": "q13",
     "tier": 3,
     "audience": "adult"
@@ -246,7 +246,7 @@
     "explanation": "A suitable comparison and a well-specified protocol improve the ability to assess benefit and harm. This is a study-design judgement, not a guarantee of success.",
     "clue": "Improve the design, not the publicity.",
     "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
-    "sourceLabel": "NIH \u00b7 Protocols and comparisons",
+    "sourceLabel": "NIH · Protocols and comparisons",
     "id": "q14",
     "tier": 3,
     "audience": "adult"
@@ -264,7 +264,7 @@
     "explanation": "20/1,000 is 2%; 10/1,000 is 1%. The absolute reduction is one percentage point and the relative reduction is 50%. These hypothetical counts alone do not resolve uncertainty, harms or generalisability.",
     "clue": "Convert both counts to percentages, and keep the time horizon.",
     "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/relative-risk",
-    "sourceLabel": "NCI \u00b7 Relative risk; worked example",
+    "sourceLabel": "NCI · Relative risk; worked example",
     "id": "q15",
     "tier": 3,
     "audience": "adult"
@@ -284,7 +284,7 @@
     "explanation": "Light and darkness provide important cues to daily sleep/wake timing.",
     "clue": "Think day and night.",
     "source": "https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle",
-    "sourceLabel": "NIH \u00b7 Research and health",
+    "sourceLabel": "NIH · Research and health",
     "audience": "adult"
   },
   {
@@ -302,7 +302,7 @@
     "explanation": "Everyday activity counts; WHO emphasises that some physical activity is better than none.",
     "clue": "Small amounts still count.",
     "source": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
-    "sourceLabel": "WHO \u00b7 Physical activity",
+    "sourceLabel": "WHO · Physical activity",
     "audience": "adult"
   },
   {
@@ -320,7 +320,7 @@
     "explanation": "Clinical trials involve people and evaluate effects of an intervention on health outcomes.",
     "clue": "Clinical research involves volunteers.",
     "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
-    "sourceLabel": "NIH \u00b7 Research and health",
+    "sourceLabel": "NIH · Research and health",
     "audience": "adult"
   },
   {
@@ -338,7 +338,7 @@
     "explanation": "A placebo is an inactive comparison that resembles the tested product. Its use must be appropriate to the study and participant safety.",
     "clue": "Think comparison rather than active ingredient.",
     "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
-    "sourceLabel": "NIH \u00b7 Research and health",
+    "sourceLabel": "NIH · Research and health",
     "audience": "adult"
   },
   {
@@ -356,7 +356,7 @@
     "explanation": "A protocol specifies goals, eligibility, procedures, duration and the information gathered.",
     "clue": "A trial needs a plan before its results.",
     "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
-    "sourceLabel": "NIH \u00b7 Research and health",
+    "sourceLabel": "NIH · Research and health",
     "audience": "adult"
   },
   {
@@ -374,7 +374,7 @@
     "explanation": "Comparing treatments requires a consistent outcome and timing. This is a study-design reasoning example, not a reported trial finding.",
     "clue": "Compare like with like.",
     "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
-    "sourceLabel": "NIH \u00b7 Research and health",
+    "sourceLabel": "NIH · Research and health",
     "audience": "adult"
   },
   {
@@ -392,7 +392,7 @@
     "explanation": "Phase I trials typically examine safety and side effects in an initial small group. Later research is still needed.",
     "clue": "It is an early step.",
     "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
-    "sourceLabel": "NIH \u00b7 Research and health",
+    "sourceLabel": "NIH · Research and health",
     "audience": "adult"
   },
   {
@@ -410,14 +410,14 @@
     "explanation": "Double-blind studies mask allocation from participants and the research team, reducing influences from expectations and assessment.",
     "clue": "Double means two sides are masked.",
     "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
-    "sourceLabel": "NIH \u00b7 Research and health",
+    "sourceLabel": "NIH · Research and health",
     "audience": "adult"
   },
   {
     "id": "q24",
     "tier": 2,
     "topic": "Study design",
-    "text": "Why read a trial\u2019s eligibility criteria?",
+    "text": "Why read a trial’s eligibility criteria?",
     "answers": [
       "To understand who was studied",
       "To identify the most popular product",
@@ -428,7 +428,7 @@
     "explanation": "Eligibility criteria describe who can take part. They help interpret whether the study population resembles the population of interest.",
     "clue": "Find out whom the evidence describes.",
     "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
-    "sourceLabel": "NIH \u00b7 Research and health",
+    "sourceLabel": "NIH · Research and health",
     "audience": "adult"
   },
   {
@@ -446,7 +446,7 @@
     "explanation": "Phase IV research follows approved treatments in the general population and can add information about safety and use.",
     "clue": "Wider use can reveal more.",
     "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
-    "sourceLabel": "NIH \u00b7 Research and health",
+    "sourceLabel": "NIH · Research and health",
     "audience": "adult"
   },
   {
@@ -1078,5 +1078,545 @@
     "clue": "One testimonial cannot establish effectiveness for everyone.",
     "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
     "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "kids-16",
+    "audience": "kids",
+    "tier": 1,
+    "topic": "Space",
+    "text": "What makes day turn into night?",
+    "answers": [
+      "Earth spinning",
+      "The Sun switching off",
+      "The Moon covering Earth",
+      "Clouds moving"
+    ],
+    "correct": 0,
+    "explanation": "Earth spins. Places turn towards sunlight and then away from it.",
+    "clue": "Think of a spinning globe.",
+    "source": "https://spaceplace.nasa.gov/seasons/en/",
+    "sourceLabel": "NASA · Seasons and Earth’s rotation"
+  },
+  {
+    "id": "kids-17",
+    "audience": "kids",
+    "tier": 1,
+    "topic": "Space",
+    "text": "Where does the Moon’s light come from?",
+    "answers": [
+      "A lamp inside it",
+      "Sunlight reflecting off it",
+      "Fire on its surface",
+      "Earth’s street lights"
+    ],
+    "correct": 1,
+    "explanation": "The Moon reflects light from the Sun. It does not make its own visible light.",
+    "clue": "The Moon is a reflector.",
+    "source": "https://spaceplace.nasa.gov/moon-phases/en/",
+    "sourceLabel": "NASA · Moon phases"
+  },
+  {
+    "id": "kids-18",
+    "audience": "kids",
+    "tier": 1,
+    "topic": "Food discovery",
+    "text": "Which food belongs to the protein foods group?",
+    "answers": [
+      "A glass of water",
+      "Table salt",
+      "An egg",
+      "An ice cube"
+    ],
+    "correct": 2,
+    "explanation": "Eggs are one example of a protein food. This group also includes beans, nuts and other foods.",
+    "clue": "Think of something a hen lays.",
+    "source": "https://www.myplate.gov/web/web/eat-healthy/protein-foods",
+    "sourceLabel": "USDA · Protein foods"
+  },
+  {
+    "id": "kids-19",
+    "audience": "kids",
+    "tier": 1,
+    "topic": "Rest",
+    "text": "What is something sleep helps your brain do?",
+    "answers": [
+      "Stop learning forever",
+      "Forget every new skill",
+      "Work without any rest",
+      "Learn and remember"
+    ],
+    "correct": 3,
+    "explanation": "Sleep supports learning and memory as well as other body functions.",
+    "clue": "Rest can help yesterday’s learning stick.",
+    "source": "https://www.nhlbi.nih.gov/health/sleep/why-sleep-important",
+    "sourceLabel": "NIH · Why sleep matters"
+  },
+  {
+    "id": "kids-20",
+    "audience": "kids",
+    "tier": 1,
+    "topic": "Curiosity",
+    "text": "Which tool measures how warm water is?",
+    "answers": [
+      "A thermometer",
+      "A ruler",
+      "A stopwatch",
+      "A weighing scale"
+    ],
+    "correct": 0,
+    "explanation": "A thermometer measures temperature. Choose a tool that matches what you want to measure.",
+    "clue": "Its name starts with thermo.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/variables",
+    "sourceLabel": "Science Buddies · Experimental variables"
+  },
+  {
+    "id": "kids-21",
+    "audience": "kids",
+    "tier": 2,
+    "topic": "Space",
+    "text": "Earth takes about how long to spin once?",
+    "answers": [
+      "One minute",
+      "One day",
+      "One month",
+      "One year"
+    ],
+    "correct": 1,
+    "explanation": "Earth makes approximately one complete turn each day.",
+    "clue": "Think about the day-and-night cycle.",
+    "source": "https://spaceplace.nasa.gov/seasons/en/",
+    "sourceLabel": "NASA · Seasons and Earth’s rotation"
+  },
+  {
+    "id": "kids-22",
+    "audience": "kids",
+    "tier": 2,
+    "topic": "Food discovery",
+    "text": "Which pair contains plant-based protein foods?",
+    "answers": [
+      "Salt and ice",
+      "Apples and water",
+      "Beans and lentils",
+      "Sugar and oil"
+    ],
+    "correct": 2,
+    "explanation": "Beans and lentils are plant-based foods in the protein foods group.",
+    "clue": "Both foods are legumes.",
+    "source": "https://www.myplate.gov/web/web/eat-healthy/protein-foods",
+    "sourceLabel": "USDA · Protein foods"
+  },
+  {
+    "id": "kids-23",
+    "audience": "kids",
+    "tier": 2,
+    "topic": "Curiosity",
+    "text": "You compare how two paper planes fly. What should stay the same?",
+    "answers": [
+      "Their test conditions, such as where you launch",
+      "The result you want to get",
+      "The colour of the notebook only",
+      "Nothing at all"
+    ],
+    "correct": 0,
+    "explanation": "Keeping test conditions consistent makes comparisons more useful.",
+    "clue": "Try changing one thing at a time.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/variables",
+    "sourceLabel": "Science Buddies · Experimental variables"
+  },
+  {
+    "id": "kids-24",
+    "audience": "kids",
+    "tier": 2,
+    "topic": "Space",
+    "text": "What is a full Moon?",
+    "answers": [
+      "A Moon that has doubled in size",
+      "A Moon with its Earth-facing side fully lit",
+      "A Moon that makes sunlight",
+      "A Moon covered in water"
+    ],
+    "correct": 1,
+    "explanation": "At full Moon we see the fully illuminated side facing Earth.",
+    "clue": "It looks like a bright circle.",
+    "source": "https://spaceplace.nasa.gov/moon-phases/en/",
+    "sourceLabel": "NASA · Moon phases"
+  },
+  {
+    "id": "kids-25",
+    "audience": "kids",
+    "tier": 2,
+    "topic": "Curiosity",
+    "text": "Which is a measurement?",
+    "answers": [
+      "This plant is lovely",
+      "This plant feels lucky",
+      "This plant is 12 centimetres tall",
+      "This plant is the best"
+    ],
+    "correct": 2,
+    "explanation": "A measurement records a quantity with a unit, such as centimetres.",
+    "clue": "Look for a number and a unit.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/variables",
+    "sourceLabel": "Science Buddies · Experimental variables"
+  },
+  {
+    "id": "kids-26",
+    "audience": "kids",
+    "tier": 3,
+    "topic": "Space",
+    "text": "Why do Earth’s seasons change?",
+    "answers": [
+      "The Sun becomes a different star",
+      "The Moon changes the weather each day",
+      "Earth stops spinning",
+      "Earth’s axis is tilted as it orbits the Sun"
+    ],
+    "correct": 3,
+    "explanation": "Earth’s tilt changes how directly sunlight reaches different regions over the year.",
+    "clue": "Think of a globe leaning to one side.",
+    "source": "https://spaceplace.nasa.gov/seasons/en/",
+    "sourceLabel": "NASA · Seasons and Earth’s rotation"
+  },
+  {
+    "id": "kids-27",
+    "audience": "kids",
+    "tier": 3,
+    "topic": "Curiosity",
+    "text": "You test whether light affects a plant’s growth. What do you change?",
+    "answers": [
+      "The amount of light",
+      "Light, water and soil together",
+      "The plant’s name only",
+      "Your prediction after every result"
+    ],
+    "correct": 0,
+    "explanation": "Changing the light while keeping other conditions similar helps test the effect of light.",
+    "clue": "Change the thing named in your question.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/variables",
+    "sourceLabel": "Science Buddies · Experimental variables"
+  },
+  {
+    "id": "kids-28",
+    "audience": "kids",
+    "tier": 3,
+    "topic": "Curiosity",
+    "text": "Two plants get different light. What should you measure to compare growth?",
+    "answers": [
+      "Your favourite plant",
+      "Each plant’s change in height over the same time",
+      "The colour of your shoes",
+      "Only the height of the pot"
+    ],
+    "correct": 1,
+    "explanation": "Measuring growth over the same period makes the comparison clearer.",
+    "clue": "Use a ruler at the start and end.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/variables",
+    "sourceLabel": "Science Buddies · Experimental variables"
+  },
+  {
+    "id": "kids-29",
+    "audience": "kids",
+    "tier": 3,
+    "topic": "Space",
+    "text": "When the Northern Hemisphere tilts towards the Sun, which season is it there?",
+    "answers": [
+      "Winter",
+      "Autumn",
+      "Summer",
+      "Every season at once"
+    ],
+    "correct": 2,
+    "explanation": "The Northern Hemisphere receives more direct sunlight when it tilts towards the Sun.",
+    "clue": "More direct sunlight makes this season warmer.",
+    "source": "https://spaceplace.nasa.gov/seasons/en/",
+    "sourceLabel": "NASA · Seasons and Earth’s rotation"
+  },
+  {
+    "id": "kids-30",
+    "audience": "kids",
+    "tier": 3,
+    "topic": "Curiosity",
+    "text": "You test paper planes and one flight is unusual. What helps you learn more?",
+    "answers": [
+      "Hide that flight",
+      "Guess the answer",
+      "Never test again",
+      "Repeat the flights and record every result"
+    ],
+    "correct": 3,
+    "explanation": "Repeated measurements help show how much results vary. Keep unusual results in your notes.",
+    "clue": "One flight may not tell the whole story.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/variables",
+    "sourceLabel": "Science Buddies · Experimental variables"
+  },
+  {
+    "id": "teen-16",
+    "audience": "teen",
+    "tier": 1,
+    "topic": "Rest and learning",
+    "text": "Which brain function does sleep support?",
+    "answers": [
+      "Learning and memory",
+      "Knowing every fact automatically",
+      "Avoiding all mistakes",
+      "Reading without practice"
+    ],
+    "correct": 0,
+    "explanation": "Sleep supports learning and memory. It is not a shortcut that replaces learning.",
+    "clue": "Think about keeping what you learned.",
+    "source": "https://www.nhlbi.nih.gov/health/sleep/why-sleep-important",
+    "sourceLabel": "NIH · Why sleep matters"
+  },
+  {
+    "id": "teen-17",
+    "audience": "teen",
+    "tier": 1,
+    "topic": "Nutrition literacy",
+    "text": "Which is a plant-based member of the protein foods group?",
+    "answers": [
+      "Plain water",
+      "Lentils",
+      "Table salt",
+      "Ice"
+    ],
+    "correct": 1,
+    "explanation": "Lentils are legumes and belong to the protein foods group.",
+    "clue": "Look for a legume.",
+    "source": "https://www.myplate.gov/web/web/eat-healthy/protein-foods",
+    "sourceLabel": "USDA · Protein foods"
+  },
+  {
+    "id": "teen-18",
+    "audience": "teen",
+    "tier": 1,
+    "topic": "Experimental design",
+    "text": "What is an independent variable?",
+    "answers": [
+      "The result measured",
+      "A factor kept the same",
+      "The factor deliberately changed",
+      "A factor that never matters"
+    ],
+    "correct": 2,
+    "explanation": "The independent variable is what the investigator changes to test its effect.",
+    "clue": "Independent means the chosen change.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/variables",
+    "sourceLabel": "Science Buddies · Experimental variables"
+  },
+  {
+    "id": "teen-19",
+    "audience": "teen",
+    "tier": 1,
+    "topic": "Experimental design",
+    "text": "What is a dependent variable?",
+    "answers": [
+      "The researcher’s name",
+      "Every fixed condition",
+      "The question alone",
+      "The outcome measured"
+    ],
+    "correct": 3,
+    "explanation": "The dependent variable is the measured response to the change being tested.",
+    "clue": "It is the result you record.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/variables",
+    "sourceLabel": "Science Buddies · Experimental variables"
+  },
+  {
+    "id": "teen-20",
+    "audience": "teen",
+    "tier": 1,
+    "topic": "Space science",
+    "text": "Why can we see the Moon at night?",
+    "answers": [
+      "It reflects sunlight",
+      "It burns hydrogen like the Sun",
+      "It generates electric light",
+      "It is always directly above us"
+    ],
+    "correct": 0,
+    "explanation": "The Moon reflects sunlight from its surface.",
+    "clue": "The light comes from another object.",
+    "source": "https://spaceplace.nasa.gov/moon-phases/en/",
+    "sourceLabel": "NASA · Moon phases"
+  },
+  {
+    "id": "teen-21",
+    "audience": "teen",
+    "tier": 2,
+    "topic": "Experimental design",
+    "text": "A test changes water amount to study plant growth. What is the dependent variable?",
+    "answers": [
+      "Water amount",
+      "Plant growth measured",
+      "The pot label",
+      "The researcher’s age"
+    ],
+    "correct": 1,
+    "explanation": "Water amount is changed; plant growth is the measured response.",
+    "clue": "Which factor is the outcome?",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/variables",
+    "sourceLabel": "Science Buddies · Experimental variables"
+  },
+  {
+    "id": "teen-22",
+    "audience": "teen",
+    "tier": 2,
+    "topic": "Experimental design",
+    "text": "Why keep soil type the same in a test of water and plant growth?",
+    "answers": [
+      "To make every result identical",
+      "To guarantee the hypothesis is right",
+      "To reduce another possible cause of growth differences",
+      "To avoid measuring growth"
+    ],
+    "correct": 2,
+    "explanation": "Soil can also affect growth. Keeping it consistent helps isolate the water variable.",
+    "clue": "Try to isolate one cause.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/variables",
+    "sourceLabel": "Science Buddies · Experimental variables"
+  },
+  {
+    "id": "teen-23",
+    "audience": "teen",
+    "tier": 2,
+    "topic": "Space science",
+    "text": "What is the main cause of Earth’s seasons?",
+    "answers": [
+      "A different Sun every month",
+      "The Moon’s changing shape",
+      "Earth stopping its rotation",
+      "Earth’s axial tilt during its orbit"
+    ],
+    "correct": 3,
+    "explanation": "Tilt changes the angle and duration of sunlight in each hemisphere through the year.",
+    "clue": "Think about the angle of the axis.",
+    "source": "https://spaceplace.nasa.gov/seasons/en/",
+    "sourceLabel": "NASA · Seasons and Earth’s rotation"
+  },
+  {
+    "id": "teen-24",
+    "audience": "teen",
+    "tier": 2,
+    "topic": "Experimental design",
+    "text": "A test of music and reading speed also changes text difficulty. What is the problem?",
+    "answers": [
+      "Text difficulty could affect reading speed too",
+      "It proves music has no effect",
+      "More changes always make a fairer test",
+      "No measurements are needed"
+    ],
+    "correct": 0,
+    "explanation": "A second changing factor can make it harder to identify the effect of music.",
+    "clue": "There are two possible causes.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/variables",
+    "sourceLabel": "Science Buddies · Experimental variables"
+  },
+  {
+    "id": "teen-25",
+    "audience": "teen",
+    "tier": 2,
+    "topic": "Space science",
+    "text": "At a full Moon, what are we seeing?",
+    "answers": [
+      "The entire Moon from every direction",
+      "The fully sunlit Earth-facing side",
+      "The Moon producing its own light",
+      "Earth’s shadow on the Moon"
+    ],
+    "correct": 1,
+    "explanation": "The Earth-facing side is fully illuminated by sunlight at full Moon.",
+    "clue": "Only one side is visible from Earth.",
+    "source": "https://spaceplace.nasa.gov/moon-phases/en/",
+    "sourceLabel": "NASA · Moon phases"
+  },
+  {
+    "id": "teen-26",
+    "audience": "teen",
+    "tier": 3,
+    "topic": "Experimental design",
+    "text": "A study tests fertiliser A on roses and B on sunflowers. What weakens the comparison?",
+    "answers": [
+      "The fertilisers have names",
+      "Plants can be measured",
+      "Plant species also changes",
+      "Results are written down"
+    ],
+    "correct": 2,
+    "explanation": "Both fertiliser and species change. Growth differences cannot be attributed to fertiliser alone.",
+    "clue": "Look for a second changing factor.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/variables",
+    "sourceLabel": "Science Buddies · Experimental variables"
+  },
+  {
+    "id": "teen-27",
+    "audience": "teen",
+    "tier": 3,
+    "topic": "Experimental design",
+    "text": "Which design best tests water amount on plant growth?",
+    "answers": [
+      "One plant with no recorded conditions",
+      "Different species, soil and light for every plant",
+      "Change the ruler each day",
+      "Same species, soil and light; vary water and measure growth"
+    ],
+    "correct": 3,
+    "explanation": "Keeping relevant conditions consistent helps isolate the effect of water amount.",
+    "clue": "Change the tested factor and measure the outcome.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/variables",
+    "sourceLabel": "Science Buddies · Experimental variables"
+  },
+  {
+    "id": "teen-28",
+    "audience": "teen",
+    "tier": 3,
+    "topic": "Space science",
+    "text": "Why can Australia and Europe have opposite seasons at the same time?",
+    "answers": [
+      "Their hemispheres tilt towards the Sun at opposite times",
+      "The Sun switches between two temperatures",
+      "Earth orbits two different suns",
+      "The Moon heats Australia separately"
+    ],
+    "correct": 0,
+    "explanation": "The Northern and Southern Hemispheres receive their most direct sunlight at opposite points in Earth’s orbit.",
+    "clue": "Think of the two ends of a tilted globe.",
+    "source": "https://spaceplace.nasa.gov/seasons/en/",
+    "sourceLabel": "NASA · Seasons and Earth’s rotation"
+  },
+  {
+    "id": "teen-29",
+    "audience": "teen",
+    "tier": 3,
+    "topic": "Experimental design",
+    "text": "An experiment measures plant height at the start and end. Which result best represents growth?",
+    "answers": [
+      "The pot’s final width",
+      "Final height minus starting height",
+      "Starting height plus pot weight",
+      "Only the plant’s name"
+    ],
+    "correct": 1,
+    "explanation": "Growth in height is the change between the two measurements, using the same units.",
+    "clue": "Growth is a change, not just a final size.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/variables",
+    "sourceLabel": "Science Buddies · Experimental variables"
+  },
+  {
+    "id": "teen-30",
+    "audience": "teen",
+    "tier": 3,
+    "topic": "Experimental design",
+    "text": "A paper-plane test uses the same launcher but different wing designs. What is controlled?",
+    "answers": [
+      "Flight distance",
+      "Wing design",
+      "The launcher",
+      "The result of each flight"
+    ],
+    "correct": 2,
+    "explanation": "The launcher is kept the same; wing design changes; distance is measured.",
+    "clue": "Controlled variables stay consistent.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/variables",
+    "sourceLabel": "Science Buddies · Experimental variables"
   }
 ]

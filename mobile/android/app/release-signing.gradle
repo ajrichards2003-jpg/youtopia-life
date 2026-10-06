@@ -1,0 +1,19 @@
+// Secrets come from the build environment, never repository files.
+def signingNames = ['YOUTOPIA_UPLOAD_STORE_FILE', 'YOUTOPIA_UPLOAD_STORE_PASSWORD', 'YOUTOPIA_UPLOAD_KEY_ALIAS', 'YOUTOPIA_UPLOAD_KEY_PASSWORD']
+def signingValues = signingNames.collectEntries { name -> [(name): System.getenv(name)] }
+def hasAnySigning = signingValues.values().any { it }
+def hasAllSigning = signingValues.values().every { it }
+if ((hasAnySigning || System.getenv('YOUTOPIA_REQUIRE_SIGNING') == 'true') && !hasAllSigning) {
+    throw new GradleException('Release signing is incomplete. Required environment variables: ' + signingNames.join(', '))
+}
+if (hasAllSigning) {
+    def uploadFile = new File(signingValues['YOUTOPIA_UPLOAD_STORE_FILE'])
+    if (!uploadFile.isFile()) throw new GradleException('The configured upload keystore file is unavailable.')
+    android.signingConfigs.create('youtopiaUpload') {
+        storeFile uploadFile
+        storePassword signingValues['YOUTOPIA_UPLOAD_STORE_PASSWORD']
+        keyAlias signingValues['YOUTOPIA_UPLOAD_KEY_ALIAS']
+        keyPassword signingValues['YOUTOPIA_UPLOAD_KEY_PASSWORD']
+    }
+    android.buildTypes.release.signingConfig = android.signingConfigs.youtopiaUpload
+}

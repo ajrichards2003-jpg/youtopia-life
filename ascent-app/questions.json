@@ -1,0 +1,1082 @@
+[
+  {
+    "topic": "Sleep",
+    "text": "What does \u201ccircadian rhythm\u201d describe?",
+    "answers": [
+      "An approximately 24-hour body rhythm",
+      "A five-minute breathing cycle",
+      "A measure of muscle strength",
+      "The speed of digestion"
+    ],
+    "correct": 0,
+    "explanation": "Circadian rhythms help coordinate daily sleep and wake patterns. Light and darkness are important timing cues.",
+    "clue": "Think of your body\u2019s daily clock.",
+    "source": "https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle",
+    "sourceLabel": "NIH \u00b7 Your sleep/wake cycle",
+    "id": "q1",
+    "tier": 1,
+    "audience": "adult"
+  },
+  {
+    "topic": "Movement",
+    "text": "Which is an example of physical activity?",
+    "answers": [
+      "Walking to the shops",
+      "Only running a marathon",
+      "Only supervised gym sessions",
+      "Only competitive sport"
+    ],
+    "correct": 0,
+    "explanation": "Physical activity includes everyday movement, active travel, chores and recreation\u2014not just formal workouts.",
+    "clue": "It can be part of an ordinary day.",
+    "source": "https://www.who.int/europe/news-room/fact-sheets/item/physical-activity",
+    "sourceLabel": "WHO \u00b7 Physical activity",
+    "id": "q2",
+    "tier": 1,
+    "audience": "adult"
+  },
+  {
+    "topic": "Supplement sense",
+    "text": "A supplement is labelled \u201cnatural\u201d. What can you safely conclude?",
+    "answers": [
+      "The label alone does not establish safety",
+      "It cannot interact with medicine",
+      "Everyone can take it safely",
+      "Its benefits are proven"
+    ],
+    "correct": 0,
+    "explanation": "Natural origin does not guarantee safety. Supplements can have side effects and interactions with medicines.",
+    "clue": "A plant origin is not a safety test.",
+    "source": "https://www.nccih.nih.gov/health/using-dietary-supplements-wisely/",
+    "sourceLabel": "NIH NCCIH \u00b7 Supplements wisely",
+    "id": "q3",
+    "tier": 1,
+    "audience": "adult"
+  },
+  {
+    "topic": "Healthy foundations",
+    "text": "For adults, what weekly moderate aerobic activity range does WHO recommend?",
+    "answers": [
+      "150\u2013300 minutes",
+      "10\u201320 minutes",
+      "30\u201340 minutes",
+      "900\u20131,200 minutes"
+    ],
+    "correct": 0,
+    "explanation": "WHO recommends 150\u2013300 minutes of moderate activity, or an equivalent vigorous mix, each week for adults. This is general population guidance, not a personalised exercise plan.",
+    "clue": "The lower end is two and a half hours.",
+    "source": "https://www.who.int/europe/news-room/fact-sheets/item/physical-activity",
+    "sourceLabel": "WHO \u00b7 Adult activity guidance",
+    "id": "q4",
+    "tier": 1,
+    "audience": "adult"
+  },
+  {
+    "topic": "Strength",
+    "text": "In addition to aerobic activity, WHO recommends adult muscle-strengthening work on\u2026",
+    "answers": [
+      "At least 2 days each week",
+      "One day each year",
+      "Only days without meals",
+      "Every hour of every day"
+    ],
+    "correct": 0,
+    "explanation": "The adult recommendation includes major muscle groups on two or more days a week. Activities should suit individual ability and circumstances.",
+    "clue": "More than once a week; daily is not the minimum.",
+    "source": "https://www.who.int/europe/news-room/fact-sheets/item/physical-activity",
+    "sourceLabel": "WHO \u00b7 Strength guidance",
+    "id": "q5",
+    "tier": 1,
+    "audience": "adult"
+  },
+  {
+    "topic": "Body mechanics",
+    "text": "How does light help your body keep time?",
+    "answers": [
+      "Light signals help synchronise the body clock",
+      "It removes the need for sleep",
+      "It makes every person\u2019s clock identical",
+      "It guarantees eight hours of deep sleep"
+    ],
+    "correct": 0,
+    "explanation": "Light and darkness help align internal rhythms. People differ in their natural timing, and artificial light can affect wakefulness cues.",
+    "clue": "Your clock takes cues from its environment.",
+    "source": "https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle",
+    "sourceLabel": "NIH \u00b7 Your sleep/wake cycle",
+    "id": "q6",
+    "tier": 2,
+    "audience": "adult"
+  },
+  {
+    "topic": "Study design",
+    "text": "What does \u201crandomised\u201d mean in a clinical trial?",
+    "answers": [
+      "Treatment groups are assigned by chance",
+      "Researchers choose the healthiest group",
+      "Participants choose their favourite treatment",
+      "Every result is caused by chance"
+    ],
+    "correct": 0,
+    "explanation": "Random allocation reduces bias in assigning treatments. It does not guarantee a flawless study.",
+    "clue": "It describes how people enter treatment groups.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Clinical trial basics",
+    "id": "q7",
+    "tier": 2,
+    "audience": "adult"
+  },
+  {
+    "topic": "Study design",
+    "text": "Why might a study blind participants and researchers to treatment allocation?",
+    "answers": [
+      "To reduce bias in responses and assessment",
+      "To avoid collecting any outcomes",
+      "To make follow-up unnecessary",
+      "To guarantee a positive result"
+    ],
+    "correct": 0,
+    "explanation": "Blinding can reduce the influence of expectations and assessment bias. Trial design, follow-up and outcome choice still matter.",
+    "clue": "Knowing the treatment could influence behaviour or judgement.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Blinding and trials",
+    "id": "q8",
+    "tier": 2,
+    "audience": "adult"
+  },
+  {
+    "topic": "Frontier science",
+    "text": "A treatment works in mice. What is the most defensible human conclusion?",
+    "answers": [
+      "It is a signal that needs human testing",
+      "The same benefit is proven in people",
+      "The correct human dose is now known",
+      "Long-term human safety is established"
+    ],
+    "correct": 0,
+    "explanation": "Animal findings can motivate clinical research. They do not establish human benefit, dose or safety.",
+    "clue": "The next research step involves a different population.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 How research progresses",
+    "id": "q9",
+    "tier": 2,
+    "audience": "adult"
+  },
+  {
+    "topic": "Spot the hype",
+    "text": "Twenty people improve after taking a product, with no control group. What is missing?",
+    "answers": [
+      "A comparison to help separate treatment effects from other changes",
+      "A more exciting product name",
+      "A higher-priced bottle",
+      "A celebrity testimonial"
+    ],
+    "correct": 0,
+    "explanation": "Without a comparison group, change over time cannot be confidently attributed to the product. This is an interpretation of the hypothetical design.",
+    "clue": "What might have happened without the product?",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Comparing treatments",
+    "id": "q10",
+    "tier": 2,
+    "audience": "adult"
+  },
+  {
+    "topic": "Risk maths",
+    "text": "In a hypothetical trial, risk falls from 10% to 5%. What is the absolute reduction?",
+    "answers": [
+      "5 percentage points",
+      "50 percentage points",
+      "95 percentage points",
+      "0.5 percentage points"
+    ],
+    "correct": 0,
+    "explanation": "Subtract 5% from 10%: 5 percentage points. The relative reduction is 50%. The numbers describe this fictional trial only.",
+    "clue": "Subtract the two risks; do not divide them.",
+    "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/absolute-risk",
+    "sourceLabel": "NCI \u00b7 Absolute risk; worked example",
+    "id": "q11",
+    "tier": 3,
+    "audience": "adult"
+  },
+  {
+    "topic": "Risk maths",
+    "text": "That same 10%-to-5% change is a relative risk reduction of\u2026",
+    "answers": [
+      "50%",
+      "5%",
+      "95%",
+      "200%"
+    ],
+    "correct": 0,
+    "explanation": "The reduction is 5 out of the original 10: 5 \u00f7 10 = 50%. Relative percentages need their baseline risk for context.",
+    "clue": "Compare the reduction with the starting risk.",
+    "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/relative-risk",
+    "sourceLabel": "NCI \u00b7 Relative risk; worked example",
+    "id": "q12",
+    "tier": 3,
+    "audience": "adult"
+  },
+  {
+    "topic": "Clinical meaning",
+    "text": "A study improves a blood marker but does not measure how people feel or function. What remains open?",
+    "answers": [
+      "Whether it improves meaningful health outcomes",
+      "Whether the marker was measured at all",
+      "Whether all future studies are unnecessary",
+      "Whether the product cures every disease"
+    ],
+    "correct": 0,
+    "explanation": "A surrogate endpoint is a substitute measure. A marker change alone does not establish a meaningful clinical benefit.",
+    "clue": "A laboratory number and a lived outcome are different measurements.",
+    "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/surrogate-endpoint",
+    "sourceLabel": "NCI \u00b7 Surrogate endpoints",
+    "id": "q13",
+    "tier": 3,
+    "audience": "adult"
+  },
+  {
+    "topic": "Evidence judgement",
+    "text": "Which follow-up best tests a promising small pilot finding?",
+    "answers": [
+      "A larger, well-designed human trial with a suitable comparator",
+      "A collection of enthusiastic reviews",
+      "Repeating only the marketing headline",
+      "A trial that measures no outcomes"
+    ],
+    "correct": 0,
+    "explanation": "A suitable comparison and a well-specified protocol improve the ability to assess benefit and harm. This is a study-design judgement, not a guarantee of success.",
+    "clue": "Improve the design, not the publicity.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Protocols and comparisons",
+    "id": "q14",
+    "tier": 3,
+    "audience": "adult"
+  },
+  {
+    "topic": "Summit reasoning",
+    "text": "A controlled trial finds 20 events in 1,000 people versus 10 in 1,000 over one year. Which summary preserves the result and its limits?",
+    "answers": [
+      "Risk is 2% versus 1%; a 1-point absolute reduction over one year, with uncertainty and harms still to assess",
+      "A 50-point absolute reduction and guaranteed benefit for everyone",
+      "A 1% relative reduction with lifelong safety proven",
+      "Ten fewer events proves the treatment will work for every population"
+    ],
+    "correct": 0,
+    "explanation": "20/1,000 is 2%; 10/1,000 is 1%. The absolute reduction is one percentage point and the relative reduction is 50%. These hypothetical counts alone do not resolve uncertainty, harms or generalisability.",
+    "clue": "Convert both counts to percentages, and keep the time horizon.",
+    "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/relative-risk",
+    "sourceLabel": "NCI \u00b7 Relative risk; worked example",
+    "id": "q15",
+    "tier": 3,
+    "audience": "adult"
+  },
+  {
+    "id": "q16",
+    "tier": 1,
+    "topic": "Sleep",
+    "text": "Which environmental signal helps synchronise your daily body clock?",
+    "answers": [
+      "Light and darkness",
+      "The price of a sleep tracker",
+      "Your shoe size",
+      "The colour of a supplement bottle"
+    ],
+    "correct": 0,
+    "explanation": "Light and darkness provide important cues to daily sleep/wake timing.",
+    "clue": "Think day and night.",
+    "source": "https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle",
+    "sourceLabel": "NIH \u00b7 Research and health",
+    "audience": "adult"
+  },
+  {
+    "id": "q17",
+    "tier": 1,
+    "topic": "Movement",
+    "text": "Which statement best matches WHO guidance on everyday movement?",
+    "answers": [
+      "Some physical activity is better than none",
+      "Movement only counts inside a gym",
+      "Activity only counts if it is competitive",
+      "Being active requires a fitness device"
+    ],
+    "correct": 0,
+    "explanation": "Everyday activity counts; WHO emphasises that some physical activity is better than none.",
+    "clue": "Small amounts still count.",
+    "source": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
+    "sourceLabel": "WHO \u00b7 Physical activity",
+    "audience": "adult"
+  },
+  {
+    "id": "q18",
+    "tier": 1,
+    "topic": "Research",
+    "text": "A clinical trial evaluates an intervention in whom?",
+    "answers": [
+      "Human participants",
+      "Only laboratory cells",
+      "Only computer models",
+      "Only advertising audiences"
+    ],
+    "correct": 0,
+    "explanation": "Clinical trials involve people and evaluate effects of an intervention on health outcomes.",
+    "clue": "Clinical research involves volunteers.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Research and health",
+    "audience": "adult"
+  },
+  {
+    "id": "q19",
+    "tier": 1,
+    "topic": "Research",
+    "text": "What is a placebo?",
+    "answers": [
+      "An inactive comparison resembling the test product",
+      "A guarantee that a treatment works",
+      "A treatment chosen by every participant",
+      "A name for the highest dose"
+    ],
+    "correct": 0,
+    "explanation": "A placebo is an inactive comparison that resembles the tested product. Its use must be appropriate to the study and participant safety.",
+    "clue": "Think comparison rather than active ingredient.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Research and health",
+    "audience": "adult"
+  },
+  {
+    "id": "q20",
+    "tier": 1,
+    "topic": "Research",
+    "text": "What is the main purpose of a trial protocol?",
+    "answers": [
+      "To specify the study plan",
+      "To guarantee a positive result",
+      "To replace collecting data",
+      "To let every participant set a different outcome"
+    ],
+    "correct": 0,
+    "explanation": "A protocol specifies goals, eligibility, procedures, duration and the information gathered.",
+    "clue": "A trial needs a plan before its results.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Research and health",
+    "audience": "adult"
+  },
+  {
+    "id": "q21",
+    "tier": 2,
+    "topic": "Study design",
+    "text": "Why does the same outcome need to be measured in both trial groups?",
+    "answers": [
+      "To enable a meaningful comparison",
+      "To make the groups identical in every way",
+      "To remove all measurement error",
+      "To ensure the new treatment wins"
+    ],
+    "correct": 0,
+    "explanation": "Comparing treatments requires a consistent outcome and timing. This is a study-design reasoning example, not a reported trial finding.",
+    "clue": "Compare like with like.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Research and health",
+    "audience": "adult"
+  },
+  {
+    "id": "q22",
+    "tier": 2,
+    "topic": "Research phases",
+    "text": "What is a key purpose of a phase I drug trial?",
+    "answers": [
+      "Investigate safety and side effects",
+      "Prove lifelong benefit for everyone",
+      "Replace all later phases",
+      "Guarantee superiority over standard care"
+    ],
+    "correct": 0,
+    "explanation": "Phase I trials typically examine safety and side effects in an initial small group. Later research is still needed.",
+    "clue": "It is an early step.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Research and health",
+    "audience": "adult"
+  },
+  {
+    "id": "q23",
+    "tier": 2,
+    "topic": "Study design",
+    "text": "In a double-blind trial, who normally does not know the assigned treatment?",
+    "answers": [
+      "Participants and the research team",
+      "Only the participants",
+      "Only the sponsor",
+      "Nobody; everyone always knows"
+    ],
+    "correct": 0,
+    "explanation": "Double-blind studies mask allocation from participants and the research team, reducing influences from expectations and assessment.",
+    "clue": "Double means two sides are masked.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Research and health",
+    "audience": "adult"
+  },
+  {
+    "id": "q24",
+    "tier": 2,
+    "topic": "Study design",
+    "text": "Why read a trial\u2019s eligibility criteria?",
+    "answers": [
+      "To understand who was studied",
+      "To identify the most popular product",
+      "To determine a guaranteed personal benefit",
+      "To avoid considering harms"
+    ],
+    "correct": 0,
+    "explanation": "Eligibility criteria describe who can take part. They help interpret whether the study population resembles the population of interest.",
+    "clue": "Find out whom the evidence describes.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Research and health",
+    "audience": "adult"
+  },
+  {
+    "id": "q25",
+    "tier": 2,
+    "topic": "Research phases",
+    "text": "Why monitor a drug after approval?",
+    "answers": [
+      "To learn more about benefits and risks in wider use",
+      "Because approval proves it has no risks",
+      "Because earlier data should be discarded",
+      "To guarantee every user responds identically"
+    ],
+    "correct": 0,
+    "explanation": "Phase IV research follows approved treatments in the general population and can add information about safety and use.",
+    "clue": "Wider use can reveal more.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Research and health",
+    "audience": "adult"
+  },
+  {
+    "id": "q26",
+    "tier": 3,
+    "topic": "Risk maths",
+    "text": "A fictional trial reduces events from 4% to 3%. What is the absolute reduction?",
+    "answers": [
+      "1 percentage point",
+      "25 percentage points",
+      "3 percentage points",
+      "75 percentage points"
+    ],
+    "correct": 0,
+    "explanation": "4% minus 3% is one percentage point. The relative reduction is 25%. This is a fictional arithmetic example.",
+    "clue": "Subtract the risks.",
+    "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/relative-risk",
+    "sourceLabel": "Source and reasoning",
+    "audience": "adult"
+  },
+  {
+    "id": "q27",
+    "tier": 3,
+    "topic": "Risk maths",
+    "text": "A fictional trial reduces events from 4% to 3%. What is the relative reduction?",
+    "answers": [
+      "25%",
+      "1%",
+      "75%",
+      "33%"
+    ],
+    "correct": 0,
+    "explanation": "The decrease is 1 out of the original 4: 1/4 is 25%. A baseline is needed to interpret the relative figure.",
+    "clue": "Divide the decrease by the starting risk.",
+    "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/relative-risk",
+    "sourceLabel": "Source and reasoning",
+    "audience": "adult"
+  },
+  {
+    "id": "q28",
+    "tier": 3,
+    "topic": "Risk maths",
+    "text": "A fictional study reports 6 events among 200 people. What is the event risk?",
+    "answers": [
+      "3%",
+      "6%",
+      "12%",
+      "0.3%"
+    ],
+    "correct": 0,
+    "explanation": "6 divided by 200 is 0.03, or 3%. Counts need their denominator.",
+    "clue": "Convert the fraction to a percentage.",
+    "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/relative-risk",
+    "sourceLabel": "Source and reasoning",
+    "audience": "adult"
+  },
+  {
+    "id": "q29",
+    "tier": 3,
+    "topic": "Risk maths",
+    "text": "Two fictional groups have 8/400 and 4/400 events. What is the absolute difference?",
+    "answers": [
+      "1 percentage point",
+      "4 percentage points",
+      "50 percentage points",
+      "2 percentage points"
+    ],
+    "correct": 0,
+    "explanation": "The groups have 2% and 1% event risks. Their absolute difference is one percentage point, not 50 percentage points.",
+    "clue": "Convert both fractions first.",
+    "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/relative-risk",
+    "sourceLabel": "Source and reasoning",
+    "audience": "adult"
+  },
+  {
+    "id": "q30",
+    "tier": 3,
+    "topic": "Evidence judgement",
+    "text": "Which summary is most defensible for a promising fictional pilot study?",
+    "answers": [
+      "The findings justify better testing, with benefits and harms still uncertain",
+      "The product must work for every age group",
+      "The correct personal treatment is established",
+      "Marketing testimonials can replace follow-up trials"
+    ],
+    "correct": 0,
+    "explanation": "A pilot signal can justify further study. Small findings do not guarantee wider benefit or establish personal treatment. This is a hypothetical interpretation.",
+    "clue": "Keep both the promise and the limits.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "Source and reasoning",
+    "audience": "adult"
+  },
+  {
+    "id": "kids-1",
+    "audience": "kids",
+    "tier": 1,
+    "topic": "Explore & learn",
+    "text": "Which planet do we live on?",
+    "answers": [
+      "Earth",
+      "Mars",
+      "Venus",
+      "Jupiter"
+    ],
+    "correct": 0,
+    "explanation": "Earth is our home planet.",
+    "clue": "Earth is our home planet.",
+    "source": "https://spaceplace.nasa.gov/",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "kids-2",
+    "audience": "kids",
+    "tier": 1,
+    "topic": "Explore & learn",
+    "text": "Which organ pumps blood?",
+    "answers": [
+      "Heart",
+      "Ear",
+      "Stomach",
+      "Skin"
+    ],
+    "correct": 0,
+    "explanation": "The heart pumps blood around the body.",
+    "clue": "The heart pumps blood around the body.",
+    "source": "https://kidshealth.org/en/kids/the-heart/",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "kids-3",
+    "audience": "kids",
+    "tier": 1,
+    "topic": "Explore & learn",
+    "text": "Which sense helps you hear music?",
+    "answers": [
+      "Hearing",
+      "Taste",
+      "Smell",
+      "Touch"
+    ],
+    "correct": 0,
+    "explanation": "Our ears help us hear sounds.",
+    "clue": "Our ears help us hear sounds.",
+    "source": "https://kidshealth.org/en/kids/ears.html",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "kids-4",
+    "audience": "kids",
+    "tier": 1,
+    "topic": "Explore & learn",
+    "text": "What do plants use sunlight for?",
+    "answers": [
+      "Making food",
+      "Making plastic",
+      "Making metal",
+      "Making sand"
+    ],
+    "correct": 0,
+    "explanation": "Plants use sunlight to make food through photosynthesis.",
+    "clue": "Plants use sunlight to make food through photosynthesis.",
+    "source": "https://spaceplace.nasa.gov/",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "kids-5",
+    "audience": "kids",
+    "tier": 1,
+    "topic": "Explore & learn",
+    "text": "What is a kind way to include someone?",
+    "answers": [
+      "Invite them to join",
+      "Hide their bag",
+      "Laugh at them",
+      "Ignore them"
+    ],
+    "correct": 0,
+    "explanation": "A friendly invitation helps people feel welcome.",
+    "clue": "A friendly invitation helps people feel welcome.",
+    "source": "https://www.unicef.org/parenting/child-development/how-talk-your-children-about-bullying",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "kids-6",
+    "audience": "kids",
+    "tier": 2,
+    "topic": "Explore & learn",
+    "text": "What happens to water when it freezes?",
+    "answers": [
+      "It becomes ice",
+      "It becomes wood",
+      "It disappears forever",
+      "It becomes soil"
+    ],
+    "correct": 0,
+    "explanation": "Frozen water is ice.",
+    "clue": "Frozen water is ice.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "kids-7",
+    "audience": "kids",
+    "tier": 2,
+    "topic": "Explore & learn",
+    "text": "Which animal is a mammal?",
+    "answers": [
+      "Dolphin",
+      "Butterfly",
+      "Octopus",
+      "Lizard"
+    ],
+    "correct": 0,
+    "explanation": "Dolphins breathe air and feed their young milk.",
+    "clue": "Dolphins breathe air and feed their young milk.",
+    "source": "https://www.nigms.nih.gov/education/fact-sheets/Pages/Studying-Genes.aspx",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "kids-8",
+    "audience": "kids",
+    "tier": 2,
+    "topic": "Explore & learn",
+    "text": "What protects the brain?",
+    "answers": [
+      "Skull",
+      "Elbow",
+      "Knee",
+      "Ankle"
+    ],
+    "correct": 0,
+    "explanation": "The skull is the bone structure around the brain.",
+    "clue": "The skull is the bone structure around the brain.",
+    "source": "https://kidshealth.org/en/kids/htbw/",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "kids-9",
+    "audience": "kids",
+    "tier": 2,
+    "topic": "Explore & learn",
+    "text": "What can you do when a question is confusing?",
+    "answers": [
+      "Ask for help",
+      "Pretend you know",
+      "Give up forever",
+      "Blame a friend"
+    ],
+    "correct": 0,
+    "explanation": "Asking questions is a useful way to learn.",
+    "clue": "Asking questions is a useful way to learn.",
+    "source": "https://www.unicef.org/parenting/child-development/how-talk-your-children-about-bullying",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "kids-10",
+    "audience": "kids",
+    "tier": 2,
+    "topic": "Explore & learn",
+    "text": "Which action helps keep passwords private?",
+    "answers": [
+      "Keep them to yourself and a trusted adult",
+      "Post them online",
+      "Share with strangers",
+      "Write them in public chat"
+    ],
+    "correct": 0,
+    "explanation": "A trusted adult can help you keep accounts safe.",
+    "clue": "A trusted adult can help you keep accounts safe.",
+    "source": "https://consumer.ftc.gov/articles/protecting-your-privacy-online",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "kids-11",
+    "audience": "kids",
+    "tier": 3,
+    "topic": "Explore & learn",
+    "text": "Why do shadows change during the day?",
+    "answers": [
+      "The Sun appears in different positions",
+      "Trees stop existing",
+      "The Moon eats light",
+      "Roads move"
+    ],
+    "correct": 0,
+    "explanation": "As Earth turns, the Sun appears to move across the sky.",
+    "clue": "As Earth turns, the Sun appears to move across the sky.",
+    "source": "https://spaceplace.nasa.gov/",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "kids-12",
+    "audience": "kids",
+    "tier": 3,
+    "topic": "Explore & learn",
+    "text": "Which is a fair way to compare two toy cars?",
+    "answers": [
+      "Use the same ramp",
+      "Push one much harder",
+      "Change every condition",
+      "Test only your favourite"
+    ],
+    "correct": 0,
+    "explanation": "Keeping the ramp the same makes the comparison fairer.",
+    "clue": "Keeping the ramp the same makes the comparison fairer.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "kids-13",
+    "audience": "kids",
+    "tier": 3,
+    "topic": "Explore & learn",
+    "text": "Which statement is an observation?",
+    "answers": [
+      "The leaf is green",
+      "The leaf is magical",
+      "The leaf likes music",
+      "The leaf wants a hat"
+    ],
+    "correct": 0,
+    "explanation": "An observation describes something you can notice or measure.",
+    "clue": "An observation describes something you can notice or measure.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "kids-14",
+    "audience": "kids",
+    "tier": 3,
+    "topic": "Explore & learn",
+    "text": "What should you do with an online message asking for your home address?",
+    "answers": [
+      "Tell a trusted adult",
+      "Send it straight away",
+      "Ask a stranger",
+      "Post it publicly"
+    ],
+    "correct": 0,
+    "explanation": "A trusted adult can help you respond safely.",
+    "clue": "A trusted adult can help you respond safely.",
+    "source": "https://consumer.ftc.gov/articles/protecting-your-privacy-online",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "kids-15",
+    "audience": "kids",
+    "tier": 3,
+    "topic": "Explore & learn",
+    "text": "A friend makes a mistake in a game. What helps?",
+    "answers": [
+      "Encourage them to try again",
+      "Call them names",
+      "Stop being friends",
+      "Hide the rules"
+    ],
+    "correct": 0,
+    "explanation": "Mistakes are part of learning; encouragement helps.",
+    "clue": "Mistakes are part of learning; encouragement helps.",
+    "source": "https://www.unicef.org/parenting/child-development/how-talk-your-children-about-bullying",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "teen-1",
+    "audience": "teen",
+    "tier": 1,
+    "topic": "Think & discover",
+    "text": "What is a hypothesis?",
+    "answers": [
+      "An idea that can be tested",
+      "A guaranteed fact",
+      "A popularity score",
+      "A final law"
+    ],
+    "correct": 0,
+    "explanation": "A hypothesis is a proposed explanation that can be tested.",
+    "clue": "A hypothesis is a proposed explanation that can be tested.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "teen-2",
+    "audience": "teen",
+    "tier": 1,
+    "topic": "Think & discover",
+    "text": "Which source is strongest for checking a scientific claim?",
+    "answers": [
+      "The original study",
+      "An anonymous comment",
+      "A sponsored slogan",
+      "A cropped meme"
+    ],
+    "correct": 0,
+    "explanation": "The original study lets you inspect methods and results.",
+    "clue": "The original study lets you inspect methods and results.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "teen-3",
+    "audience": "teen",
+    "tier": 1,
+    "topic": "Think & discover",
+    "text": "What is a digital footprint?",
+    "answers": [
+      "Information your online activity leaves behind",
+      "A shoe scan",
+      "Your running speed",
+      "A device battery"
+    ],
+    "correct": 0,
+    "explanation": "Posts and online activity can leave records.",
+    "clue": "Posts and online activity can leave records.",
+    "source": "https://consumer.ftc.gov/articles/protecting-your-privacy-online",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "teen-4",
+    "audience": "teen",
+    "tier": 1,
+    "topic": "Think & discover",
+    "text": "Why should research mention its limitations?",
+    "answers": [
+      "To show what the evidence cannot establish",
+      "To hide results",
+      "To prove perfection",
+      "To replace methods"
+    ],
+    "correct": 0,
+    "explanation": "Limitations help readers interpret findings fairly.",
+    "clue": "Limitations help readers interpret findings fairly.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "teen-5",
+    "audience": "teen",
+    "tier": 1,
+    "topic": "Think & discover",
+    "text": "What does a balanced friendship include?",
+    "answers": [
+      "Respecting boundaries",
+      "Sharing passwords",
+      "Always agreeing",
+      "Constant competition"
+    ],
+    "correct": 0,
+    "explanation": "Respect includes listening and accepting boundaries.",
+    "clue": "Respect includes listening and accepting boundaries.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "teen-6",
+    "audience": "teen",
+    "tier": 2,
+    "topic": "Think & discover",
+    "text": "What does correlation mean?",
+    "answers": [
+      "Two things vary together",
+      "One definitely causes the other",
+      "A result is always false",
+      "A study is complete"
+    ],
+    "correct": 0,
+    "explanation": "Correlation is a relationship, not proof of cause.",
+    "clue": "Correlation is a relationship, not proof of cause.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "teen-7",
+    "audience": "teen",
+    "tier": 2,
+    "topic": "Think & discover",
+    "text": "What makes an experiment fairer?",
+    "answers": [
+      "Keeping comparison conditions consistent",
+      "Changing all variables",
+      "Only reporting wins",
+      "Picking a favourite result"
+    ],
+    "correct": 0,
+    "explanation": "Consistent conditions help identify the effect being tested.",
+    "clue": "Consistent conditions help identify the effect being tested.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "teen-8",
+    "audience": "teen",
+    "tier": 2,
+    "topic": "Think & discover",
+    "text": "What is peer review?",
+    "answers": [
+      "Other experts assess a research report",
+      "Friends vote for a creator",
+      "A guarantee of truth",
+      "A paid advertisement"
+    ],
+    "correct": 0,
+    "explanation": "Expert review can find problems but does not guarantee correctness.",
+    "clue": "Expert review can find problems but does not guarantee correctness.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "teen-9",
+    "audience": "teen",
+    "tier": 2,
+    "topic": "Think & discover",
+    "text": "How should you respond to a suspicious login link?",
+    "answers": [
+      "Check through the official service",
+      "Enter your password immediately",
+      "Forward it to everyone",
+      "Disable all security"
+    ],
+    "correct": 0,
+    "explanation": "Use the official site or app rather than a suspicious link.",
+    "clue": "Use the official site or app rather than a suspicious link.",
+    "source": "https://consumer.ftc.gov/articles/protecting-your-privacy-online",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "teen-10",
+    "audience": "teen",
+    "tier": 2,
+    "topic": "Think & discover",
+    "text": "What does a sample represent?",
+    "answers": [
+      "A subset of a larger group",
+      "Every possible person",
+      "Only the researchers",
+      "The study funding"
+    ],
+    "correct": 0,
+    "explanation": "Researchers often examine a sample rather than a whole population.",
+    "clue": "Researchers often examine a sample rather than a whole population.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "teen-11",
+    "audience": "teen",
+    "tier": 3,
+    "topic": "Think & discover",
+    "text": "A survey only asks a sports team about exercise. What is a concern?",
+    "answers": [
+      "The sample may not represent everyone",
+      "It proves everyone exercises",
+      "It has no participants",
+      "Surveys cannot ask questions"
+    ],
+    "correct": 0,
+    "explanation": "A narrow sample may not represent the wider population.",
+    "clue": "A narrow sample may not represent the wider population.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "teen-12",
+    "audience": "teen",
+    "tier": 3,
+    "topic": "Think & discover",
+    "text": "A result changes from 10 to 15 out of 100. What is the absolute change?",
+    "answers": [
+      "5 percentage points",
+      "50 percentage points",
+      "150 percentage points",
+      "No change"
+    ],
+    "correct": 0,
+    "explanation": "15 minus 10 equals five percentage points.",
+    "clue": "15 minus 10 equals five percentage points.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "teen-13",
+    "audience": "teen",
+    "tier": 3,
+    "topic": "Think & discover",
+    "text": "Why can repeating a study help?",
+    "answers": [
+      "It tests whether findings hold up",
+      "It guarantees the same answer",
+      "It removes all uncertainty",
+      "It replaces evidence"
+    ],
+    "correct": 0,
+    "explanation": "Replication checks how reliably findings can be reproduced.",
+    "clue": "Replication checks how reliably findings can be reproduced.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "teen-14",
+    "audience": "teen",
+    "tier": 3,
+    "topic": "Think & discover",
+    "text": "What is a conflict of interest?",
+    "answers": [
+      "An interest that could influence judgement",
+      "Any disagreement",
+      "A wrong answer",
+      "A missing title"
+    ],
+    "correct": 0,
+    "explanation": "Financial or other interests can influence judgement and should be disclosed.",
+    "clue": "Financial or other interests can influence judgement and should be disclosed.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  },
+  {
+    "id": "teen-15",
+    "audience": "teen",
+    "tier": 3,
+    "topic": "Think & discover",
+    "text": "An advert says a product works because one user loved it. What is missing?",
+    "answers": [
+      "A fair comparison and broader evidence",
+      "A louder slogan",
+      "More colours",
+      "A bigger logo"
+    ],
+    "correct": 0,
+    "explanation": "One testimonial cannot establish effectiveness for everyone.",
+    "clue": "One testimonial cannot establish effectiveness for everyone.",
+    "source": "https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method",
+    "sourceLabel": "Learning reference"
+  }
+]

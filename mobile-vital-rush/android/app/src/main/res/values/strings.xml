@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Youtopia Vital Rush</string>
+    <string name="title_activity_main">Youtopia Vital Rush</string>
+    <string name="package_name">com.youtopialife.vitalrush</string>
+    <string name="custom_url_scheme">com.youtopialife.vitalrush</string>
+</resources>

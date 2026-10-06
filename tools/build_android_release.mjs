@@ -4,7 +4,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const app=process.argv[2];
-if(!['mobile','mobile-ascent'].includes(app)){console.error('Usage: node tools/build_android_release.mjs mobile|mobile-ascent');process.exit(1)}
+if(!['mobile','mobile-ascent','mobile-vital-rush'].includes(app)){console.error('Usage: node tools/build_android_release.mjs mobile|mobile-ascent|mobile-vital-rush');process.exit(1)}
 const names=['YOUTOPIA_UPLOAD_STORE_FILE','YOUTOPIA_UPLOAD_STORE_PASSWORD','YOUTOPIA_UPLOAD_KEY_ALIAS','YOUTOPIA_UPLOAD_KEY_PASSWORD'];
 const missing=names.filter(name=>!process.env[name]);
 if(missing.length){console.error('Signing configuration required: '+missing.join(', '));process.exit(1)}

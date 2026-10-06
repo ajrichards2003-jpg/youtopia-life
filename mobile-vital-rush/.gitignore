@@ -1,0 +1,15 @@
+node_modules/
+www/
+android/.gradle/
+android/local.properties
+android/app/build/
+ios/App/App/public/
+
+# Private release credentials and local signing configuration
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+.env*
+key.properties
+signing.properties

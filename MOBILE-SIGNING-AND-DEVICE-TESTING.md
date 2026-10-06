@@ -51,3 +51,6 @@ Official sources checked 6 October 2026:
 - https://developer.apple.com/help/app-store-connect/manage-builds/upload-builds/
 - https://developer.apple.com/kids/
 - https://support.google.com/googleplay/android-developer/answer/9867159?hl=en
+
+## Active launch scope — 7 October 2026
+The active games are Ascent and Vital Rush (`mobile-vital-rush`, `com.youtopialife.vitalrush`). The broader Life app is paused. The release helper now accepts `mobile-vital-rush` with the same required private signing variable names. Use the correct registered key per app. Native build CI now targets both active games; use the latest successful run linked from PR #27, not the older artifacts named above. See LAUNCH-ASCENT-AND-RUSH.md for the current release sequence. No real-device outcome or store submission has been recorded.

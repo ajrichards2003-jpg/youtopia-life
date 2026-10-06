@@ -1,6 +1,6 @@
 # Youtopia Ascent — store submission working draft
 
-6 October 2026. Separate app identity: `com.youtopialife.ascent`; ownership must be checked in both developer accounts. Version 1.0.0, build 1. No store listing or submission has occurred.
+7 October 2026. Separate app identity: `com.youtopialife.ascent`; ownership must be checked in both developer accounts. Version 1.0.0, build 1. No store listing or submission has occurred.
 
 ## Store copy
 
@@ -12,7 +12,7 @@ Google short description: Choose your climb: discovery, science and evidence. Pl
 
 Description:
 
-How far will your curiosity take you? Youtopia Ascent is a discovery, science and evidence question game with 60 questions across three modes. Kids (suggested 7–12) offers 15 friendly discovery questions and lets players continue after mistakes. Teen (13–17) offers 15 science, reasoning and online-safety questions. Adult (18+) selects a fresh 15-question climb from 30 health and evidence questions. No date of birth or identity is collected.
+How far will your curiosity take you? Youtopia Ascent is a discovery, science and evidence question game with 90 questions across three modes. Kids (suggested 7–12) draws 15 friendly questions from 30 discovery questions and lets players continue after mistakes. Teen (13–17) draws 15 questions from 30 science, reasoning and online-safety questions. Adult (18+) selects a fresh 15-question climb from 30 health and evidence questions. No date of birth or identity is collected.
 
 Use three lifelines: narrow to two, reveal a clue or take a second chance. Protect a rank every three correct answers, bank your progress or reach Summit Mind. Practice mode lets you learn every question without ending the run after a mistake.
 
@@ -39,6 +39,9 @@ Game home; question and choices; clue/narrowing; source-linked feedback; protect
 Verify developer accounts and app ID ownership; final release-build compilation; device/VoiceOver/TalkBack testing; final SDK/privacy/health-app/content-rating declarations; support and public privacy; signed distribution builds; beta testing; approved final metadata and screenshots; store submission and review. No purchase or submission is authorised by this document.
 
 ## Family modes — 6 October 2026
-Kids (suggested 7–12): 15 general discovery questions, mistakes continue. Teen (13–17): 15 science, reasoning and online-safety questions. Adult (18+): 30 health/evidence questions. Separate local scores and saved runs; no birth date, account, chat, advertising, purchases or health measurements. Default is Kids; modes are reading-level choices, not verified ages. Outbound navigation has a random grown-up multiplication check. This is a navigation barrier, not verified parental consent or identity.
+Kids (suggested 7–12): 30 general discovery questions, mistakes continue. Teen (13–17): 30 science, reasoning and online-safety questions. Adult (18+): 30 health/evidence questions. Separate local scores and saved runs; no birth date, account, chat, advertising, purchases or health measurements. Default is Kids; modes are reading-level choices, not verified ages. Outbound navigation has a random grown-up multiplication check. This is a navigation barrier, not verified parental consent or identity.
 
 Store audience declarations must include children and teens. Review Google Play Families requirements. Apple Kids category selection and age-band presentation need final account-owner review; do not use child-directed store metadata while declaring an adult-only audience. Verify all outbound paths and native back navigation on devices. A guardian should review Kids usability; independent clinical review is not claimed.
+
+## Latest preparation
+Practice replay stays in practice. Each audience has ten questions per tier. Browser offline preparation waits for its own game worker activation. App privacy candidate: https://youtopialife.com/ascent-app/privacy.html; publish approved policy before store use. Mixed-audience Apple metadata should not imply the main audience is children unless the final Kids category strategy is approved; the in-app Kids mode still requires appropriate family declarations. Android debug and iOS simulator compilation are not signed distribution or device-test evidence.

@@ -3,9 +3,9 @@
 Original browser arcade prototype. Open `index.html` through an HTTP server or the draft deploy preview. No build step or external assets are required. Desktop arrows/A/D and Space/Up; touch swipes and the visible buttons. Escape pauses. Switching away pauses automatically.
 
 ## Implemented
-Three lanes; progressively faster runs; at least two unobstructed lanes in every row; jumpable low hurdles and tall walls; three lives; foods/protein-themed collectibles; ten-food Glow Rush with fictional growth and doubled pickup points; one-hit shields; peptide-inspired research tokens that award points without being consumed; repeatable local-date daily routes; gentle pace; sound toggle; less motion; local personal bests and two food-earned suits.
+Three lanes; progressively faster runs; at least two unobstructed lanes in every row; jumpable low hurdles and tall walls; three lives; foods/protein-themed collectibles; ten-food Glow Rush with fictional growth and doubled pickup points; one-hit shields; peptide-inspired research tokens that award points without being consumed; repeatable local-date daily routes; 35-second practice; gentle pace; sound toggle; saved motion/pace preferences; local personal bests and two food-earned suits.
 
-No accounts, analytics, ads, purchases, online leaderboard or external game dependencies. Scores and unlocks are local to the browser and are not synchronised. Clearing browser data removes them. Date changes select a new daily route. This version has no service worker or native wrapper yet. Canvas play has keyboard controls and status announcements but is not fully playable without sight.
+No accounts, analytics, ads, purchases, online leaderboard or external game dependencies. Scores and unlocks are local to the browser and are not synchronised. Clearing browser data removes them. Date changes select a new daily route. Optional browser offline downloads and separate iOS/Android wrappers are prepared in `mobile-vital-rush`. Canvas play has keyboard controls and status announcements but is not fully playable without sight.
 
 ## Validation
 `node tests/vital-rush-check.cjs` verifies deterministic courses, fair obstacle generation, controls, pause, hurdle/wall distinction, shields, food growth, doubled points and end state. `node tests/ascent-check.cjs` verifies the separately maintained Ascent edition.

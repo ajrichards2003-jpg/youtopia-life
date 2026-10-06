@@ -6,6 +6,7 @@ on:
       - 'ascent-app/**'
       - 'mobile/**'
       - 'mobile-ascent/**'
+      - 'mobile-vital-rush/**'
       - 'assets/**'
       - 'tests/**'
       - 'vital-rush/**'
@@ -20,7 +21,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        app: [mobile, mobile-ascent]
+        app: [mobile-ascent, mobile-vital-rush]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -58,7 +59,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        app: [mobile, mobile-ascent]
+        app: [mobile-ascent, mobile-vital-rush]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

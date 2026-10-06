@@ -2,7 +2,7 @@
   "id": "/ascent-app/",
   "name": "Youtopia Ascent",
   "short_name": "Ascent",
-  "description": "An evidence-led health and wellness question game.",
+  "description": "A discovery, science and evidence quiz with Kids, Teen and Adult modes.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

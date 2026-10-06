@@ -8,7 +8,7 @@
   const BEST_KEY = 'youtopia-ascent-best-v1';
   const ranks = ['Explorer', 'Investigator', 'Evidence Navigator', 'Frontier Thinker', 'Summit Mind'];
   const rank = n => n < 3 ? 'Starting the climb' : ranks[Math.min(4, Math.floor(n / 3) - 1)];
-  let bank = [], allQuestions = [], state = null;
+  let bank = [], allQuestions = [], state = null, lastMode = 'challenge';
   const read = key => { try { return JSON.parse(localStorage.getItem(key) || 'null'); } catch { return null; } };
   const best = () => Math.max(0, Math.min(15, Number(read(bestKey())) || 0));
   const write = (key, data) => { try { localStorage.setItem(key, JSON.stringify(data)); } catch { $('status').textContent = 'Device storage is unavailable. This run stays in this session.'; } };
@@ -71,6 +71,7 @@
   }
   function nextQuestion() { state.phase = 'question'; state.order = shuffle([0,1,2,3]); state.selected = -1; state.hidden = []; state.chanceArmed = false; state.hint = ''; persist(); draw(); }
   function start(mode) {
+    lastMode = mode;
     const ids = mode === 'practice' ? [...bank].sort((a,b) => a.tier - b.tier).map(x => x.id) : [1,2,3].flatMap(t => shuffle(bank.filter(x => x.tier === t)).slice(0,5).map(x => x.id));
     state = { version:2, mode, ids, i:0, score:0, safe:0, order:[], selected:-1, hidden:[], used:{}, chanceArmed:false, phase:'question', review:[], hint:'' };
     nextQuestion();
@@ -89,13 +90,13 @@
       const p = document.createElement('p'); p.textContent = 'Answer: ' + item.answers[item.correct] + '. ' + item.explanation;
       const a = document.createElement('a'); a.href = item.source; a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'Follow the source'; article.append(h,p,a); return article;
     }));
-    $('review-heading').hidden = !$('review-list').children.length; $('result-title').focus(); state = null; refreshHome();
+    $('review-heading').hidden = !$('review-list').children.length; $('result-title').focus(); lastMode = run.mode; state = null; refreshHome();
   }
   $('start').addEventListener('click', () => start('challenge'));
   $('practice').addEventListener('click', () => start('practice'));
-  $('restart').addEventListener('click', () => start('challenge'));
+  $('restart').addEventListener('click', () => start(lastMode));
   $('home').addEventListener('click', () => { $('result').hidden = true; $('intro').hidden = false; refreshHome(); $('start').focus(); });
-  $('resume').addEventListener('click', () => { const s = read(runKey()); if (valid(s)) { state = s; draw(); } else { remove(runKey()); refreshHome(); } });
+  $('resume').addEventListener('click', () => { const s = read(runKey()); if (valid(s)) { state = s; lastMode = s.mode; draw(); } else { remove(runKey()); refreshHome(); } });
   $('bank').addEventListener('click', () => { if (state.phase === 'question') finish('bank'); });
   $('lock').addEventListener('click', () => {
     if (state.phase !== 'question' || state.selected < 0) return;
@@ -116,13 +117,13 @@
     $('practice').textContent = 'Practice all ' + bank.length;
     $('mode-copy').textContent = audience === 'kids' ? 'Kids · suggested ages 7–12. A fresh 15-question climb from 30 discovery questions. Every answer teaches something; mistakes let you keep going. A grown-up can help with reading.' : audience === 'teen' ? 'Teen · suggested ages 13–17. A fresh 15-question mix from 30 questions about science, online safety and thinking clearly. Checkpoints protect your progress.' : 'Adult · a fresh 15-question mix from 30 health, wellness and evidence questions.';
     $('rules-copy').textContent = audience === 'kids' ? 'No timer. Mistakes are part of learning: read the answer and keep exploring. Each mode saves its own progress.' : 'Earn a protected rank every three questions. A wrong answer ends the run at your last checkpoint. Bank your rank whenever you choose. No timer.';
-    state = null; $('play').hidden = true; $('result').hidden = true; $('intro').hidden = false; ladder(); refreshHome();
+    state = null; lastMode = 'challenge'; $('play').hidden = true; $('result').hidden = true; $('intro').hidden = false; ladder(); refreshHome();
   }
   $('audience').addEventListener('change', chooseAudience);
   for (const id of ['start','practice','resume']) $(id).disabled = true;
   $('status').textContent = 'Preparing your questions…'; ladder();
   fetch('questions.json').then(r => { if (!r.ok) throw Error(); return r.json(); }).then(data => {
-    if (!Array.isArray(data) || data.length < 15 || new Set(data.map(x=>x.id)).size !== data.length || data.some(x => ![1,2,3].includes(x.tier) || !Array.isArray(x.answers) || x.answers.length !== 4 || !Number.isInteger(x.correct) || x.correct<0 || x.correct>3 || !x.source.startsWith('https://')) || [1,2,3].some(t => data.filter(x=>x.tier===t).length<5)) throw Error();
+    if (!Array.isArray(data) || data.length < 15 || new Set(data.map(x=>x.id)).size !== data.length || data.some(x => ![1,2,3].includes(x.tier) || !Array.isArray(x.answers) || x.answers.length !== 4 || !Number.isInteger(x.correct) || x.correct<0 || x.correct>3 || !x.source.startsWith('https://')) || ['kids','teen','adult'].some(a=>[1,2,3].some(t => data.filter(x=>x.audience===a&&x.tier===t).length<5))) throw Error();
     allQuestions = data; chooseAudience(); $('status').textContent = ''; for (const id of ['start','practice','resume']) $(id).disabled = false; refreshHome();
   }).catch(() => { $('status').textContent = 'The question bank could not load. Refresh while connected to prepare the game.'; });
 })();

@@ -8,6 +8,7 @@ on:
       - 'mobile-ascent/**'
       - 'assets/**'
       - 'tests/**'
+      - 'vital-rush/**'
       - '.github/workflows/mobile-apps.yml'
   workflow_dispatch:
 permissions:
@@ -32,7 +33,9 @@ jobs:
       - name: Install main dependencies for shared native bridge
         run: npm ci --prefix mobile --no-audit --no-fund
       - name: Game paths
-        run: node tests/ascent-check.cjs
+        run: |
+          node tests/ascent-check.cjs
+          node tests/vital-rush-check.cjs
       - name: Package and sync
         working-directory: ${{ matrix.app }}
         run: |

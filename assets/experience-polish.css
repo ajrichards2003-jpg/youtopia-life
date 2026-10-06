@@ -19,3 +19,4 @@ a.btn::after{content:'↗';font-size:1.15em;line-height:1;opacity:.8;margin-left
 .video-poster[hidden]{display:none!important}
 
 .editorial-byline{font:500 .82rem/1.6 system-ui,sans-serif;color:#b9c9c0;margin:18px 0 22px}.editorial-byline a{color:#83e4c0;text-decoration:underline;text-underline-offset:3px}
+

@@ -26,13 +26,14 @@ Read complete source-linked articles inside the app, search by topic and save us
 
 Youtopia Ascent is a 15-question health-and-evidence challenge with five progress ranks and source-linked explanations. Its ranks reflect game progress only. They are not an IQ score, brain-age estimate, diagnosis or clinical assessment.
 
-The first release includes:
+The release candidate includes:
 
 - Six complete source-linked evidence articles.
 - Topic search and filters.
 - A device-local saved-reading list.
 - Optional offline reading.
-- Youtopia Ascent.
+- Youtopia Ascent with practice, source-linked feedback and saved runs.
+- Memory matching and Calm & Connect.
 - Links to the wider Youtopia Life website.
 
 Youtopia Life is educational. It does not diagnose, treat or prevent disease, replace professional medical advice, or measure health data.
@@ -120,7 +121,7 @@ Prepare required iPhone/iPad and Android phone/tablet sizes only after confirmin
 - [ ] Dynamic/large text tested without clipping.
 - [ ] Reduced motion, contrast and visible focus tested.
 - [ ] Small phone, large phone and tablet safe areas tested in portrait and landscape.
-- [ ] Final Youtopia app icon and splash assets use the canonical licensed artwork.
+- [x] Branded Youtopia icon and splash assets prepared; device inspection still required.
 - [ ] No default Capacitor icons, splash images or test identifiers remain.
 
 ### Privacy, safety and compliance
@@ -144,9 +145,10 @@ Prepare required iPhone/iPad and Android phone/tablet sizes only after confirmin
 
 ## Known release blockers
 
-1. Default native platform icons and splash screens still need replacement with canonical Youtopia artwork.
+1. Branded native icons and splash assets are prepared; inspect them on actual devices before release.
 2. Native iOS and Android binaries have not been compiled, signed or tested on physical devices.
 3. Developer-account ownership, bundle-ID availability, membership costs and signing authority are unverified.
 4. Final privacy/data-safety answers require compiled-SDK verification.
 5. Store screenshots and final metadata require the approved release candidate.
 6. App submission has not been authorised or performed.
+

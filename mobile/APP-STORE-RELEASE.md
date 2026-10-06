@@ -1,21 +1,9 @@
-# Youtopia Life app release checklist
+# Youtopia Life — release candidate checklist
 
-Initial preview: six complete source-linked evidence articles, searchable topics, local saved reading, Ascent, and links to the wider Youtopia world. No analytics, account, health measurement or medical assessment. Offline caching is opt-in. Saved reading stays on this device.
+6 October 2026. Version 1.0.0 / build 1. Six complete source-linked articles, search/filter, saved reading, 30-question Ascent with practice and resume, memory matching, Calm & Connect, local privacy and offline assets. Wider website features require internet. No account, analytics or health measurements in this edition.
 
-## Build status
-Web build passed. Capacitor iOS (Swift Package Manager) and Android projects generated successfully. Native binaries have not been compiled, signed or tested on devices. Default platform icons and splash screens must be replaced before release.
+Web packaging and Capacitor sync pass. iOS and Android projects contain branded icons and splashes. Native compilation and physical-device QA are separate checks; never infer a passing compiler result from project generation.
 
-## Reproduce
-From mobile: npm ci; npm run sync. Open ios/App/App.xcodeproj in Xcode or android in Android Studio. Build tools, supported OS versions and signing must be verified against current Capacitor requirements.
+Reproduce: from mobile, npm ci then npm run sync. Open ios/App/App.xcodeproj or android in the platform tools. GitHub mobile-apps workflow prepares Android debug and iOS simulator builds; neither is a signed distribution release.
 
-## Before store submission
-- Confirm ownership of bundle ID com.youtopialife.app and developer account organisation details. Apple and Google developer memberships may require payment.
-- Replace default icons/splash assets with licensed Youtopia branding; check all image/content rights.
-- Test real iPhone and Android devices: navigation, back button, safe areas, accessibility, article modals, saving, source links, game completion and airplane-mode reading. Check small screens, large text and performance.
-- Keep meaningful app functionality beyond website links; Apple minimum-functionality review is not guaranteed by using Capacitor.
-- Finalise privacy policy and support URLs, App Privacy/Data Safety declarations and any applicable Google health-app declaration. Declare actual SDK/network behaviour accurately. Reassess before adding analytics, AI, accounts or health data.
-- Prepare age rating, screenshots, description and review notes explaining educational purpose, evidence caveats and the non-clinical Ascent ranks.
-- Confirm current Play testing requirements for the account type; newer personal accounts can require a closed test before production access.
-- Complete TestFlight/Play testing, signing, release configuration and store review. No app-store submission or approval has happened.
-
-Official references: https://developer.apple.com/app-store/review/guidelines/ ; https://capacitorjs.com/docs/ios ; https://capacitorjs.com/docs/android ; https://support.google.com/googleplay/android-developer/
+Remaining: developer-account/app-ID ownership, native compiler checks, real-device and accessibility QA, final SDK/privacy declarations, public app-specific privacy policy and monitored support, signed store binaries, required beta testing, actual device screenshots, final metadata approval and store review. No purchase or submission has occurred.

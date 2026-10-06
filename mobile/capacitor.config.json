@@ -3,5 +3,5 @@
   "appName": "Youtopia Life",
   "webDir": "www",
   "backgroundColor": "#071713",
-  "loggingBehavior": "debug"
+  "loggingBehavior": "none"
 }

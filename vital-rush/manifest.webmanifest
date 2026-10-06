@@ -1,1 +1,24 @@
-{"id":"./","name":"Youtopia Vital Rush","short_name":"Vital Rush","start_url":"./","scope":"./","display":"standalone","orientation":"portrait","background_color":"#07171e","theme_color":"#07171e","icons":[{"src":"icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icon-512.png","sizes":"512x512","type":"image/png"}]}
+{
+  "id": "./",
+  "name": "Youtopia Vital Rush",
+  "short_name": "Vital Rush",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#07171e",
+  "theme_color": "#07171e",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "description": "A fast, family-friendly three-lane runner with practice, gentle pace and offline play."
+}

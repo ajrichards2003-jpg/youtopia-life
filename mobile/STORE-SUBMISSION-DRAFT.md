@@ -146,7 +146,7 @@ Prepare required iPhone/iPad and Android phone/tablet sizes only after confirmin
 ## Known release blockers
 
 1. Branded native icons and splash assets are prepared; inspect them on actual devices before release.
-2. Native iOS and Android binaries have not been compiled, signed or tested on physical devices.
+2. Android debug and unsigned iOS simulator builds passed in Actions run 37399454740. Distribution signing and physical-device testing remain.
 3. Developer-account ownership, bundle-ID availability, membership costs and signing authority are unverified.
 4. Final privacy/data-safety answers require compiled-SDK verification.
 5. Store screenshots and final metadata require the approved release candidate.

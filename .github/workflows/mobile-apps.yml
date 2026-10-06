@@ -1,0 +1,80 @@
+name: Mobile app build checks
+on:
+  pull_request:
+    paths:
+      - 'app/**'
+      - 'ascent-app/**'
+      - 'mobile/**'
+      - 'mobile-ascent/**'
+      - 'mobile-vital-rush/**'
+      - 'assets/**'
+      - 'tests/**'
+      - 'vital-rush/**'
+      - '.github/workflows/mobile-apps.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        app: [mobile-ascent, mobile-vital-rush]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Game paths
+        run: |
+          node tests/ascent-check.cjs
+          node tests/vital-rush-check.cjs
+          node tests/offline-check.cjs
+      - name: Package and sync
+        working-directory: ${{ matrix.app }}
+        run: |
+          npm ci --no-audit --no-fund
+          npm run sync
+      - name: Compile Android test build
+        working-directory: ${{ matrix.app }}/android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.app }}-android-debug
+          path: ${{ matrix.app }}/android/app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+          retention-days: 7
+  ios:
+    runs-on: macos-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        app: [mobile-ascent, mobile-vital-rush]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Package and sync
+        working-directory: ${{ matrix.app }}
+        run: |
+          npm ci --no-audit --no-fund
+          npm run sync
+      - name: Compile iOS simulator test build
+        working-directory: ${{ matrix.app }}
+        run: xcodebuild -project ios/App/App.xcodeproj -scheme App -configuration Debug -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' -derivedDataPath build CODE_SIGNING_ALLOWED=NO build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.app }}-ios-simulator
+          path: ${{ matrix.app }}/build/Build/Products/Debug-iphonesimulator/*.app
+          if-no-files-found: error
+          retention-days: 7

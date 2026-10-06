@@ -1,0 +1,11 @@
+{
+	"appId": "com.youtopialife.vitalrush",
+	"appName": "Youtopia Vital Rush",
+	"webDir": "www",
+	"backgroundColor": "#07171e",
+	"loggingBehavior": "none",
+	"packageClassList": [
+		"CAPBrowserPlugin",
+		"AppPlugin"
+	]
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Youtopia Life</string>
+    <string name="title_activity_main">Youtopia Life</string>
+    <string name="package_name">com.youtopialife.app</string>
+    <string name="custom_url_scheme">com.youtopialife.app</string>
+</resources>

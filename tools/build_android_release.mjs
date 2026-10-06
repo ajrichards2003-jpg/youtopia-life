@@ -10,7 +10,7 @@ const missing=names.filter(name=>!process.env[name]);
 if(missing.length){console.error('Signing configuration required: '+missing.join(', '));process.exit(1)}
 if(!path.isAbsolute(process.env.YOUTOPIA_UPLOAD_STORE_FILE)){console.error('Use an absolute keystore path.');process.exit(1)}
 try{await access(process.env.YOUTOPIA_UPLOAD_STORE_FILE)}catch{console.error('Upload keystore file is unavailable.');process.exit(1)}
-const run=(cmd,args,cwd)=>{const r=spawnSync(cmd,args,{cwd,stdio:'inherit',env:{...process.env,YOUTOPIA_REQUIRE_SIGNING:'true'}});if(r.error){console.error('Build tool could not start. Check your installed tooling.');process.exit(1)}if(r.status!==0)process.exit(r.status||1)};
+const run=(cmd,args,cwd)=>{const r=spawnSync(cmd,args,{cwd,stdio:'inherit',shell:process.platform==='win32',env:{...process.env,YOUTOPIA_REQUIRE_SIGNING:'true'}});if(r.error){console.error('Build tool could not start. Check your installed tooling.');process.exit(1)}if(r.status!==0)process.exit(r.status||1)};
 run(process.platform==='win32'?'npm.cmd':'npm',['run','sync'],path.join(root,app));
 run(process.platform==='win32'?'gradlew.bat':'./gradlew',['bundleRelease','assembleRelease','--no-daemon','--no-configuration-cache'],path.join(root,app,'android'));
 console.log('Release build complete. Verify certificate, package identity and version before upload.');

@@ -1,0 +1,19 @@
+{
+  "id": "/app/",
+  "name": "Youtopia Life",
+  "short_name": "Youtopia",
+  "description": "Discover, learn and play.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#071713",
+  "theme_color": "#071713",
+  "icons": [
+    {
+      "src": "/assets/youtopia-bronze-wing-logo.jpg",
+      "sizes": "800x800",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

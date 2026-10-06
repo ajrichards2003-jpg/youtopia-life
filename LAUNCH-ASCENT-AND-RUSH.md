@@ -12,7 +12,7 @@ Both are version 1.0.0/build 1. Confirm identity ownership and available build n
 ## Product readiness
 Ascent: 90 source-linked questions; 30 per audience, ten per tier; fresh 15-question climbs; three lifelines; separate local progress; missed-question review; practice replay preserves its mode; browser offline support; bundled native content.
 
-Rush: original three-lane runner; food-powered fictional growth; shields; research points; fair obstacle rows; daily route; 35-second non-penalising practice; gentle pace; saved motion/pace preferences; local bests and earned suits; optional sound; pause/lifecycle handling; privacy and confirmed reset; browser offline downloads; separate portrait iOS/Android wrapper and original icon/splash assets.
+Rush: original three-lane runner; food-powered fictional growth; shields; research points; fair obstacle rows; daily route; 35-second non-penalising practice; gentle pace; saved motion/pace preferences; local bests and earned suits; optional sound; pause/lifecycle handling; privacy and confirmed reset; browser offline downloads; separate iOS/Android wrapper with portrait phone layout and iPad orientation support and original icon/splash assets.
 
 Code and browser checks are evidence of functionality, not an independent content review or physical-device result. Rush requires sight despite keyboard/status support; test real usability. Neither game promises health outcomes, IQ ratings or download rankings.
 
@@ -39,3 +39,5 @@ Developer-account access/enrolment/type, Team ID, ID ownership, devices, real si
 - Apple review, metadata, privacy and Kids category: https://developer.apple.com/app-store/review/guidelines/
 - Google new personal-account tests: https://support.google.com/googleplay/android-developer/answer/14151465
 - Capacitor native setup: https://capacitorjs.com/docs/getting-started
+
+Tablet review: Rush declares all iPad orientations to support current Apple multitasking requirements; resizing pauses a run. Test rotated and resized tablet windows on devices before submission. Apple reference: https://developer.apple.com/documentation/technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key

@@ -37,3 +37,8 @@ Game home; question and choices; clue/narrowing; source-linked feedback; protect
 ## Remaining release gates
 
 Verify developer accounts and app ID ownership; native compilation; device/VoiceOver/TalkBack testing; final SDK/privacy/health-app/content-rating declarations; support and public privacy; signed distribution builds; beta testing; approved final metadata and screenshots; store submission and review. No purchase or submission is authorised by this document.
+
+## Family modes — 6 October 2026
+Kids (suggested 7–12): 15 general discovery questions, mistakes continue. Teen (13–17): 15 science, reasoning and online-safety questions. Adult (18+): 30 health/evidence questions. Separate local scores and saved runs; no birth date, account, chat, advertising, purchases or health measurements. Default is Kids; modes are reading-level choices, not verified ages. Outbound navigation has a random grown-up multiplication check. This is a navigation barrier, not verified parental consent or identity.
+
+Store audience declarations must include children and teens. Review Google Play Families requirements. Apple Kids category selection and age-band presentation need final account-owner review; do not use child-directed store metadata while declaring an adult-only audience. Verify all outbound paths and native back navigation on devices. A guardian should review Kids usability; independent clinical review is not claimed.

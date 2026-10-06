@@ -1,21 +1,24 @@
 (() => {
   'use strict';
   const $ = id => document.getElementById(id);
+  let audience = 'kids';
+  const runKey = () => audience === 'adult' ? RUN_KEY : RUN_KEY + '-' + audience;
+  const bestKey = () => audience === 'adult' ? BEST_KEY : BEST_KEY + '-' + audience;
   const RUN_KEY = 'youtopia-ascent-run-v2';
   const BEST_KEY = 'youtopia-ascent-best-v1';
   const ranks = ['Explorer', 'Investigator', 'Evidence Navigator', 'Frontier Thinker', 'Summit Mind'];
   const rank = n => n < 3 ? 'Starting the climb' : ranks[Math.min(4, Math.floor(n / 3) - 1)];
-  let bank = [], state = null;
+  let bank = [], allQuestions = [], state = null;
   const read = key => { try { return JSON.parse(localStorage.getItem(key) || 'null'); } catch { return null; } };
-  const best = () => Math.max(0, Math.min(15, Number(read(BEST_KEY)) || 0));
+  const best = () => Math.max(0, Math.min(15, Number(read(bestKey())) || 0));
   const write = (key, data) => { try { localStorage.setItem(key, JSON.stringify(data)); } catch { $('status').textContent = 'Device storage is unavailable. This run stays in this session.'; } };
   const remove = key => { try { localStorage.removeItem(key); } catch {} };
   const shuffle = list => { const a = [...list]; for (let j = a.length - 1; j > 0; j--) { const k = Math.floor(Math.random() * (j + 1)); [a[j], a[k]] = [a[k], a[j]]; } return a; };
   const q = () => bank.find(x => x.id === state.ids[state.i]);
-  const persist = () => { if (state) write(RUN_KEY, state); };
+  const persist = () => { if (state) write(runKey(), state); };
   const valid = s => s && s.version === 2 && ['challenge', 'practice'].includes(s.mode) && Array.isArray(s.ids) && s.ids.length === (s.mode === 'challenge' ? 15 : bank.length) && new Set(s.ids).size === s.ids.length && s.ids.every(id => bank.some(x => x.id === id)) && Number.isInteger(s.i) && s.i >= 0 && s.i < s.ids.length && Array.isArray(s.order) && [...s.order].sort().join() === '0,1,2,3' && Array.isArray(s.hidden) && s.hidden.every(x => Number.isInteger(x) && x >= 0 && x < 4) && ['question','feedback'].includes(s.phase) && Number.isInteger(s.selected) && s.selected >= -1 && s.selected < 4 && (s.phase !== 'feedback' || s.selected >= 0) && Number.isInteger(s.score) && s.score >= 0 && s.score <= s.ids.length && Number.isInteger(s.safe) && s.safe >= 0 && s.safe <= 15 && s.used && Array.isArray(s.review) && s.review.every(x => bank.some(b => b.id === x.id));
   function refreshHome() {
-    const resume = read(RUN_KEY);
+    const resume = read(runKey());
     $('resume').hidden = !valid(resume);
     $('intro-best').textContent = 'Personal best: ' + rank(best()) + ' · ' + best() + '/15';
   }
@@ -45,7 +48,7 @@
     $('verdict').textContent = correct ? 'Correct. Keep climbing.' : state.mode === 'practice' ? 'A new thing to learn.' : 'Not this time. Here’s the evidence.';
     $('explanation').textContent = q().explanation;
     $('source').href = q().source; $('source').textContent = q().sourceLabel + ' ↗';
-    $('next').textContent = !correct && state.mode === 'challenge' ? 'See my result' : state.i === state.ids.length - 1 ? 'Complete this run' : 'Next question';
+    $('next').textContent = !correct && state.mode === 'challenge' && audience !== 'kids' ? 'See my result' : state.i === state.ids.length - 1 ? 'Complete this run' : 'Next question';
     $('next').focus();
   }
   function draw() {
@@ -74,9 +77,9 @@
   }
   function finish(reason) {
     const run = state;
-    remove(RUN_KEY); $('play').hidden = true; $('intro').hidden = true; $('result').hidden = false;
+    remove(runKey()); $('play').hidden = true; $('intro').hidden = true; $('result').hidden = false;
     $('result-label').textContent = run.mode === 'practice' ? 'PRACTICE COMPLETE' : reason === 'win' ? 'ASCENT COMPLETE' : reason === 'bank' ? 'RANK BANKED' : 'CHECKPOINT SAVED';
-    $('result-title').textContent = run.mode === 'practice' ? 'Keep the questions coming.' : reason === 'win' ? 'Summit Mind. Curiosity elevated.' : 'Every answer is a new starting point.';
+    $('result-title').textContent = run.mode === 'practice' ? 'Keep the questions coming.' : reason === 'win' ? (audience === 'kids' ? 'Discovery complete. Keep wondering!' : 'Summit Mind. Curiosity elevated.') : 'Every answer is a new starting point.';
     $('result-score').textContent = run.mode === 'practice' ? run.score + ' correct · ' + run.review.length + ' answered' : rank(run.score) + ' · ' + run.score + '/15';
     $('result-copy').textContent = run.mode === 'practice' ? 'Practice teaches every answer. It does not change your Ascent rank.' : reason === 'miss' ? 'You keep your last protected checkpoint. Your personal best records the highest step you have reached.' : 'Your progress is saved on this device. Another climb brings a fresh question selection.';
     $('best').textContent = 'Personal best: ' + rank(best()) + ' · ' + best() + '/15';
@@ -92,25 +95,33 @@
   $('practice').addEventListener('click', () => start('practice'));
   $('restart').addEventListener('click', () => start('challenge'));
   $('home').addEventListener('click', () => { $('result').hidden = true; $('intro').hidden = false; refreshHome(); $('start').focus(); });
-  $('resume').addEventListener('click', () => { const s = read(RUN_KEY); if (valid(s)) { state = s; draw(); } else { remove(RUN_KEY); refreshHome(); } });
+  $('resume').addEventListener('click', () => { const s = read(runKey()); if (valid(s)) { state = s; draw(); } else { remove(runKey()); refreshHome(); } });
   $('bank').addEventListener('click', () => { if (state.phase === 'question') finish('bank'); });
   $('lock').addEventListener('click', () => {
     if (state.phase !== 'question' || state.selected < 0) return;
     const correct = state.order[state.selected] === q().correct;
     if (!correct && state.chanceArmed) { state.chanceArmed = false; state.hidden.push(state.selected); state.selected = -1; state.hint = 'Second chance used. That answer is out. Choose again.'; persist(); draw(); return; }
     state.phase = 'feedback'; state.review.push({id:q().id, correct});
-    if (correct) { state.score++; if (state.mode === 'challenge') { if (state.score % 3 === 0) state.safe = state.score; write(BEST_KEY, Math.max(best(), state.score)); } }
-    else if (state.mode === 'challenge') state.score = state.safe;
+    if (correct) { state.score++; if (state.mode === 'challenge') { if (state.score % 3 === 0) state.safe = state.score; write(bestKey(), Math.max(best(), state.score)); } }
+    else if (state.mode === 'challenge' && audience !== 'kids') state.score = state.safe;
     persist(); controls(); ladder(); feedback();
   });
-  $('next').addEventListener('click', () => { if (state.phase !== 'feedback') return; const correct = state.order[state.selected] === q().correct; if (!correct && state.mode === 'challenge') return finish('miss'); if (state.i === state.ids.length - 1) return finish('win'); state.i++; nextQuestion(); });
+  $('next').addEventListener('click', () => { if (state.phase !== 'feedback') return; const correct = state.order[state.selected] === q().correct; if (!correct && state.mode === 'challenge' && audience !== 'kids') return finish('miss'); if (state.i === state.ids.length - 1) return finish('win'); state.i++; nextQuestion(); });
   $('narrow').addEventListener('click', () => { if (state.phase !== 'question' || state.used.narrow) return; state.used.narrow = true; const wrong = shuffle(state.order.map((original,n) => ({original,n})).filter(x => x.original !== q().correct && !state.hidden.includes(x.n))); wrong.slice(0,Math.max(0,2-state.hidden.length)).forEach(x => state.hidden.push(x.n)); if (state.hidden.includes(state.selected)) state.selected = -1; state.hint = 'Two choices remain. The decision is yours.'; persist(); draw(); });
   $('clue').addEventListener('click', () => { if (state.phase !== 'question' || state.used.clue) return; state.used.clue = true; state.hint = q().clue; persist(); draw(); });
   $('chance').addEventListener('click', () => { if (state.phase !== 'question' || state.used.chance) return; state.used.chance = true; state.chanceArmed = true; state.hint = 'Second chance armed for this question.'; persist(); draw(); });
+  function chooseAudience() {
+    audience = $('audience').value || 'adult';
+    bank = allQuestions.filter(x => (x.audience || 'adult') === audience);
+    $('practice').textContent = 'Practice all ' + bank.length;
+    $('mode-copy').textContent = audience === 'kids' ? 'Kids · suggested ages 7–12. Fifteen discovery questions. Every answer teaches something; mistakes let you keep going. A grown-up can help with reading.' : audience === 'teen' ? 'Teen · suggested ages 13–17. Fifteen questions about science, online safety and thinking clearly. Checkpoints protect your progress.' : 'Adult · a fresh 15-question mix from 30 health, wellness and evidence questions.';
+    state = null; $('play').hidden = true; $('result').hidden = true; $('intro').hidden = false; ladder(); refreshHome();
+  }
+  $('audience').addEventListener('change', chooseAudience);
   for (const id of ['start','practice','resume']) $(id).disabled = true;
   $('status').textContent = 'Preparing your questions…'; ladder();
   fetch('questions.json').then(r => { if (!r.ok) throw Error(); return r.json(); }).then(data => {
     if (!Array.isArray(data) || data.length < 15 || new Set(data.map(x=>x.id)).size !== data.length || data.some(x => ![1,2,3].includes(x.tier) || !Array.isArray(x.answers) || x.answers.length !== 4 || !Number.isInteger(x.correct) || x.correct<0 || x.correct>3 || !x.source.startsWith('https://')) || [1,2,3].some(t => data.filter(x=>x.tier===t).length<5)) throw Error();
-    bank = data; $('status').textContent = ''; for (const id of ['start','practice','resume']) $(id).disabled = false; refreshHome();
+    allQuestions = data; chooseAudience(); $('status').textContent = ''; for (const id of ['start','practice','resume']) $(id).disabled = false; refreshHome();
   }).catch(() => { $('status').textContent = 'The question bank could not load. Refresh while connected to prepare the game.'; });
 })();

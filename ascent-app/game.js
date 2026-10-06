@@ -45,7 +45,7 @@
     const correct = state.order[state.selected] === q().correct;
     [...$('answers').children].forEach((b, n) => { b.disabled = true; b.classList.toggle('correct', state.order[n] === q().correct); b.classList.toggle('wrong', n === state.selected && !correct); });
     $('feedback').hidden = false;
-    $('verdict').textContent = correct ? 'Correct. Keep climbing.' : state.mode === 'practice' ? 'A new thing to learn.' : 'Not this time. Here’s the evidence.';
+    $('verdict').textContent = correct ? 'Correct. Keep climbing.' : state.mode === 'practice' || audience === 'kids' ? 'A new thing to learn.' : 'Not this time. Here’s the evidence.';
     $('explanation').textContent = q().explanation;
     $('source').href = q().source; $('source').textContent = q().sourceLabel + ' ↗';
     $('next').textContent = !correct && state.mode === 'challenge' && audience !== 'kids' ? 'See my result' : state.i === state.ids.length - 1 ? 'Complete this run' : 'Next question';
@@ -53,7 +53,7 @@
   }
   function draw() {
     $('intro').hidden = true; $('result').hidden = true; $('play').hidden = false;
-    $('level').textContent = (state.mode === 'practice' ? 'PRACTICE' : 'ASCENT') + ' · ' + (state.i + 1) + '/' + state.ids.length;
+    $('level').textContent = audience.toUpperCase() + ' · ' + (state.mode === 'practice' ? 'PRACTICE' : 'ASCENT') + ' · ' + (state.i + 1) + '/' + state.ids.length;
     $('topic').textContent = q().topic + ' · ' + ['Foundations', 'Discovery', 'Deep thinking'][q().tier - 1];
     $('question').textContent = q().text;
     $('answers').replaceChildren(...state.order.map((original, n) => {
@@ -115,6 +115,7 @@
     bank = allQuestions.filter(x => (x.audience || 'adult') === audience);
     $('practice').textContent = 'Practice all ' + bank.length;
     $('mode-copy').textContent = audience === 'kids' ? 'Kids · suggested ages 7–12. Fifteen discovery questions. Every answer teaches something; mistakes let you keep going. A grown-up can help with reading.' : audience === 'teen' ? 'Teen · suggested ages 13–17. Fifteen questions about science, online safety and thinking clearly. Checkpoints protect your progress.' : 'Adult · a fresh 15-question mix from 30 health, wellness and evidence questions.';
+    $('rules-copy').textContent = audience === 'kids' ? 'No timer. Mistakes are part of learning: read the answer and keep exploring. Each mode saves its own progress.' : 'Earn a protected rank every three questions. A wrong answer ends the run at your last checkpoint. Bank your rank whenever you choose. No timer.';
     state = null; $('play').hidden = true; $('result').hidden = true; $('intro').hidden = false; ladder(); refreshHome();
   }
   $('audience').addEventListener('change', chooseAudience);

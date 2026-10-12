@@ -59,7 +59,7 @@
     frame.title = 'Ultrahuman Ring AIR official product film';
     frame.tabIndex = -1;
     const url = new URL('https://www.youtube-nocookie.com/embed/35wj28s34nc');
-    Object.entries({autoplay:1,mute:1,playsinline:1,enablejsapi:1,controls:0,rel:0,origin:location.origin}).forEach(([key,value]) => url.searchParams.set(key,value));
+    Object.entries({autoplay:1,mute:1,playsinline:1,enablejsapi:1,controls:0,rel:0,cc_load_policy:0,iv_load_policy:3,origin:location.origin}).forEach(([key,value]) => url.searchParams.set(key,value));
     frame.src = url.href;
     frame.allow = 'autoplay; encrypted-media; picture-in-picture';
     frame.allowFullscreen = true;

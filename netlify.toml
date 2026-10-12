@@ -2,3 +2,9 @@
   from = "/api/ask-youtopia"
   to = "/.netlify/functions/ask-youtopia"
   status = 200
+
+[[redirects]]
+  from = "/products/iherb/*"
+  to = "/products/nutrition/:splat"
+  status = 301
+  force = true

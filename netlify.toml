@@ -8,3 +8,8 @@
   to = "/products/nutrition/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/assets/youtopia-mark-transparent.png"
+  status = 302

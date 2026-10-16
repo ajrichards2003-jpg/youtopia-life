@@ -13,3 +13,111 @@
   from = "/favicon.ico"
   to = "/assets/youtopia-mark-transparent.png"
   status = 302
+
+[[redirects]]
+  from = "/articles/creatine-body-brain"
+  to = "/articles/creatine-body-brain.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/nmn-human-evidence"
+  to = "/articles/nmn-human-evidence.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/nattokinase-evidence"
+  to = "/articles/nattokinase-evidence.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/red-light-evidence"
+  to = "/articles/red-light-evidence.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/akkermansia-gut-evidence"
+  to = "/articles/akkermansia-gut-evidence.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/brocelite-sulforaphane"
+  to = "/articles/brocelite-sulforaphane.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/spirulina-chlorella-evidence"
+  to = "/articles/spirulina-chlorella-evidence.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/sleep-biological-ageing"
+  to = "/articles/sleep-biological-ageing.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/circulation-ageing-evidence"
+  to = "/articles/circulation-ageing-evidence.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/cold-exposure-evidence"
+  to = "/articles/cold-exposure-evidence.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/memory-clarity-evidence"
+  to = "/articles/memory-clarity-evidence.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/research-watch-epigenetic-clocks"
+  to = "/articles/research-watch-epigenetic-clocks.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/research-watch-protein-clocks"
+  to = "/articles/research-watch-protein-clocks.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/research-watch-gut-brain"
+  to = "/articles/research-watch-gut-brain.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/research-watch-living-brain"
+  to = "/articles/research-watch-living-brain.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/analemma-overview"
+  to = "/articles/analemma-overview.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/leela-quantum-overview"
+  to = "/articles/leela-quantum-overview.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/auro-glutaryl-evidence"
+  to = "/articles/auro-glutaryl-evidence.html"
+  status = 301
+  force = true

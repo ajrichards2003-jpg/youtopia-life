@@ -91,3 +91,7 @@
 @media(max-width:800px){.site-standard .site-masthead-inner{padding:18px 22px;display:block}.site-standard .site-global-links{margin-top:13px;gap:20px;overflow-x:auto;padding-bottom:4px}.site-standard h1{font-size:clamp(3rem,11vw,5rem)}.site-standard:not(.is-home)>header{padding-top:35px}.site-standard .site-feature img{aspect-ratio:16/9}}
 @media(max-width:500px){.site-standard .site-edition{font-size:.53rem}.site-standard .site-edition span:last-child{display:none}.site-standard .wrap{padding-left:20px;padding-right:20px}.site-standard .section-signoff{flex-direction:column;gap:10px}.site-standard h2{font-size:2.25rem}.site-standard .card h3{font-size:1.7rem}.site-standard .site-feature{padding:0}.site-standard .site-feature figcaption{padding:0 20px}.site-standard:not(.is-interactive) table{display:block;overflow-x:auto}}
 @media(prefers-reduced-motion:reduce){.site-standard{scroll-behavior:auto}}
+
+/* Keep product editorial panels legible on the paper palette. */
+.site-standard:not(.is-home):not(.is-interactive) .feature,.site-standard:not(.is-home):not(.is-interactive) .feature .copy{background:#fffefa;color:#15211e;border-color:#ccd3cb}
+.site-standard.is-editorial .brand-word{color:#15211e}

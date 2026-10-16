@@ -3,7 +3,10 @@ on:
   pull_request:
     paths:
       - 'articles/**'
-      - 'scripts/check-journal.py'
+      - 'scripts/check-journal*.py'
+      - 'sitemap.xml'
+      - 'netlify.toml'
+      - 'editorial/**'
       - '.github/workflows/journal-integrity.yml'
   workflow_dispatch:
 jobs:
@@ -15,4 +18,6 @@ jobs:
         with:
           python-version: '3.12'
       - name: Verify feature lengths, sources and links
-        run: python scripts/check-journal.py
+        run: |
+          python scripts/check-journal.py
+          python scripts/check-journal-seo.py

@@ -1,13 +1,13 @@
 [
   {
     "slug": "red-light-evidence",
-    "title": "Light, cells and the distance between them.",
+    "title": "Beyond the glow: what red light can actually do",
     "category": "Technology & the body",
     "label": "Evidence varies by outcome",
     "deck": "Red-light therapy is often discussed as if it were one treatment with one evidence level. It isn't. Wavelength, dose, target tissue, protocol and outcome all matter.",
     "image": "/assets/red-light-hero-edge.webp",
-    "words": 527,
-    "minutes": 3
+    "words": 1767,
+    "minutes": 9
   },
   {
     "slug": "auro-glutaryl-evidence",
@@ -16,8 +16,8 @@
     "label": "Early human delivery research",
     "deck": "Glutaryl is Auro Wellness's topical glutathione spray. The manufacturer pairs glutathione with cyclodextrin in a skin-applied delivery system. This overview separates delivery research from broad health claims.",
     "image": "/assets/editorial/topical-delivery.webp",
-    "words": 462,
-    "minutes": 3
+    "words": 1801,
+    "minutes": 9
   },
   {
     "slug": "sleep-biological-ageing",
@@ -26,8 +26,8 @@
     "label": "Human observational research",
     "deck": "A major 2026 Nature study linked sleep duration with biological-ageing clocks across multiple organs and molecular systems. The interesting part is not “sleep more.” It is the shape of the relationship.",
     "image": "https://images.unsplash.com/photo-1667422773763-6e83c35a90d0?auto=format&fit=crop&w=1600&q=80",
-    "words": 589,
-    "minutes": 3
+    "words": 1602,
+    "minutes": 8
   },
   {
     "slug": "akkermansia-gut-evidence",
@@ -36,8 +36,8 @@
     "label": "Preparation-specific human trials",
     "deck": "The excitement around Akkermansia muciniphila has moved from correlations into human trials. Here is what they can and cannot say.",
     "image": "https://images.unsplash.com/photo-1745793652792-dd1624661142?auto=format&fit=crop&w=1400&q=80",
-    "words": 509,
-    "minutes": 3
+    "words": 1827,
+    "minutes": 9
   },
   {
     "slug": "leela-quantum-overview",
@@ -46,8 +46,8 @@
     "label": "Supplier claims; clinical validation unresolved",
     "deck": "Leela sells products described using “quantum energy” and bioenergetic concepts. Youtopia's first job is not to dismiss or endorse them — it is to separate the claim, measurement and evidence.",
     "image": "/assets/editorial/optical-prisms.webp",
-    "words": 469,
-    "minutes": 3
+    "words": 1737,
+    "minutes": 8
   },
   {
     "slug": "circulation-ageing-evidence",
@@ -56,18 +56,18 @@
     "label": "Animal mechanisms; selected human vascular research",
     "deck": "From capillary networks to nitric oxide: how blood vessels support the body, and what emerging research can actually tell us.",
     "image": "/assets/editorial/circulation-lab.webp",
-    "words": 774,
-    "minutes": 4
+    "words": 1664,
+    "minutes": 8
   },
   {
     "slug": "nattokinase-evidence",
-    "title": "The enzyme, the promise and the missing outcome.",
+    "title": "The clot claim: nattokinase under the microscope",
     "category": "Cardiovascular science",
     "label": "Mixed human trial findings",
     "deck": "A fermented-soy enzyme has become a biohacking favourite. The human evidence asks for more caution than the headlines allow.",
     "image": "/assets/editorial/natto.webp",
-    "words": 522,
-    "minutes": 3
+    "words": 1721,
+    "minutes": 8
   },
   {
     "slug": "creatine-body-brain",
@@ -76,8 +76,8 @@
     "label": "Established exercise use; emerging cognitive research",
     "deck": "A well-studied training supplement has become a memory conversation. The evidence for these two uses is at different stages.",
     "image": "/assets/nutrition/training-campaign.webp",
-    "words": 581,
-    "minutes": 3
+    "words": 1660,
+    "minutes": 8
   },
   {
     "slug": "brocelite-sulforaphane",
@@ -86,8 +86,8 @@
     "label": "Ingredient research; product claims require separate proof",
     "deck": "A broccoli-derived supplement raises a practical question: does a more stable capsule deliver the molecule, and does that translate into better health?",
     "image": "https://images.unsplash.com/photo-1692956705964-14c55d0dd6b4?auto=format&fit=crop&w=1400&q=80",
-    "words": 545,
-    "minutes": 3
+    "words": 1640,
+    "minutes": 8
   },
   {
     "slug": "analemma-overview",
@@ -96,8 +96,8 @@
     "label": "Supplier hypothesis; health benefit unestablished",
     "deck": "Before looking at a price or checkout button, understand the idea. Aǹalemma markets a quartz wand designed to change the organisation of water through what it calls coherent water technology.",
     "image": "/assets/editorial/water-quartz.webp",
-    "words": 480,
-    "minutes": 3
+    "words": 1637,
+    "minutes": 8
   },
   {
     "slug": "spirulina-chlorella-evidence",
@@ -106,8 +106,8 @@
     "label": "Food composition; selected short-term human trials",
     "deck": "Nutrition, cellular mechanisms and space-food research—follow the evidence behind the algae conversation.",
     "image": "/assets/editorial/algae-nutrition.webp",
-    "words": 1003,
-    "minutes": 5
+    "words": 1605,
+    "minutes": 8
   },
   {
     "slug": "nmn-human-evidence",
@@ -116,8 +116,8 @@
     "label": "Short human trials; long-term outcomes unresolved",
     "deck": "The most important question about nicotinamide mononucleotide is what happens after the biomarker moves.",
     "image": "https://images.unsplash.com/photo-1748261348346-9ef0f83b9ab3?auto=format&fit=crop&w=1400&q=80",
-    "words": 466,
-    "minutes": 3
+    "words": 1657,
+    "minutes": 8
   },
   {
     "slug": "cold-exposure-evidence",
@@ -126,8 +126,8 @@
     "label": "Limited, outcome-dependent human evidence",
     "deck": "Cold-water immersion is everywhere. The evidence is more interesting — and more nuanced — than either the evangelists or the eye-rollers suggest.",
     "image": "https://images.unsplash.com/photo-1701895853566-bd08afa0c422?auto=format&fit=crop&w=1600&q=80",
-    "words": 529,
-    "minutes": 3
+    "words": 1607,
+    "minutes": 8
   },
   {
     "slug": "memory-clarity-evidence",
@@ -136,8 +136,8 @@
     "label": "Clinical assessment before supplement claims",
     "deck": "For the person who misplaces a word, forgets a name or feels less sharp: a useful first step is to understand what has changed, before shopping for a brain supplement.",
     "image": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=1400&q=80",
-    "words": 667,
-    "minutes": 4
+    "words": 1697,
+    "minutes": 8
   },
   {
     "slug": "research-watch-gut-brain",
@@ -146,8 +146,8 @@
     "label": "Human association; causality unresolved",
     "deck": "Researchers are bringing the gut–brain conversation into sharper focus by measuring microbial potential alongside chemistry in living human brains.",
     "image": "/assets/research-watch/gut-brain.webp",
-    "words": 447,
-    "minutes": 3
+    "words": 1844,
+    "minutes": 9
   },
   {
     "slug": "research-watch-epigenetic-clocks",
@@ -156,8 +156,8 @@
     "label": "Multi-study analysis; surrogate outcomes unresolved",
     "deck": "A younger biological-age score makes a powerful headline. Understanding what moved, and why, makes a better story.",
     "image": "/assets/research-watch/epigenetic-clocks.webp",
-    "words": 424,
-    "minutes": 3
+    "words": 1703,
+    "minutes": 8
   },
   {
     "slug": "research-watch-protein-clocks",
@@ -166,8 +166,8 @@
     "label": "Exploratory, disease-specific trial analysis",
     "deck": "Could a disease-focused trial reveal something about ageing too? Protein-based clocks offer a new way to ask.",
     "image": "/assets/research-watch/protein-clocks.webp",
-    "words": 402,
-    "minutes": 3
+    "words": 1787,
+    "minutes": 9
   },
   {
     "slug": "research-watch-living-brain",
@@ -176,7 +176,7 @@
     "label": "Selected human tissue research",
     "deck": "Understanding a disease while it unfolds can ask different questions from examining what remains afterwards.",
     "image": "/assets/research-watch/living-brain.webp",
-    "words": 414,
-    "minutes": 3
+    "words": 1793,
+    "minutes": 9
   }
 ]

@@ -8,6 +8,9 @@ Build and test each next edition in a fresh preview. The design launch is approv
 
 ## First delivery
 
+- All 18 journal features expanded to 1,602–1,844 story words (30,749 total; average 1,708). Inline source links, chapter navigation and reading times updated; automated word-count and local-link checks pass. Preview only.
+
+
 - Expanded adult sleep guide: original reporting and practical context, three checked official source pages, a printable 14-day diary, symptoms that warrant assessment and links to related reporting.
 - Expanded circadian guide: light timing, routine, shift-work context and source-linked boundaries for treatment.
 - Product comparison worksheet: three options, 12–36-month ownership costs and unsaved evidence/privacy/fit notes.
@@ -34,7 +37,7 @@ Build and test each next edition in a fresh preview. The design launch is approv
 
 ## Article queue
 
-All 18 have the journal layout and a first editorial expansion. The next pass deepens substance, rather than presenting the styling pass as completed investigative reporting.
+All 18 now have expanded source-linked features in the requested 1,500–3,000-word range. The following remain research priorities for subsequent editions; publication does not imply independent clinical review. Full-text access limitations are recorded in LONG_FEATURE_AUDIT_2026-10-17.json.
 
 1. Sleep and biological ageing — review correction notices and limits of individual inference.
 2. Creatine and cognition — separate exercise, healthy-person cognition and disease-specific trials.

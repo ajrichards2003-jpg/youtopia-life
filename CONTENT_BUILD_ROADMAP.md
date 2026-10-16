@@ -9,7 +9,9 @@ Build and test each next edition in a fresh preview. The design launch is approv
 ## First delivery
 
 - Expanded adult sleep guide: original reporting and practical context, three checked official source pages, a printable 14-day diary, symptoms that warrant assessment and links to related reporting.
-- Field Guides landing page: three clear starting paths and a direct link to the expanded sleep resource.
+- Expanded circadian guide: light timing, routine, shift-work context and source-linked boundaries for treatment.
+- Product comparison worksheet: three options, 12–36-month ownership costs and unsaved evidence/privacy/fit notes.
+- Field Guides landing page: three clear starting paths and direct links to expanded sleep and circadian resources.
 - Product-panel contrast correction after launch, keeping the paper palette readable.
 
 ## Next working order

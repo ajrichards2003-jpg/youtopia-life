@@ -1,0 +1,161 @@
+[
+  {
+    "slug": "circulation-ageing-evidence",
+    "title": "The quiet infrastructure of a living body.",
+    "image": "assets/editorial/circulation-lab.webp",
+    "description": "The future of vascular ageing runs through a difficult distinction: changing blood flow is not the same as rebuilding tissue, preventing dementia or extending life.",
+    "path": "/articles/circulation-ageing-evidence.html",
+    "story": "assets/social/edition-complete/circulation-ageing-evidence-story.jpg",
+    "post": "assets/social/edition-complete/circulation-ageing-evidence-story.jpg"
+  },
+  {
+    "slug": "research-watch-gut-brain",
+    "title": "A conversation between two worlds.",
+    "image": "assets/research-watch/gut-brain.webp",
+    "description": "A new human study pairs microbial genetic potential with regional brain chemistry. The connection is intriguing; the causal story is still being built.",
+    "path": "/articles/research-watch-gut-brain.html",
+    "story": "assets/social/edition-complete/research-watch-gut-brain-story.jpg",
+    "post": "assets/social/edition-complete/research-watch-gut-brain-story.jpg"
+  },
+  {
+    "slug": "research-watch-living-brain",
+    "title": "A rare window into the living brain.",
+    "image": "assets/research-watch/living-brain.webp",
+    "description": "Small tissue samples collected during clinically indicated surgery offer a closer view of Alzheimer-related biology. Their greatest promise is a better question, rather than an immediate treatment.",
+    "path": "/articles/research-watch-living-brain.html",
+    "story": "assets/social/edition-complete/research-watch-living-brain-story.jpg",
+    "post": "assets/social/edition-complete/research-watch-living-brain-story.jpg",
+    "video": "assets/social/edition-complete/research-watch-living-brain-story.mp4"
+  },
+  {
+    "slug": "nmn-human-evidence",
+    "title": "NAD rises. What happens to the person?",
+    "image": "assets/guide-supplements.jpg",
+    "description": "NMN has moved from animal experiments into human trials. The difficult question is whether a busier biochemical pathway becomes a healthier life.",
+    "path": "/articles/nmn-human-evidence.html",
+    "story": "assets/social/edition-complete/nmn-human-evidence-story.jpg",
+    "post": "assets/social/edition-complete/nmn-human-evidence-story.jpg"
+  },
+  {
+    "slug": "nattokinase-evidence",
+    "title": "The clot claim: nattokinase under the microscope",
+    "image": "assets/editorial/natto.webp",
+    "description": "An enzyme from fermented soy has genuine biological activity. Whether a capsule prevents heart attacks is a much harder question.",
+    "path": "/articles/nattokinase-evidence.html",
+    "story": "assets/social/edition-complete/nattokinase-evidence-story.jpg",
+    "post": "assets/social/edition-complete/nattokinase-evidence-story.jpg"
+  },
+  {
+    "slug": "red-light-evidence",
+    "title": "Beyond the glow: what red light can actually do",
+    "image": "assets/red-light-hero-edge.webp",
+    "description": "Photobiomodulation has credible clinical applications. The challenge is matching the right light, dose and outcome to the claims on a consumer device.",
+    "path": "/articles/red-light-evidence.html",
+    "story": "assets/social/edition-complete/red-light-evidence-story.jpg",
+    "post": "assets/social/edition-complete/red-light-evidence-story.jpg"
+  },
+  {
+    "slug": "sleep-biological-ageing",
+    "title": "What the night leaves behind.",
+    "image": "assets/guide-sleep.jpg",
+    "description": "A new map connects sleep with biological ageing. Its most useful lesson is how carefully we must move from a population curve to a human life.",
+    "path": "/articles/sleep-biological-ageing.html",
+    "story": "assets/social/edition-complete/sleep-biological-ageing-story.jpg",
+    "post": "assets/social/edition-complete/sleep-biological-ageing-story.jpg",
+    "video": "assets/social/edition-complete/sleep-biological-ageing-story.mp4"
+  },
+  {
+    "slug": "research-watch-epigenetic-clocks",
+    "title": "The clock is moving. What does it mean?",
+    "image": "assets/research-watch/epigenetic-clocks.webp",
+    "description": "Biological-age tests are learning to detect change. The harder question is whether a younger result tells us anything dependable about a healthier future.",
+    "path": "/articles/research-watch-epigenetic-clocks.html",
+    "story": "assets/social/edition-complete/research-watch-epigenetic-clocks-story.jpg",
+    "post": "assets/social/edition-complete/research-watch-epigenetic-clocks-story.jpg",
+    "video": "assets/social/edition-complete/research-watch-epigenetic-clocks-story.mp4"
+  },
+  {
+    "slug": "research-watch-protein-clocks",
+    "title": "Reading biological time in a vial of blood.",
+    "image": "assets/research-watch/protein-clocks.webp",
+    "description": "An experimental lung-disease trial has become a test bed for ageing measurements. The opportunity is substantial, provided we keep the disease, the drug and the clock distinct.",
+    "path": "/articles/research-watch-protein-clocks.html",
+    "story": "assets/social/edition-complete/research-watch-protein-clocks-story.jpg",
+    "post": "assets/social/edition-complete/research-watch-protein-clocks-story.jpg",
+    "video": "assets/social/edition-complete/research-watch-protein-clocks-story.mp4"
+  },
+  {
+    "slug": "spirulina-chlorella-evidence",
+    "title": "Small organisms. A much bigger nutrition story.",
+    "image": "assets/editorial/algae-nutrition.webp",
+    "description": "Inside the vivid world of algae: real nutrients, intriguing trials, and the distance between a remarkable organism and a remarkable health claim.",
+    "path": "/articles/spirulina-chlorella-evidence.html",
+    "story": "assets/social/edition-complete/spirulina-chlorella-evidence-story.jpg",
+    "post": "assets/social/edition-complete/spirulina-chlorella-evidence-story.jpg"
+  },
+  {
+    "slug": "akkermansia-gut-evidence",
+    "title": "One microbe. An entire ecosystem.",
+    "image": "assets/research-watch/gut-brain.webp",
+    "description": "Akkermansia has moved from intriguing correlations into human trials. The most compelling findings are specific, and the details matter as much as the bacterial name.",
+    "path": "/articles/akkermansia-gut-evidence.html",
+    "story": "assets/social/edition-complete/akkermansia-gut-evidence-story.jpg",
+    "post": "assets/social/edition-complete/akkermansia-gut-evidence-story.jpg"
+  },
+  {
+    "slug": "analemma-overview",
+    "title": "Water, wonder and the experiment in between.",
+    "image": "assets/editorial/water-quartz.webp",
+    "description": "A quartz wand, a proposed change in water and two small human studies. We follow the evidence from the glass to the claim\u2014and ask which experiment would settle the important questions.",
+    "path": "/articles/analemma-overview.html",
+    "story": "assets/social/edition-complete/analemma-overview-story.jpg",
+    "post": "assets/social/edition-complete/analemma-overview-story.jpg"
+  },
+  {
+    "slug": "leela-quantum-overview",
+    "title": "An extraordinary claim needs an ordinary, repeatable test.",
+    "image": "assets/editorial/optical-prisms.webp",
+    "description": "Leela has laboratory reports and small human experiments. We examine what they measured, what the findings leave unresolved and why a striking percentage is only the beginning of the story.",
+    "path": "/articles/leela-quantum-overview.html",
+    "story": "assets/social/edition-complete/leela-quantum-overview-story.jpg",
+    "post": "assets/social/edition-complete/leela-quantum-overview-story.jpg"
+  },
+  {
+    "slug": "auro-glutaryl-evidence",
+    "title": "The skin barrier. The delivery question. The bigger claim.",
+    "image": "assets/editorial/topical-delivery.webp",
+    "description": "A topical glutathione spray has an early human study behind it. What crossed into the evidence\u2014and what still separates a changing laboratory marker from a meaningful health benefit?",
+    "path": "/articles/auro-glutaryl-evidence.html",
+    "story": "assets/social/edition-complete/auro-glutaryl-evidence-story.jpg",
+    "post": "assets/social/edition-complete/auro-glutaryl-evidence-story.jpg"
+  },
+  {
+    "slug": "creatine-body-brain",
+    "title": "Beyond the gym. Into a more difficult question.",
+    "image": "assets/nutrition/training-campaign.webp",
+    "description": "Creatine has earned its place in strength training. Its second act, in brain research, asks us to distinguish an established tool from an intriguing possibility.",
+    "path": "/articles/creatine-body-brain.html",
+    "story": "assets/social/edition-complete/creatine-body-brain-story.jpg",
+    "post": "assets/social/edition-complete/creatine-body-brain-story.jpg",
+    "video": "assets/social/edition-complete/creatine-body-brain-story.mp4"
+  },
+  {
+    "slug": "memory-clarity-evidence",
+    "title": "When a familiar word feels further away.",
+    "image": "assets/guide-meditation.jpg",
+    "description": "Memory worries deserve both ambition and care: a look at what clinical assessment, major lifestyle trials and emerging research can actually offer.",
+    "path": "/articles/memory-clarity-evidence.html",
+    "story": "assets/social/edition-complete/memory-clarity-evidence-story.jpg",
+    "post": "assets/social/edition-complete/memory-clarity-evidence-story.jpg"
+  },
+  {
+    "slug": "night-light",
+    "title": "Give the night its darkness.",
+    "image": "assets/guide-circadian.jpg",
+    "description": "Light is a timing signal. Explore the evidence behind morning light, evening routines and a more consistent body clock.",
+    "path": "/guides/circadian-rhythm.html",
+    "story": "assets/social/edition-complete/night-light-story.jpg",
+    "post": "assets/social/edition-complete/night-light-story.jpg",
+    "video": "assets/social/edition-complete/night-light-story.mp4"
+  }
+]

@@ -34,3 +34,35 @@
 .is-home #top .intro-copy h1,.is-home #top .intro-copy h2{font-size:clamp(40px,10vw,58px)!important}
 }
 @media(max-width:380px){.is-home .navin{gap:10px}.is-home .category-label select{max-width:115px}}
+
+/* Compact single-row header in the site's own deep green. */
+.premium-masthead{background:#07110f;border:0;padding:0}
+.is-home .premium-masthead{position:absolute;top:0;left:max(24px,calc((100% - 1132px)/2));height:56px;display:flex;align-items:center;z-index:10000}
+.premium-title{color:#f5f2e9!important}
+.premium-title span{font-size:28px;letter-spacing:.075em}
+.premium-title small{font-size:8px;margin-left:7px;letter-spacing:.2em}
+.is-home .nav{background:#07110f!important;border-bottom:1px solid #294139;color:#f5f2e9}
+.is-home .navin{height:56px;min-height:56px;padding-top:0;padding-bottom:0;padding-left:270px;gap:22px;justify-content:flex-end;flex-wrap:nowrap}
+.is-home .nav .category-label,.is-home .navin>label,.is-home .nav .site-options>summary,.is-home .nav .nav-shop,.is-home .nav .pill,.is-home .nav a,.is-home .nav select{color:#e7eee9!important}
+.is-home .nav .category-label select{font-size:11px}
+.is-home .nav .site-options .options-panel{background:#0e1c19;color:#f5f2e9;border-color:#294139}
+.is-home .nav .ambient-label{color:#e7eee9}
+.is-home .nav .options-panel button,.is-home .nav .options-panel a{color:#e7eee9!important}
+body:not(.is-home) .premium-masthead{padding:15px 24px}
+@media(max-width:700px){
+.is-home .premium-masthead{left:16px;height:48px}
+.premium-title span{font-size:21px;letter-spacing:.045em}
+.premium-title small{font-size:6px;margin-left:4px;letter-spacing:.12em}
+.is-home .navin{height:48px;min-height:48px;padding:0 12px 0 170px;gap:12px}
+.is-home .nav .nav-shop{display:none}
+.is-home .category-label select{max-width:94px;font-size:10px;padding:5px 0}
+.is-home .navin>.pill{font-size:0;padding:6px 0}
+.is-home .navin>.pill:after{content:"Ask";font-size:10px}
+.is-home .nav .site-options>summary{font-size:10px;padding:6px 0}
+}
+@media(max-width:380px){
+.is-home .premium-masthead{left:12px}
+.premium-title span{font-size:18px}
+.is-home .navin{padding-left:145px;gap:10px}
+.is-home .category-label select{max-width:86px}
+}

@@ -37,7 +37,7 @@
         anchor.setAttribute('href', url.href);
       }
     }
-    for (const form of document.querySelectorAll('form[data-netlify]')) {
+    for (const form of document.querySelectorAll('form[name="youtopia-weekly"], form[name="youtopia-contact"], form[name="first-collection-interest"], form[name="merch-interest"], form[name="wallpaper-signup"], form[name="youtopia-signup"]')) {
       for (const key of keys) {
         let input = form.elements.namedItem(key);
         if (!input && campaign[key]) {

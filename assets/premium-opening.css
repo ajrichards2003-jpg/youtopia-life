@@ -4,3 +4,33 @@
 .is-home .nav .category-label,.is-home .navin>label,.is-home .nav .site-options>summary{color:#203c30!important}.is-home .nav .site-options .options-panel{background:#f6f5ef;color:#203c30}.is-home .nav .ambient-label{color:#203c30}.is-home .quick-paths h2{color:#edf4ed!important}.is-home .quick-paths .brief-link{color:#e1f2e7!important}
 
 .premium-title{text-decoration:none!important}.newsletter-layout input{box-sizing:border-box}
+
+/* Slim white editorial masthead — review revision. */
+.premium-masthead{background:#fff;padding:16px 24px 14px;border-bottom:1px solid #e5e9e6}
+.premium-kicker,.premium-motto,.premium-title img{display:none}
+.premium-title{margin:0;gap:0}
+.premium-title span{font-size:42px;line-height:1;letter-spacing:.09em}
+.premium-title small{display:inline-block;font-size:10px;letter-spacing:.27em;margin:0 0 0 10px;vertical-align:middle}
+.is-home .nav{background:#fff!important;border-bottom:1px solid #dce5df;backdrop-filter:none}
+.is-home .navin{min-height:42px;padding-top:4px;padding-bottom:4px;gap:26px}
+.is-home .nav .nav-shop,.is-home .nav .pill,.is-home .nav .site-options>summary{font-size:11px;border:0;background:none;box-shadow:none;padding:7px 5px;border-radius:0;color:#17382c}
+.is-home .navin>label[for=language-nav]{display:none!important}
+.is-home .navin>.category-label{margin-left:0}
+.is-home .category-label{font-size:0}
+.is-home .category-label select{font-size:11px;max-width:170px}
+.is-home .navin>.pill{margin-left:0}
+.is-home .site-options{margin-left:0}
+.is-home #top .intro-copy h1,.is-home #top .intro-copy h2{font-size:clamp(46px,5.8vw,78px)!important}
+.is-home .nav .options-panel{border:1px solid #dce5df}
+@media(max-width:700px){
+.premium-masthead{padding:14px 16px 12px}
+.premium-title span{font-size:32px;letter-spacing:.07em}
+.premium-title small{font-size:8px;margin-left:7px;letter-spacing:.2em}
+.is-home .navin{min-height:39px;gap:18px;padding:3px 12px;flex-wrap:nowrap}
+.is-home .navin>.site-options{display:block}
+.is-home .navin>.pill{display:inline-block}
+.is-home .category-label select{max-width:135px;font-size:10px}
+.is-home .nav .nav-shop,.is-home .nav .pill,.is-home .nav .site-options>summary{font-size:10px;padding:6px 2px;white-space:nowrap}
+.is-home #top .intro-copy h1,.is-home #top .intro-copy h2{font-size:clamp(40px,10vw,58px)!important}
+}
+@media(max-width:380px){.is-home .navin{gap:10px}.is-home .category-label select{max-width:115px}}

@@ -66,3 +66,16 @@ body:not(.is-home) .premium-masthead{padding:15px 24px}
 .is-home .navin{padding-left:145px;gap:10px}
 .is-home .category-label select{max-width:86px}
 }
+
+/* Editorial destinations balance the wordmark without adding height. */
+@media(min-width:1100px){
+.is-home .navin{gap:18px}
+.is-home .nav .links{display:flex!important;order:0;gap:19px;margin-left:0;margin-right:auto;align-items:center;white-space:nowrap}
+.is-home .nav .links a{font-size:11px;letter-spacing:.025em;color:#e7eee9!important}
+.is-home .nav .links a:hover{color:#63e6c1!important}
+.is-home .navin>.category-label{order:1}
+.is-home .navin>.nav-shop{order:2}
+.is-home .navin>.pill{order:3}
+.is-home .navin>.site-options{order:4}
+.is-home .nav .category-label select{max-width:126px}
+}

@@ -79,3 +79,5 @@ body:not(.is-home) .premium-masthead{padding:15px 24px}
 .is-home .navin>.site-options{order:4}
 .is-home .nav .category-label select{max-width:126px}
 }
+
+@media(min-width:1100px){.is-home .nav .navin{flex-wrap:nowrap!important;height:56px!important;min-height:56px!important}.is-home .nav .navin .links{flex:0 1 auto!important;flex-basis:auto!important;width:auto!important;flex-wrap:nowrap!important;margin-left:0!important;margin-right:auto!important;gap:18px!important}.is-home .nav .navin .links a{padding:0!important}.is-home .nav .category-label{flex:none!important}}

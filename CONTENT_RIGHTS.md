@@ -68,3 +68,8 @@ New field-guide images verified on individual free Unsplash photo pages (not Uns
 
 ## iHerb introduction preview
 Uses existing AI-generated algae/laboratory illustrations and the already documented licensed guide photographs: Andrew Valdivia (Unsplash photo-1591202585597-839c6965c443) and Ahmed Nishaath (Unsplash photo-1761957883290-c37d9ce7c5d2). Credits appear on each slide. These are illustrative editorial scenes, not branded product images or endorsements. No new supplier packshots copied.
+
+## Operational asset register (20 October 2026)
+
+Use [ASSET_PROVENANCE_REGISTER.md](ASSET_PROVENANCE_REGISTER.md) as the per-asset release gate for locally hosted films, audio, generated artwork, supplier media and merchandise print files. A repository file, previous preview or general platform licence is not evidence that a specific asset is cleared for every channel. Missing evidence remains **Pending**.
+

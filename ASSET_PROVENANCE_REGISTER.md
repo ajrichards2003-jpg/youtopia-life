@@ -1,6 +1,6 @@
 # Asset provenance register
 
-Reviewed 20 October 2026. This is an operational release-control record, not legal advice.
+Reviewed 23 October 2026. This is an operational release-control record, not legal advice.
 
 Use this register for every locally hosted film, audio track, generated visual, supplier asset and merchandise print file. An asset is not production-ready merely because it exists in the repository or appeared in a previous preview.
 
@@ -15,7 +15,7 @@ Use this register for every locally hosted film, audio track, generated visual, 
 
 | Asset group | Current status | Required evidence | Release rule |
 | --- | --- | --- | --- |
-| Locally hosted Youtopia films | Pending | Original footage source, editor/project file, music source, model/property releases where applicable | Do not schedule, advertise or repurpose until each film has an individual record |
+| Locally hosted Youtopia films | Mixed — see individual records | Original footage or image source, render/project file, music source and releases where applicable | Only the exact channels recorded below are cleared; every other film remains Pending |
 | Locally hosted audio, including legacy generated ambient tracks | Pending | Generator/service account or composer, creation date, applicable terms or licence receipt, original export | Do not use in production until rights and permitted commercial scope are recorded |
 | Generated campaign artwork | Pending | Generating tool/account, prompt or project record, original export, identity/brand review | Preview only until resemblance, logo, person and commercial-use checks pass |
 | Ring AIR and other supplier media | Pending supplier scope | Written supplier permission or programme terms covering website, organic social and paid use separately | Links and original Youtopia editorial explanation may proceed; supplier media cannot be assumed reusable |
@@ -30,7 +30,9 @@ Add one row before approving any local or third-party asset.
 
 | File or URL | Asset type | Source/creator | Created/acquired | Licence or permission | Permitted channels | Restrictions/expiry | Evidence location | Reviewer/date | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| _Example only — replace with the real asset_ | Film |  |  |  | Website / organic social / paid / merchandise |  |  |  | Pending |
+| `assets/social/journal-launch/sleep-reel.mp4` | 21-second silent vertical editorial Reel | Youtopia render from `assets/guide-sleep.jpg`; source photo Ahmed Nishaath, Unsplash ID `photo-1761957883290-c37d9ce7c5d2` | Render committed 17 October 2026 | Unsplash free licence recorded in `CONTENT_RIGHTS.md`; original Youtopia typography/render; no audio | Website preview, organic social and Story cut | Editorial sleep context only; no paid advertising, merchandise, endorsement implication or music addition without a new review | `tools/build_journal_growth.py`; commit `0758bb0`; `CONTENT_RIGHTS.md` | Automated evidence review / 23 October 2026 | Editorial only — still requires final visual/brand approval before scheduling |
+| `assets/social/journal-launch/creatine-reel.mp4` | 21-second silent vertical editorial Reel | Youtopia render from `assets/nutrition/training-campaign.webp` | Render committed 17 October 2026 | Render script and silent export verified; original generation/account evidence for source image not recorded | Preview only | Do not schedule, advertise or repurpose until the source image's generation record and commercial-use scope are preserved | `tools/build_journal_growth.py`; commit `0758bb0` | Automated evidence review / 23 October 2026 | Pending |
+| `assets/social/journal-launch/clocks-reel.mp4` | 21-second silent vertical editorial Reel | Youtopia render from `assets/research-watch/epigenetic-clocks.webp` | Render committed 17 October 2026 | Render script and silent export verified; original generation/account evidence for source image not recorded | Preview only | Do not schedule, advertise or repurpose until the source image's generation record and commercial-use scope are preserved | `tools/build_journal_growth.py`; commit `0758bb0` | Automated evidence review / 23 October 2026 | Pending |
 
 ## Mandatory checks
 

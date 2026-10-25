@@ -97,3 +97,8 @@ Website connected confirmed by owner screenshot; Adam reports application comple
 - Homepage product carousel, shop, wearables cross-link and /products/sinocare/ added.
 - Destination tested by Adam: https://en.sinocare.com; redirect carries AWIN click parameters. Sale attribution not independently confirmed.
 - Current prices/promotions remain supplier-controlled. Product-specific TGA status, Australian fulfilment, validation and hands-on review remain unverified.
+
+## APE BORN Fitness — joined 25 October 2026
+- AWIN advertiser 59683; publisher 3106417. Joined status evidenced by Adam’s screenshot; commission/cookie terms pending.
+- Partner introduction /products/ape-born/, homepage, shop and wearables entries prepared.
+- No independent hands-on testing, model-specific clearance or Australian regulatory/fulfilment confirmation. Performance claims not adopted. Optional membership terms require checking.

@@ -6,3 +6,22 @@
 @media print{.masthead,.edition-bar,.article-aside,.related,.film,.site-footer{display:none}.article-layout{display:block;max-width:none}.article-header{padding-top:0}body{background:white;color:black}.hero-figure img{max-height:300px}a{color:inherit}.article-content h2{break-after:avoid}p{orphans:3;widows:3}}
 
 .article-breadcrumb{font: .78rem/1.5 system-ui,sans-serif;letter-spacing:0;margin-bottom:1.5rem;color:var(--muted,#626964)}.article-breadcrumb a{color:inherit;text-decoration:underline}
+
+/* Dark editorial edition: sculpted photography and a quiet reading canvas. */
+:root{--paper:#070d0c;--ink:#edf5f0;--muted:#b5c8bd;--mint:#7ce7bf;--line:#2a4035;--accent:#7ce7bf;color-scheme:dark}
+body{background:#070d0c;color:#edf5f0}
+:is(.masthead,.related,.site-footer,.reader-invitation){background:#0b1712!important;color:#edf5f0!important;border-color:#2a4035!important}
+:is(.snapshot,.callout,.box){background:#10241a!important;color:#d9eadd!important;border-color:#6bcfa8!important}
+.evidence-label{background:#183b29;color:#b3f1d2}
+.article-content th{background:#193126;color:#e8f5ed}
+.article-content td{color:#cedfd4}.article-aside{border-color:#7ce7bf}
+.hero-figure:not(.poster) img{border-radius:38% 38% 2% 14% / 24% 24% 2% 14%;box-shadow:0 25px 65px #0005;background:#10231c}
+.hero-figure.poster img{border-radius:0;object-fit:contain}
+.catalogue-card,.related-card{border-color:#304d3c}
+.catalogue-card img,.related-card img{border-radius:42% 42% 2px 2px / 28% 28% 2px 2px}
+.catalogue-card:nth-child(3n+2) img{border-radius:6% 44% 6% 44%}
+.catalogue-card h2,.related-card h3{color:#edf5f0}
+.pullquote{color:#c1f0d9;border-color:#355e46}
+a:focus-visible,button:focus-visible{outline-color:#7ce7bf}
+@media(min-width:1000px){.catalogue-card:nth-child(3n+2){margin-top:65px}.catalogue-grid{align-items:start}.hero-figure:not(.poster){max-width:1260px;margin-top:15px;margin-bottom:75px}}
+@media(max-width:680px){.hero-figure:not(.poster){padding:0 20px}.hero-figure:not(.poster) img{border-radius:40% 40% 3% 12% / 25% 25% 3% 12%}.catalogue-grid{gap:30px 20px}}

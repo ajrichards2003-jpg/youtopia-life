@@ -133,3 +133,11 @@ body.site-standard.is-home .section .btn{color:#92efcc!important;border-color:#5
 body.site-standard.is-home .section .btn.primary{color:#062015!important;background:#7ce7bf!important}
 body.site-standard.is-home .section .nutrition-intro :is(h2,p,.eyebrow){color:#f2f8f4!important}
 body.site-standard.is-home .section img.card-topic-photo{border-radius:38% 38% 2% 12% / 26% 26% 2% 12%!important}
+
+/* Homepage uses clean rectangular thumbnails; sculpted images stay inside editorial pages. */
+body.site-standard.is-home .section img,
+body.site-standard.is-home .section img.card-topic-photo,
+body.site-standard.is-home .section :is(.discovery-photo,.mind-photo,.pick-photo,.partner-photo img,.site-feature img){
+border-radius:0!important;box-shadow:none!important
+}
+body.site-standard.is-home .grid:not(.minds-grid)>.card:nth-child(3n+2){transform:none!important}

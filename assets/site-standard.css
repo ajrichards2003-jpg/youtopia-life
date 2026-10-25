@@ -123,3 +123,13 @@ body.site-standard .reader-invitation{background:linear-gradient(120deg,#0d231a,
 body.site-standard .premium-title small{color:#7ce7bf!important}
 @media(min-width:900px){body.site-standard:not(.is-interactive) .grid:not(.minds-grid)>.card:nth-child(3n+2){transform:translateY(20px)}body.site-standard:not(.is-interactive) .grid:not(.minds-grid){padding-bottom:25px}}
 @media(prefers-reduced-motion:reduce){body.site-standard .card{transition:none!important}}
+
+/* Resolve earlier section-specific paper-palette selectors. */
+body.site-standard.is-home .section :is(h1,h2,h3,.card h2,.card h3,.mind h3){color:#f0f6f2!important}
+body.site-standard.is-home .section :is(p,li,.intro,.lede,.fine,.small,.card p){color:#b5c8bd!important}
+body.site-standard.is-home .section :is(.eyebrow,.tag,.go,.mind .go,.resources a){color:#7ce7bf!important}
+body.site-standard.is-home .section .card{background:transparent!important;color:#edf5f0!important;border-color:#2a4035!important}
+body.site-standard.is-home .section .btn{color:#92efcc!important;border-color:#51896f!important}
+body.site-standard.is-home .section .btn.primary{color:#062015!important;background:#7ce7bf!important}
+body.site-standard.is-home .section .nutrition-intro :is(h2,p,.eyebrow){color:#f2f8f4!important}
+body.site-standard.is-home .section img.card-topic-photo{border-radius:38% 38% 2% 12% / 26% 26% 2% 12%!important}

@@ -90,3 +90,10 @@ Prioritised by Adam after Ultrahuman. Official AU page points to Awin ROW advert
 
 ## iHerb Impact update — 3 October 2026
 Website connected confirmed by owner screenshot; Adam reports application complete. Approval and assigned contract terms not yet observed. Public default 5% is a planning assumption, not account confirmation. New 20-product editorial shortlist spans nine themes; ordinary supplier links only until account-issued links are verified. Keep Ultrahuman featured and iHerb in preview until owner reviews.
+
+
+## Sinocare — approved 25 October 2026
+- AWIN advertiser 114180; publisher 3106417. Welcome email: 8% base CPA, 30-day cookie; volume tiers available (thresholds unconfirmed).
+- Homepage product carousel, shop, wearables cross-link and /products/sinocare/ added.
+- Destination tested by Adam: https://en.sinocare.com; redirect carries AWIN click parameters. Sale attribution not independently confirmed.
+- Current prices/promotions remain supplier-controlled. Product-specific TGA status, Australian fulfilment, validation and hands-on review remain unverified.

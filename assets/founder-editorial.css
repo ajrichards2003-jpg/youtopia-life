@@ -1,0 +1,35 @@
+/* Isolated founder feature restoration, 26 Oct 2026. */
+.founder-editorial {
+  background: #081512;
+  border-block: 1px solid rgba(154, 245, 209, .18);
+}
+.founder-spread {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+  gap: clamp(30px, 6vw, 80px);
+  align-items: center;
+}
+.founder-spread figure { margin: 0; }
+.founder-spread img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.founder-spread figcaption {
+  margin-top: 12px;
+  color: #9baba4;
+  font-size: .78rem;
+  line-height: 1.5;
+}
+.founder-spread h2 {
+  font-size: clamp(2.5rem, 6vw, 5.4rem);
+  line-height: .96;
+  margin: 12px 0 24px;
+}
+.founder-spread p { color: #c8d4ce; max-width: 560px; }
+.founder-spread .btn { margin-top: 10px; }
+.founder-spread .fine { font-size: .8rem; color: #8fa29a; margin-top: 18px; }
+@media (max-width: 800px) {
+  .founder-spread { grid-template-columns: 1fr; }
+}

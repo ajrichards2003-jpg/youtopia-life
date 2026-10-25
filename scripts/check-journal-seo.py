@@ -37,5 +37,5 @@ for p in sorted((ROOT/'articles').glob('*.html')):
  assert 1500<=article['wordCount']<=3000 and bread['itemListElement'][-1]['item']==url
  assert any(x['from']=='/articles/'+p.stem and x['to']=='/articles/'+p.name and x['status']==301 for x in redirects)
  titles.append(d.title)
-assert len(titles)==18 and len(set(titles))==18
-print('PASS: 18 unique search titles; canonical URLs, sitemap, redirects, visible attribution, citations and schema agree')
+assert len(titles)==20 and len(set(titles))==20
+print('PASS: 20 unique search titles; canonical URLs, sitemap, redirects, visible attribution, citations and schema agree')

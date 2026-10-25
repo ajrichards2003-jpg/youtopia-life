@@ -95,3 +95,41 @@
 /* Keep product editorial panels legible on the paper palette. */
 .site-standard:not(.is-home):not(.is-interactive) .feature,.site-standard:not(.is-home):not(.is-interactive) .feature .copy{background:#fffefa;color:#15211e;border-color:#ccd3cb}
 .site-standard.is-editorial .brand-word{color:#15211e}
+
+/* Approved dark editorial direction — shared across Youtopia destinations. */
+body.site-standard{--bg:#070d0c;--panel:#0d1915;--panel2:#102019;--ink:#f0f6f2;--muted:#b5c8bd;--a:#7ce7bf;--mint:#7ce7bf;--gold:#a7eacc;--line:#2a4035;background:#070d0c!important;color:#f0f6f2!important;color-scheme:dark}
+body.site-standard :is(main,.section,.section:nth-of-type(even),.site-local-nav,.site-edition,.site-masthead,.premium-masthead,.footer,.section-signoff,.hosting-credit){background:#070d0c!important;color:#f0f6f2!important;border-color:#2a4035!important;--ink:#f0f6f2;--muted:#b5c8bd;--a:#7ce7bf;--line:#2a4035;--panel:#0d1915;--panel2:#102019}
+body.site-standard :is(h1,h2,h3,.card h2,.step h2,.card h3,.brand-word,.site-wordmark,.site-global-links a,.site-local-nav a){color:#f0f6f2!important}
+body.site-standard :is(p,li,.intro,.lede,.muted,.fine,.small,.credit,figcaption,.card p,.step p,.recipe p){color:#b5c8bd!important}
+body.site-standard :is(.eyebrow,.tag,.go,.site-wordmark span,.section-signoff a,.hosting-credit a){color:#7ce7bf!important}
+body.site-standard:not(.is-interactive) :is(.card,.step,.recipe,.feature,.feature .copy){background:transparent!important;color:#f0f6f2!important;border-color:#2a4035!important;box-shadow:none}
+body.site-standard:not(.is-interactive) :is(.callout,.note,.notice,.snapshot,.signup,form,.newsletter-layout .signup,.reader-invitation){background:#102019!important;color:#e7f3ec!important;border-color:#345947!important}
+body.site-standard:not(.is-interactive) :is(input:not([type=checkbox]):not([type=radio]):not([type=hidden]),select,textarea){background:#0b1712!important;color:#edf6f0!important;border-color:#436250!important}
+body.site-standard:not(.is-interactive) :is(table,td){background:#0d1915!important;color:#d9e9df!important;border-color:#2a4035!important}
+body.site-standard:not(.is-interactive) th{background:#193126!important;color:#ecf8ef!important}
+body.site-standard :is(summary,.sources a,.resources a,.footer a,.reader-invitation a){color:#7ce7bf!important}
+body.site-standard:not(.is-interactive) :is(.btn,.button,.button-link){border-radius:100px!important;border-color:#51896f!important;background:#0b1913!important;color:#92efcc!important}
+body.site-standard:not(.is-interactive) :is(.btn.primary,button[type=submit]){background:#7ce7bf!important;color:#062015!important;border-color:#7ce7bf!important}
+body.site-standard .status{background:#173e2a!important;color:#a0f3cb!important}
+body.site-standard .rail-arrow{background:#10291c!important;border-color:#446c54!important;color:#9feac9!important}
+body.site-standard .rail-progress{background:#223d2e!important}body.site-standard .rail-progress span{background:#7ce7bf!important}
+body.site-standard .partner-benefits span{color:#b0e8ce!important;border-color:#436250!important}
+body.site-standard :is(a,button,input,select,textarea):focus-visible{outline-color:#8aefca!important}
+body.site-standard:not(.is-interactive) :is(.guide-editorial img,.hero-image,.site-feature img,.partner-photo img){border-radius:44% 44% 4% 18% / 30% 30% 4% 18%!important;box-shadow:0 25px 55px #0004}
+body.site-standard:not(.is-interactive) :is(.discovery-photo,.mind-photo,.pick-photo){border-radius:38% 38% 2px 2px / 25% 25% 2px 2px!important}
+body.site-standard:not(.is-interactive) .card{border-width:0 0 1px!important;border-radius:0!important;overflow:hidden}
+body.site-standard:not(.is-interactive) .card:hover{box-shadow:none!important}
+body.site-standard .reader-invitation{background:linear-gradient(120deg,#0d231a,#0a1510)!important}
+body.site-standard .premium-title small{color:#7ce7bf!important}
+@media(min-width:900px){body.site-standard:not(.is-interactive) .grid:not(.minds-grid)>.card:nth-child(3n+2){transform:translateY(20px)}body.site-standard:not(.is-interactive) .grid:not(.minds-grid){padding-bottom:25px}}
+@media(prefers-reduced-motion:reduce){body.site-standard .card{transition:none!important}}
+
+/* Resolve earlier section-specific paper-palette selectors. */
+body.site-standard.is-home .section :is(h1,h2,h3,.card h2,.card h3,.mind h3){color:#f0f6f2!important}
+body.site-standard.is-home .section :is(p,li,.intro,.lede,.fine,.small,.card p){color:#b5c8bd!important}
+body.site-standard.is-home .section :is(.eyebrow,.tag,.go,.mind .go,.resources a){color:#7ce7bf!important}
+body.site-standard.is-home .section .card{background:transparent!important;color:#edf5f0!important;border-color:#2a4035!important}
+body.site-standard.is-home .section .btn{color:#92efcc!important;border-color:#51896f!important}
+body.site-standard.is-home .section .btn.primary{color:#062015!important;background:#7ce7bf!important}
+body.site-standard.is-home .section .nutrition-intro :is(h2,p,.eyebrow){color:#f2f8f4!important}
+body.site-standard.is-home .section img.card-topic-photo{border-radius:38% 38% 2% 12% / 26% 26% 2% 12%!important}

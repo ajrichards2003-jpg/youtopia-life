@@ -152,3 +152,15 @@
   to = "/peptides/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/articles/sinocare-home-monitoring"
+  to = "/articles/sinocare-home-monitoring.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/ape-born-muscle-stimulation"
+  to = "/articles/ape-born-muscle-stimulation.html"
+  status = 301
+  force = true

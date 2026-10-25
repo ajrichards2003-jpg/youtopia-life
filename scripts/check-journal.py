@@ -46,6 +46,6 @@ for path in sorted((ROOT/'articles').glob('*.html')):
             assert dest.exists() or dest.with_suffix('.html').exists(),(path.name,ref)
         if not u.path and u.fragment:assert u.fragment in f.ids,(path.name,ref)
     counts.append((path.stem,count))
-assert len(counts)==18,('Expected 18 feature articles',len(counts))
-print('PASS: 18 features; story words',min(n for _,n in counts),'to',max(n for _,n in counts),'; headings, sources, IDs and local links valid')
+assert len(counts)==20,('Expected 20 feature articles',len(counts))
+print('PASS: 20 features; story words',min(n for _,n in counts),'to',max(n for _,n in counts),'; headings, sources, IDs and local links valid')
 for slug,count in counts:print(f'{count:4d} {slug}')

@@ -75,3 +75,47 @@ Do not send emails, post social content, contact partners on Adam’s behalf, sp
 Include `SUMMARY.md`, completed CSVs, `screenshots/`, `asset-review-copies/`, approval evidence where appropriate, and `video-drafts/`. List missing masters as missing; don’t fill gaps with invented metadata. Link large original masters using Adam’s existing approved team storage and record access requirements.
 
 Aria will integrate verified fixes, check the returned assets and prepare the next preview. Adam approves production. Google redirect/header validation and Search Console follow-up happen after deployment; a code check cannot guarantee Google has recrawled a URL.
+
+## 27 October blocker resolution
+
+This section resolves the concrete production questions raised after the 26 October pack. It is evidence and direction for review work only; it does not authorise publishing.
+
+### Recovered assets and identity
+
+| Item | Exact saved source | Direction |
+|---|---|---|
+| Follow-and-explore reel | `/Youtopia Life.com/Youtopia-Life-Reel-Follow-And-Explore.mp4` | This is the missing reel. Use it as the reference asset; it is not proof of publication or approval for a new schedule. |
+| Canonical Aria set | `/Aria Visual Library/Aria_01_Contemplative.png`; `Aria_02_Performance.jpeg`; `Aria_03_Editorial.jpeg`; `ARIA_VISUAL_BIBLE.md` | These are the saved canonical references. No higher-resolution approved master was verified in the full asset inventory. Do not upscale, regenerate or silently replace Aria. Use only for review until Adam either accepts the available native file for its intended display size or supplies the true master. |
+| Primary full logo candidate | `/Youtopia Life Bronze Wing Logo.png` | Use as the primary approved logo source for the dark-background QA pass. Preserve proportions and verify transparency/edge quality before final export. |
+| Alternate lockup | `/Winged Youtopia Life logo lockup.png` | Use only if the primary cannot meet the layout; return both side by side for Adam’s final choice. |
+| Social calendar | `/Two-Week-Social-Review.md` | The 5–18 October test is complete. Do not extend the old four-post-per-page cadence without the overdue results review. |
+
+### Claims and voiceover corrections
+
+Apply these replacements in the next narrated cuts:
+
+| Do not use | Review-safe replacement |
+|---|---|
+| “a trainer, nutritionist and therapist in your pocket” | “a connected place to explore guidance, tools and everyday wellbeing” |
+| “your complete personal health centre” | “a growing wellbeing and discovery platform” |
+| “In 2027 it begins” | “The next chapter is taking shape” |
+| “live at your best and stay there” | “understand your patterns and make more informed choices” |
+| “in a fraction of the time” | “with less friction and clearer next steps” |
+
+Also enforce the evidence register: remove the invalid 20% Ultrahuman customer-discount claim; keep Ultrahuman at the verified Awin commercial terms only (7% commission, 45-day cookie, no verified customer discount). Use the corrected sleep DOI and the peer-reviewed red-light source already recorded. Do not use AFib, “medical-grade” or equivalent diagnostic/device claims without product-specific primary evidence and approval.
+
+### Music and rights gate
+
+All Mureka tracks supplied so far were made on a free account and are **not commercially cleared**. Adam wrote the original Tigers lyrics, but that does not clear the generated recording, composition treatment or platform output. Do not publish, schedule or deliver a commercial master containing those tracks. Remove dated “2026” references from any future lyric revision. Mixkit alternatives remain candidates only until the exact track page, licence terms, download date and intended channels are saved in the permissions register.
+
+### Launch-date and release priority
+
+A firm public 2027 launch date has not been approved in the current evidence. Use the evergreen replacement above. For the Thursday 29 October review, finish existing work in this order:
+
+1. PR 55 real-device mobile QA and partner-link/destination checks.
+2. Narrated film recuts using the safer lines and a rights-cleared music candidate.
+3. Aria/logo side-by-side review, with the missing higher-resolution master explicitly marked.
+4. Partner approval evidence and supplier-footage permissions.
+
+Defer new concepts until these gates are closed. PR 55 stays draft; no merge, production deploy, social scheduling, supplier outreach or spend is authorised by this update.
+

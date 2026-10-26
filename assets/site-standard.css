@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap');
+/* Shared editorial presentation. Product tools keep their own interaction geometry. */
+.site-standard{--bg:#f6f5ef;--panel:#fffefa;--panel2:#eef1e9;--ink:#15211e;--muted:#58665f;--a:#28694f;--mint:#28694f;--gold:#28694f;--line:#ccd3cb;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;line-height:1.8}
+.site-standard h1,.site-standard h2,.site-standard h3{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;letter-spacing:-.035em;text-transform:none}
+.site-standard h1{line-height:1.02;font-size:clamp(3.3rem,7.1vw,7.2rem)}
+.site-standard h2{line-height:1.13;font-size:clamp(2rem,3.8vw,3.3rem)}
+.site-standard h3{line-height:1.18;font-size:1.85rem}
+.site-standard a{color:var(--a);text-underline-offset:4px}
+.site-standard .eyebrow,.site-standard .tag{font:700 .68rem/1.6 'DM Sans',system-ui,sans-serif;letter-spacing:.17em;color:#28694f;text-transform:uppercase}
+.site-standard .lede,.site-standard .intro,.site-standard .muted{color:var(--muted);line-height:1.7}
+.site-standard .wrap{max-width:1200px}
+.site-standard:not(.is-home)>header,.site-standard:not(.is-home)>.wrap>header{background:transparent;border:0;padding-top:60px;padding-bottom:40px}
+.site-standard:not(.is-home) .hero{background:transparent}
+.site-standard:not(.is-home) main{padding-top:25px}
+.site-standard:not(.is-home) .reading{max-width:780px;margin-bottom:70px}
+.site-standard:not(.is-home) .reading>h2{margin-top:45px}
+.site-standard:not(.is-home):not(.is-interactive) p,.site-standard:not(.is-home):not(.is-interactive) li{color:#42524a}
+.site-standard:not(.is-interactive) .card,.site-standard:not(.is-interactive) .step,.site-standard:not(.is-interactive) .recipe{background:#fffefa;color:#15211e;border:1px solid #d2d9cf;border-radius:4px;box-shadow:none}
+.site-standard:not(.is-interactive) .card p,.site-standard:not(.is-interactive) .step p,.site-standard:not(.is-interactive) .recipe p{color:#4d5e54}
+.site-standard:not(.is-interactive) .card h2,.site-standard:not(.is-interactive) .step h2{font-size:1.85rem;color:#15211e}
+.site-standard:not(.is-interactive) .callout,.site-standard:not(.is-interactive) .note,.site-standard:not(.is-interactive) .notice,.site-standard:not(.is-interactive) .snapshot{background:#e5eee3;color:#263d2f;border:0;border-left:3px solid #367756;border-radius:0;padding:24px 28px}
+.site-standard .fine,.site-standard .small,.site-standard .credit,.site-standard figcaption{color:#617268;font-size:.78rem;line-height:1.65}
+.site-standard:not(.is-interactive) .btn,.site-standard:not(.is-interactive) .button,.site-standard:not(.is-interactive) .button-link{border:1px solid #8fa795;border-radius:2px;color:#1e4b35;background:transparent;padding:12px 19px;font:600 .84rem/1.5 'DM Sans',system-ui,sans-serif;text-decoration:none}
+.site-standard:not(.is-interactive) .btn.primary,.site-standard:not(.is-interactive) button[type=submit]{background:#b8ead6;color:#102b1d;border:1px solid #a0d3bc;border-radius:2px;padding:12px 22px;font-weight:700}
+.site-standard:not(.is-interactive) input:not([type=hidden]):not([type=checkbox]):not([type=radio]),.site-standard:not(.is-interactive) select,.site-standard:not(.is-interactive) textarea{background:#fffefa;color:#15211e;border-color:#a3b6a6;border-radius:3px;font-family:'DM Sans',system-ui,sans-serif}
+.site-standard:not(.is-interactive) form{background:#fffefa;color:#15211e;border-color:#ccd3cb;border-radius:4px}
+.site-standard:not(.is-interactive) table{border-collapse:collapse;background:#fffefa;color:#15211e}
+.site-standard:not(.is-interactive) th{background:#e3ebdf;color:#173523}
+.site-standard:not(.is-interactive) td{color:#3b5042;border-color:#ccd3cb}
+.site-standard:not(.is-interactive) details{border-color:#b7c7b8}
+.site-standard:not(.is-interactive) summary{color:#244a33}
+.site-standard .guide-editorial img,.site-standard .hero-image,.site-standard .hero img,.site-standard .feature img,.site-standard .partner-photo img{border-radius:3px}
+.site-standard .guide-editorial{margin:30px 0 0}
+.site-standard .guide-editorial img{height:clamp(250px,35vw,480px);object-fit:cover}
+.site-standard .sources{border-top:2px solid #15211e;padding-top:25px;margin-top:45px}
+.site-standard .sources a{overflow-wrap:anywhere}
+.site-standard .hosting-credit{background:#0a1712;color:#c5d4cb;border:0;border-radius:0;margin:0;padding:23px max(24px,calc((100vw - 1200px)/2));font-size:.7rem;max-width:none}
+.site-standard .hosting-credit a{color:#b8ead6}
+.site-standard .site-masthead{background:#0a1712;color:#f6f5ef;border-bottom:1px solid #33463c}
+.site-standard .site-masthead-inner{max-width:1440px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:22px 35px;gap:25px}
+.site-standard .site-wordmark{color:#f6f5ef;text-decoration:none;font:700 1rem/1.5 'DM Sans',system-ui,sans-serif;letter-spacing:.18em;white-space:nowrap}
+.site-standard .site-wordmark span{color:#b8ead6}
+.site-standard .site-global-links{display:flex;gap:23px;align-items:center;position:static;background:transparent;border:0;padding:0;margin:0;max-width:none;box-shadow:none}
+.site-standard .site-global-links a{color:#dce8df;text-decoration:none;font:500 .73rem/1.5 'DM Sans',system-ui,sans-serif;white-space:nowrap}
+.site-standard .site-local-nav{background:#ecf0e7!important;color:#253c2d!important;border-bottom:1px solid #d0d9cb!important;padding:11px 24px!important;position:static!important;font-size:.74rem!important}
+.site-standard .site-local-nav a,.site-standard .site-local-nav span{color:#34543e!important}
+.site-standard .site-edition{max-width:1200px;margin:auto;padding:12px 24px;border-bottom:1px solid #ccd3cb;display:flex;justify-content:space-between;gap:20px;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:#526559}
+.site-standard .site-feature{max-width:1200px;margin:20px auto 35px;padding:0 24px}
+.site-standard .site-feature img{width:100%;aspect-ratio:2.4/1;object-fit:cover;border-radius:2px}
+.site-standard .site-feature figcaption{margin-top:8px}
+.site-standard .section-signoff{border-top:1px solid #ccd3cb;padding:28px 24px;max-width:1200px;margin:45px auto 0;display:flex;justify-content:space-between;gap:20px;font-size:.78rem}
+.site-standard .section-signoff a{color:#28694f}
+.site-standard:not(.is-home):not(.is-interactive) footer{background:#e5eee3;color:#294131;border-color:#ccd3cb}
+.site-standard:not(.is-home):not(.is-interactive) footer a{color:#28694f}
+/* The cinematic opening remains immersive; the rest of the homepage shares the journal palette. */
+.is-home .nav{background:#0a1712ed;color:#f6f5ef;--ink:#f6f5ef;--muted:#d6e2d8;--a:#b8ead6;--line:#405146}
+.is-home .nav a,.is-home .nav label,.is-home .nav summary{color:#e6eee6}
+.is-home #top{--ink:#f5f2e9;--muted:#d6e2db;--a:#55dfb8;color:#f5f2e9}
+.is-home #top .intro-copy h1,.is-home #top .intro-copy h2{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.045em}
+.is-home #top .intro-copy p{color:#e2ebe6}
+.is-home #top .eyebrow{color:#55dfb8}
+.is-home #top .btn.primary{background:#55dfb8;color:#061b12;border-radius:8px}
+.is-home #top .intro-controls button{color:#eef5ee}
+.is-home .section{background:#f6f5ef!important;color:#15211e;--ink:#15211e;--muted:#58665f;--a:#28694f;--line:#ccd3cb;--panel:#fffefa;--panel2:#eef1e9;border-color:#ccd3cb}
+.is-home .section:nth-of-type(even){background:#eaf0e6!important}
+.is-home .section h2{font-size:clamp(2.4rem,5vw,4.5rem);letter-spacing:-.035em}
+.is-home .section h3{font-size:1.85rem}
+.is-home .section p,.is-home .section .intro,.is-home .section .lede{color:#526459!important}
+.is-home .section .eyebrow,.is-home .section .go,.is-home .section .tag{color:#28694f!important}
+.is-home .section .card{background:#fffefa!important;color:#15211e!important;border:1px solid #d2d9cf;border-radius:3px}
+.is-home .section .btn{color:#244b34;border-color:#91aa95}
+.is-home .section .btn.primary{background:#b8ead6;border-color:#a0d3bc}
+.is-home .section .rw-card h3{font-family:'Libre Caslon Display',Georgia,serif;font-size:2rem}
+.is-home .section .rail-arrow{color:#214b33;background:#dae8d7;border-color:#b5c7b5}
+.is-home .section .rail-progress{background:#cedbcc}
+.is-home .section .rail-progress span{background:#3e805c}
+.is-home .section .status{background:#dcebd8;color:#285437}
+.is-home .section .partner-benefits span{color:#356446;border-color:#a8bdab}
+.is-home .section .nutrition-intro{--ink:#f6f5ef;--muted:#e1eae1;--a:#b8ead6;color:#f6f5ef}
+.is-home .section .nutrition-intro h2,.is-home .section .nutrition-intro p,.is-home .section .nutrition-intro .eyebrow{color:#f4f4eb!important}
+.is-home .footer{background:#0a1712;color:#d9e5dc;--ink:#e2ece4;--a:#b8ead6;--muted:#c0cec3}
+.is-home .footer p,.is-home .footer .fine{color:#c5d4cb}
+/* Game state colours and spatial controls remain on dark stages. */
+.site-standard.is-interactive{--bg:#07110f;--panel:#10231d;--panel2:#132520;--ink:#f5f2e9;--muted:#bccbc4;--a:#63e6c1;--line:#315044;background:#07110f;color:#f5f2e9}
+.site-standard.is-interactive h1{color:#f5f2e9}
+.site-standard.is-interactive .site-edition{color:#bdcec1;border-color:#315044}
+.site-standard.is-interactive .eyebrow{color:#a9e5cb}
+.site-standard.is-interactive .fine,.site-standard.is-interactive .small,.site-standard.is-interactive .credit{color:#bdcec1}
+.site-standard.is-interactive .stage h2,.site-standard.is-interactive .answers button,.site-standard.is-interactive .stat{font-family:'DM Sans',system-ui,sans-serif;letter-spacing:normal}
+.site-standard a:focus-visible,.site-standard button:focus-visible,.site-standard input:focus-visible,.site-standard select:focus-visible,.site-standard textarea:focus-visible{outline:3px solid #4c9a6d;outline-offset:4px}
+@media(max-width:800px){.site-standard .site-masthead-inner{padding:18px 22px;display:block}.site-standard .site-global-links{margin-top:13px;gap:20px;overflow-x:auto;padding-bottom:4px}.site-standard h1{font-size:clamp(3rem,11vw,5rem)}.site-standard:not(.is-home)>header{padding-top:35px}.site-standard .site-feature img{aspect-ratio:16/9}}
+@media(max-width:500px){.site-standard .site-edition{font-size:.53rem}.site-standard .site-edition span:last-child{display:none}.site-standard .wrap{padding-left:20px;padding-right:20px}.site-standard .section-signoff{flex-direction:column;gap:10px}.site-standard h2{font-size:2.25rem}.site-standard .card h3{font-size:1.7rem}.site-standard .site-feature{padding:0}.site-standard .site-feature figcaption{padding:0 20px}.site-standard:not(.is-interactive) table{display:block;overflow-x:auto}}
+@media(prefers-reduced-motion:reduce){.site-standard{scroll-behavior:auto}}
+
+/* Keep product editorial panels legible on the paper palette. */
+.site-standard:not(.is-home):not(.is-interactive) .feature,.site-standard:not(.is-home):not(.is-interactive) .feature .copy{background:#fffefa;color:#15211e;border-color:#ccd3cb}
+.site-standard.is-editorial .brand-word{color:#15211e}
+
+/* Approved dark editorial direction — shared across Youtopia destinations. */
+body.site-standard{--bg:#070d0c;--panel:#0d1915;--panel2:#102019;--ink:#f0f6f2;--muted:#b5c8bd;--a:#7ce7bf;--mint:#7ce7bf;--gold:#a7eacc;--line:#2a4035;background:#070d0c!important;color:#f0f6f2!important;color-scheme:dark}
+body.site-standard :is(main,.section,.section:nth-of-type(even),.site-local-nav,.site-edition,.site-masthead,.premium-masthead,.footer,.section-signoff,.hosting-credit){background:#070d0c!important;color:#f0f6f2!important;border-color:#2a4035!important;--ink:#f0f6f2;--muted:#b5c8bd;--a:#7ce7bf;--line:#2a4035;--panel:#0d1915;--panel2:#102019}
+body.site-standard :is(h1,h2,h3,.card h2,.step h2,.card h3,.brand-word,.site-wordmark,.site-global-links a,.site-local-nav a){color:#f0f6f2!important}
+body.site-standard :is(p,li,.intro,.lede,.muted,.fine,.small,.credit,figcaption,.card p,.step p,.recipe p){color:#b5c8bd!important}
+body.site-standard :is(.eyebrow,.tag,.go,.site-wordmark span,.section-signoff a,.hosting-credit a){color:#7ce7bf!important}
+body.site-standard:not(.is-interactive) :is(.card,.step,.recipe,.feature,.feature .copy){background:transparent!important;color:#f0f6f2!important;border-color:#2a4035!important;box-shadow:none}
+body.site-standard:not(.is-interactive) :is(.callout,.note,.notice,.snapshot,.signup,form,.newsletter-layout .signup,.reader-invitation){background:#102019!important;color:#e7f3ec!important;border-color:#345947!important}
+body.site-standard:not(.is-interactive) :is(input:not([type=checkbox]):not([type=radio]):not([type=hidden]),select,textarea){background:#0b1712!important;color:#edf6f0!important;border-color:#436250!important}
+body.site-standard:not(.is-interactive) :is(table,td){background:#0d1915!important;color:#d9e9df!important;border-color:#2a4035!important}
+body.site-standard:not(.is-interactive) th{background:#193126!important;color:#ecf8ef!important}
+body.site-standard :is(summary,.sources a,.resources a,.footer a,.reader-invitation a){color:#7ce7bf!important}
+body.site-standard:not(.is-interactive) :is(.btn,.button,.button-link){border-radius:100px!important;border-color:#51896f!important;background:#0b1913!important;color:#92efcc!important}
+body.site-standard:not(.is-interactive) :is(.btn.primary,button[type=submit]){background:#7ce7bf!important;color:#062015!important;border-color:#7ce7bf!important}
+body.site-standard .status{background:#173e2a!important;color:#a0f3cb!important}
+body.site-standard .rail-arrow{background:#10291c!important;border-color:#446c54!important;color:#9feac9!important}
+body.site-standard .rail-progress{background:#223d2e!important}body.site-standard .rail-progress span{background:#7ce7bf!important}
+body.site-standard .partner-benefits span{color:#b0e8ce!important;border-color:#436250!important}
+body.site-standard :is(a,button,input,select,textarea):focus-visible{outline-color:#8aefca!important}
+body.site-standard:not(.is-interactive) :is(.guide-editorial img,.hero-image,.site-feature img,.partner-photo img){border-radius:44% 44% 4% 18% / 30% 30% 4% 18%!important;box-shadow:0 25px 55px #0004}
+body.site-standard:not(.is-interactive) :is(.discovery-photo,.mind-photo,.pick-photo){border-radius:38% 38% 2px 2px / 25% 25% 2px 2px!important}
+body.site-standard:not(.is-interactive) .card{border-width:0 0 1px!important;border-radius:0!important;overflow:hidden}
+body.site-standard:not(.is-interactive) .card:hover{box-shadow:none!important}
+body.site-standard .reader-invitation{background:linear-gradient(120deg,#0d231a,#0a1510)!important}
+body.site-standard .premium-title small{color:#7ce7bf!important}
+@media(min-width:900px){body.site-standard:not(.is-interactive) .grid:not(.minds-grid)>.card:nth-child(3n+2){transform:translateY(20px)}body.site-standard:not(.is-interactive) .grid:not(.minds-grid){padding-bottom:25px}}
+@media(prefers-reduced-motion:reduce){body.site-standard .card{transition:none!important}}
+
+/* Resolve earlier section-specific paper-palette selectors. */
+body.site-standard.is-home .section :is(h1,h2,h3,.card h2,.card h3,.mind h3){color:#f0f6f2!important}
+body.site-standard.is-home .section :is(p,li,.intro,.lede,.fine,.small,.card p){color:#b5c8bd!important}
+body.site-standard.is-home .section :is(.eyebrow,.tag,.go,.mind .go,.resources a){color:#7ce7bf!important}
+body.site-standard.is-home .section .card{background:transparent!important;color:#edf5f0!important;border-color:#2a4035!important}
+body.site-standard.is-home .section .btn{color:#92efcc!important;border-color:#51896f!important}
+body.site-standard.is-home .section .btn.primary{color:#062015!important;background:#7ce7bf!important}
+body.site-standard.is-home .section .nutrition-intro :is(h2,p,.eyebrow){color:#f2f8f4!important}
+body.site-standard.is-home .section img.card-topic-photo{border-radius:38% 38% 2% 12% / 26% 26% 2% 12%!important}
+
+/* Homepage uses clean rectangular thumbnails; sculpted images stay inside editorial pages. */
+body.site-standard.is-home .section img,
+body.site-standard.is-home .section img.card-topic-photo,
+body.site-standard.is-home .section :is(.discovery-photo,.mind-photo,.pick-photo,.partner-photo img,.site-feature img){
+border-radius:0!important;box-shadow:none!important
+}
+body.site-standard.is-home .grid:not(.minds-grid)>.card:nth-child(3n+2){transform:none!important}

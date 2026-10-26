@@ -1,0 +1,227 @@
+[
+  {
+    "topic": "Sleep",
+    "text": "What does \u201ccircadian rhythm\u201d describe?",
+    "answers": [
+      "An approximately 24-hour body rhythm",
+      "A five-minute breathing cycle",
+      "A measure of muscle strength",
+      "The speed of digestion"
+    ],
+    "correct": 0,
+    "explanation": "Circadian rhythms help coordinate daily sleep and wake patterns. Light and darkness are important timing cues.",
+    "clue": "Think of your body\u2019s daily clock.",
+    "source": "https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle",
+    "sourceLabel": "NIH \u00b7 Your sleep/wake cycle"
+  },
+  {
+    "topic": "Movement",
+    "text": "Which is an example of physical activity?",
+    "answers": [
+      "Walking to the shops",
+      "Only running a marathon",
+      "Only supervised gym sessions",
+      "Only competitive sport"
+    ],
+    "correct": 0,
+    "explanation": "Physical activity includes everyday movement, active travel, chores and recreation\u2014not just formal workouts.",
+    "clue": "It can be part of an ordinary day.",
+    "source": "https://www.who.int/europe/news-room/fact-sheets/item/physical-activity",
+    "sourceLabel": "WHO \u00b7 Physical activity"
+  },
+  {
+    "topic": "Supplement sense",
+    "text": "A supplement is labelled \u201cnatural\u201d. What can you safely conclude?",
+    "answers": [
+      "The label alone does not establish safety",
+      "It cannot interact with medicine",
+      "Everyone can take it safely",
+      "Its benefits are proven"
+    ],
+    "correct": 0,
+    "explanation": "Natural origin does not guarantee safety. Supplements can have side effects and interactions with medicines.",
+    "clue": "A plant origin is not a safety test.",
+    "source": "https://www.nccih.nih.gov/health/using-dietary-supplements-wisely/",
+    "sourceLabel": "NIH NCCIH \u00b7 Supplements wisely"
+  },
+  {
+    "topic": "Healthy foundations",
+    "text": "For adults, what weekly moderate aerobic activity range does WHO recommend?",
+    "answers": [
+      "150\u2013300 minutes",
+      "10\u201320 minutes",
+      "30\u201340 minutes",
+      "900\u20131,200 minutes"
+    ],
+    "correct": 0,
+    "explanation": "WHO recommends 150\u2013300 minutes of moderate activity, or an equivalent vigorous mix, each week for adults. This is general population guidance, not a personalised exercise plan.",
+    "clue": "The lower end is two and a half hours.",
+    "source": "https://www.who.int/europe/news-room/fact-sheets/item/physical-activity",
+    "sourceLabel": "WHO \u00b7 Adult activity guidance"
+  },
+  {
+    "topic": "Strength",
+    "text": "In addition to aerobic activity, WHO recommends adult muscle-strengthening work on\u2026",
+    "answers": [
+      "At least 2 days each week",
+      "One day each year",
+      "Only days without meals",
+      "Every hour of every day"
+    ],
+    "correct": 0,
+    "explanation": "The adult recommendation includes major muscle groups on two or more days a week. Activities should suit individual ability and circumstances.",
+    "clue": "More than once a week; daily is not the minimum.",
+    "source": "https://www.who.int/europe/news-room/fact-sheets/item/physical-activity",
+    "sourceLabel": "WHO \u00b7 Strength guidance"
+  },
+  {
+    "topic": "Body mechanics",
+    "text": "How does light help your body keep time?",
+    "answers": [
+      "Light signals help synchronise the body clock",
+      "It removes the need for sleep",
+      "It makes every person\u2019s clock identical",
+      "It guarantees eight hours of deep sleep"
+    ],
+    "correct": 0,
+    "explanation": "Light and darkness help align internal rhythms. People differ in their natural timing, and artificial light can affect wakefulness cues.",
+    "clue": "Your clock takes cues from its environment.",
+    "source": "https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle",
+    "sourceLabel": "NIH \u00b7 Your sleep/wake cycle"
+  },
+  {
+    "topic": "Study design",
+    "text": "What does \u201crandomised\u201d mean in a clinical trial?",
+    "answers": [
+      "Treatment groups are assigned by chance",
+      "Researchers choose the healthiest group",
+      "Participants choose their favourite treatment",
+      "Every result is caused by chance"
+    ],
+    "correct": 0,
+    "explanation": "Random allocation reduces bias in assigning treatments. It does not guarantee a flawless study.",
+    "clue": "It describes how people enter treatment groups.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Clinical trial basics"
+  },
+  {
+    "topic": "Study design",
+    "text": "Why might a study blind participants and researchers to treatment allocation?",
+    "answers": [
+      "To reduce bias in responses and assessment",
+      "To avoid collecting any outcomes",
+      "To make follow-up unnecessary",
+      "To guarantee a positive result"
+    ],
+    "correct": 0,
+    "explanation": "Blinding can reduce the influence of expectations and assessment bias. Trial design, follow-up and outcome choice still matter.",
+    "clue": "Knowing the treatment could influence behaviour or judgement.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Blinding and trials"
+  },
+  {
+    "topic": "Frontier science",
+    "text": "A treatment works in mice. What is the most defensible human conclusion?",
+    "answers": [
+      "It is a signal that needs human testing",
+      "The same benefit is proven in people",
+      "The correct human dose is now known",
+      "Long-term human safety is established"
+    ],
+    "correct": 0,
+    "explanation": "Animal findings can motivate clinical research. They do not establish human benefit, dose or safety.",
+    "clue": "The next research step involves a different population.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 How research progresses"
+  },
+  {
+    "topic": "Spot the hype",
+    "text": "Twenty people improve after taking a product, with no control group. What is missing?",
+    "answers": [
+      "A comparison to help separate treatment effects from other changes",
+      "A more exciting product name",
+      "A higher-priced bottle",
+      "A celebrity testimonial"
+    ],
+    "correct": 0,
+    "explanation": "Without a comparison group, change over time cannot be confidently attributed to the product. This is an interpretation of the hypothetical design.",
+    "clue": "What might have happened without the product?",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Comparing treatments"
+  },
+  {
+    "topic": "Risk maths",
+    "text": "In a hypothetical trial, risk falls from 10% to 5%. What is the absolute reduction?",
+    "answers": [
+      "5 percentage points",
+      "50 percentage points",
+      "95 percentage points",
+      "0.5 percentage points"
+    ],
+    "correct": 0,
+    "explanation": "Subtract 5% from 10%: 5 percentage points. The relative reduction is 50%. The numbers describe this fictional trial only.",
+    "clue": "Subtract the two risks; do not divide them.",
+    "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/absolute-risk",
+    "sourceLabel": "NCI \u00b7 Absolute risk; worked example"
+  },
+  {
+    "topic": "Risk maths",
+    "text": "That same 10%-to-5% change is a relative risk reduction of\u2026",
+    "answers": [
+      "50%",
+      "5%",
+      "95%",
+      "200%"
+    ],
+    "correct": 0,
+    "explanation": "The reduction is 5 out of the original 10: 5 \u00f7 10 = 50%. Relative percentages need their baseline risk for context.",
+    "clue": "Compare the reduction with the starting risk.",
+    "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/relative-risk",
+    "sourceLabel": "NCI \u00b7 Relative risk; worked example"
+  },
+  {
+    "topic": "Clinical meaning",
+    "text": "A study improves a blood marker but does not measure how people feel or function. What remains open?",
+    "answers": [
+      "Whether it improves meaningful health outcomes",
+      "Whether the marker was measured at all",
+      "Whether all future studies are unnecessary",
+      "Whether the product cures every disease"
+    ],
+    "correct": 0,
+    "explanation": "A surrogate endpoint is a substitute measure. A marker change alone does not establish a meaningful clinical benefit.",
+    "clue": "A laboratory number and a lived outcome are different measurements.",
+    "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/surrogate-endpoint",
+    "sourceLabel": "NCI \u00b7 Surrogate endpoints"
+  },
+  {
+    "topic": "Evidence judgement",
+    "text": "Which follow-up best tests a promising small pilot finding?",
+    "answers": [
+      "A larger, well-designed human trial with a suitable comparator",
+      "A collection of enthusiastic reviews",
+      "Repeating only the marketing headline",
+      "A trial that measures no outcomes"
+    ],
+    "correct": 0,
+    "explanation": "A suitable comparison and a well-specified protocol improve the ability to assess benefit and harm. This is a study-design judgement, not a guarantee of success.",
+    "clue": "Improve the design, not the publicity.",
+    "source": "https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics",
+    "sourceLabel": "NIH \u00b7 Protocols and comparisons"
+  },
+  {
+    "topic": "The million-point question",
+    "text": "A controlled trial finds 20 events in 1,000 people versus 10 in 1,000 over one year. Which summary preserves the result and its limits?",
+    "answers": [
+      "Risk is 2% versus 1%; a 1-point absolute reduction over one year, with uncertainty and harms still to assess",
+      "A 50-point absolute reduction and guaranteed benefit for everyone",
+      "A 1% relative reduction with lifelong safety proven",
+      "Ten fewer events proves the treatment will work for every population"
+    ],
+    "correct": 0,
+    "explanation": "20/1,000 is 2%; 10/1,000 is 1%. The absolute reduction is one percentage point and the relative reduction is 50%. These hypothetical counts alone do not resolve uncertainty, harms or generalisability.",
+    "clue": "Convert both counts to percentages, and keep the time horizon.",
+    "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/relative-risk",
+    "sourceLabel": "NCI \u00b7 Relative risk; worked example"
+  }
+]

@@ -1,0 +1,18 @@
+/* Extend the dark editorial identity to the comparison worksheet itself. */
+body.luxury-edition .compare-main{padding-bottom:80px}
+body.luxury-edition .compare-toolbar{border-color:#476451;gap:18px;padding:28px 0}
+body.luxury-edition .compare-option{background:#101b14;border:1px solid #38513f;padding:30px;box-shadow:none}
+body.luxury-edition .compare-option h2{font-size:34px;margin:0 0 30px}
+body.luxury-edition .compare-option label{color:#b8cbbb;font-size:12px;letter-spacing:.02em;margin:22px 0}
+body.luxury-edition .compare-option input{min-height:46px;padding:12px;font:14px/1.5 Arial,Helvetica,sans-serif}
+body.luxury-edition .compare-option output{color:#9af5d1;font-size:30px;line-height:1.35;padding-top:12px;border-top:1px solid #38513f}
+body.luxury-edition .compare-option .cost-label{font-size:10px;letter-spacing:.14em;margin-top:30px}
+body.luxury-edition .compare-toolbar label{font-size:12px;color:#b8cbbb}
+body.luxury-edition .compare-main .callout{padding:25px 30px}
+.compare-starting-points{margin:55px 0;border-block:1px solid #38513f;padding:35px 0}
+.compare-starting-points h2{font-size:clamp(28px,3.5vw,42px)!important;margin:10px 0 20px}
+.compare-starting-points p{max-width:780px}
+.compare-starting-points .compare-reading{display:flex;gap:12px 26px;flex-wrap:wrap;margin:25px 0 5px}
+.compare-starting-points a{font-size:13px;text-underline-offset:6px}
+@media(max-width:800px){body.luxury-edition .compare-option{padding:24px}body.luxury-edition .compare-main>h1{font-size:clamp(42px,11vw,72px)}body.luxury-edition .compare-toolbar{align-items:stretch}.compare-toolbar label{width:100%}.compare-toolbar select{width:100%}.compare-toolbar button{flex:1 1 140px}}
+@media print{body.luxury-edition .compare-option{background:white!important;color:black!important;border-color:#777;padding:10px}body.luxury-edition .compare-option label,body.luxury-edition .compare-option output,body.luxury-edition .compare-option h2{color:black!important}body.luxury-edition .compare-option input{background:white!important;color:black!important;border:0;border-bottom:1px solid #777;min-height:0;padding:4px;font-size:10px}.compare-starting-points{display:none}}

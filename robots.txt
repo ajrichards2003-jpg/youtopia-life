@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://youtopialife.com/sitemap.xml

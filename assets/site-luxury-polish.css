@@ -26,3 +26,6 @@ body.luxury-edition #top .intro-controls{justify-content:flex-end;align-items:ce
 @media(max-width:760px){body.luxury-edition .article-header{padding:40px 24px 25px}body.luxury-edition .article-layout{padding:15px 24px 50px}body.luxury-edition .article-content{font-size:16px;line-height:1.85}body.luxury-edition .btn{min-height:48px;padding:14px 20px!important}body.luxury-edition .masthead-inner{padding:20px 24px;flex-wrap:wrap;gap:18px}body.luxury-edition .masthead nav{gap:15px;flex-wrap:wrap}body.luxury-edition .site-global-links{flex-wrap:wrap;overflow:visible}body.luxury-edition #top .intro-dots{flex-basis:auto!important;order:0!important}body.luxury-edition #top .intro-controls{justify-content:space-between}body.luxury-edition .catalogue-grid{gap:35px}}
 @media(prefers-reduced-motion:reduce){body.luxury-edition .btn{transition:none}body.luxury-edition .btn:hover{transform:none}}
 @media print{body.luxury-edition{background:white!important;color:black!important}body.luxury-edition p,body.luxury-edition h1,body.luxury-edition h2,body.luxury-edition h3{color:black!important}}
+
+/* Keep the live compact masthead in the approved mint / white identity. */
+body.luxury-edition .premium-masthead .premium-title small{color:#fff!important}

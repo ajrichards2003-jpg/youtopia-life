@@ -6,6 +6,7 @@ on:
       - 'sitemap.xml'
       - 'netlify.toml'
       - 'scripts/check-indexing.py'
+      - 'scripts/check-affiliates.py'
       - '.github/workflows/indexing-integrity.yml'
   workflow_dispatch:
 jobs:
@@ -17,3 +18,4 @@ jobs:
         with:
           python-version: '3.12'
       - run: python scripts/check-indexing.py
+      - run: python scripts/check-affiliates.py

@@ -152,3 +152,52 @@
   to = "/peptides/"
   status = 301
   force = true
+
+# Include both URL spellings: Google crawls extensionless and .html legacy links.
+[[redirects]]
+  from = "/product-policy"
+  to = "/editorial/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/01-essential-supplement-stack"
+  to = "/supplements/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/02-red-light-sauna-cold-plunge"
+  to = "/articles/red-light-evidence.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/03-meditation-20-minutes"
+  to = "/guides/meditation.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/04-peptides-spotlight.html"
+  to = "/peptides/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/books.html"
+  to = "/books"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/sinocare-home-monitoring"
+  to = "/articles/sinocare-home-monitoring.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/ape-born-muscle-stimulation"
+  to = "/articles/ape-born-muscle-stimulation.html"
+  status = 301
+  force = true

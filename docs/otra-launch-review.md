@@ -2,6 +2,16 @@
 
 Status: DRAFT / not approved for promotion. Prepared 26 October 2026.
 
+## Live review preview
+
+Feature: https://deploy-preview-54--playful-basbousa-781f5f.netlify.app/products/otra/
+
+Article: https://deploy-preview-54--playful-basbousa-781f5f.netlify.app/articles/otra-eyewear-style-guide
+
+Shop: https://deploy-preview-54--playful-basbousa-781f5f.netlify.app/shop/#otra
+
+Checks completed: HTML IDs/fragments, affiliate parameters and image integrity; desktop visual checks of feature/article/shop and silhouette expansion. Separate mobile visual review remains release QA.
+
 ## Review destinations
 
 - Brand feature: /products/otra/

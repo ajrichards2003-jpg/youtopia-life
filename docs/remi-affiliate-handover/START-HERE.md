@@ -10,14 +10,15 @@ Aria has consolidated the main corrections in draft PR 55. This pack gives your 
 
 ## Open these first
 
-- Baseline homepage: https://6adf36f084507b0b2b0d53b1--playful-basbousa-781f5f.netlify.app/
-- Partner directory: https://6adf36f084507b0b2b0d53b1--playful-basbousa-781f5f.netlify.app/shop/#partners
-- New Aeternum introduction: https://6adf36f084507b0b2b0d53b1--playful-basbousa-781f5f.netlify.app/products/aeternum/
-- Older Journal example: https://6adf36f084507b0b2b0d53b1--playful-basbousa-781f5f.netlify.app/articles/nmn-human-evidence.html
-- OTRA feature draft: https://6adf36f084507b0b2b0d53b1--playful-basbousa-781f5f.netlify.app/products/otra/
+- Baseline homepage: https://6adf3aef284f396cc8de72b3--playful-basbousa-781f5f.netlify.app/
+- Partner directory: https://6adf3aef284f396cc8de72b3--playful-basbousa-781f5f.netlify.app/shop/#partners
+- New Aeternum introduction: https://6adf3aef284f396cc8de72b3--playful-basbousa-781f5f.netlify.app/products/aeternum/
+- Older Journal example: https://6adf3aef284f396cc8de72b3--playful-basbousa-781f5f.netlify.app/articles/nmn-human-evidence.html
+- OTRA feature draft: https://6adf3aef284f396cc8de72b3--playful-basbousa-781f5f.netlify.app/products/otra/
+- Comparison worksheet: https://6adf3aef284f396cc8de72b3--playful-basbousa-781f5f.netlify.app/products/compare/
 - Code review: https://github.com/ajrichards2003-jpg/youtopia-life/pull/55
 
-These immutable links identify the reviewed baseline. Later updates in PR 55 may have a new deployment permalink. Ask Adam/Aria for the current preview before final sign-off. The comparison worksheet polish is the next update after this baseline.
+These immutable links identify the reviewed baseline. Later updates in PR 55 may have a new deployment permalink. Ask Adam/Aria for the current preview before final sign-off. This baseline includes the comparison worksheet polish and restores the full site file set.
 
 ## Suggested work split
 

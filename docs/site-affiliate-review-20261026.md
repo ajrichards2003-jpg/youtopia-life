@@ -26,3 +26,8 @@ Desktop browser inspection: Aeternum page, shop directory, homepage, active Sino
 - Aeternum cookie window/customer discount and exact current Ultrahuman assigned commission/customer discount remain unconfirmed. No unconfirmed offers were published.
 
 No messages sent, social posts scheduled, purchases placed or production deployment performed.
+
+## Follow-up build and handover
+The preview tree upload omitted inherited files; this was caught by browser review of the comparison worksheet. The corrective upload explicitly supplies all 231 files and verifies the full remote tree before commit. Do not use earlier immutable preview deployments for acceptance. Corrected full-site baseline: https://6adf3aef284f396cc8de72b3--playful-basbousa-781f5f.netlify.app/ . Production was unaffected.
+
+The comparison worksheet has a scoped dark style and partner reading links. Browser checks confirmed 100 + 10/month = AUD220 at 12 months and AUD340 at 24 months; zero fee, negative validation and Clear also behaved correctly. Remi Brief002 supplies real-device QA, asset recovery, approval evidence and four review-only video briefs. Mobile visual sign-off and actual film production remain team tasks. No team messages have been sent.

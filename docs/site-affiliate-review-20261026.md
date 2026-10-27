@@ -23,7 +23,7 @@ Desktop browser inspection: Aeternum page, shop directory, homepage, active Sino
 - Original approved Aria artwork is absent from this repository; Aria panel has not been recreated or substituted.
 - Broader pending games/community/provenance PRs are not certified by this release. They remain separate work.
 - Once production is approved and deployed, verify actual HTTP redirects and headers, resubmit the sitemap and restart only the relevant Search Console validations. Google recrawling is not a source-code fix.
-- Aeternum cookie window/customer discount and exact current Ultrahuman assigned commission/customer discount remain unconfirmed. No unconfirmed offers were published.
+- Aeternum cookie window/customer discount remain unconfirmed. Ultrahuman is verified at 7% commission with a 45-day cookie and no verified customer discount; do not restore the invalid 20% claim.
 
 No messages sent, social posts scheduled, purchases placed or production deployment performed.
 
@@ -31,3 +31,18 @@ No messages sent, social posts scheduled, purchases placed or production deploym
 The preview tree upload omitted inherited files; this was caught by browser review of the comparison worksheet. The corrective upload explicitly supplies all 231 files and verifies the full remote tree before commit. Do not use earlier immutable preview deployments for acceptance. Corrected full-site baseline: https://6adf3aef284f396cc8de72b3--playful-basbousa-781f5f.netlify.app/ . Production was unaffected.
 
 The comparison worksheet has a scoped dark style and partner reading links. Browser checks confirmed 100 + 10/month = AUD220 at 12 months and AUD340 at 24 months; zero fee, negative validation and Clear also behaved correctly. Remi Brief002 supplies real-device QA, asset recovery, approval evidence and four review-only video briefs. Mobile visual sign-off and actual film production remain team tasks. No team messages have been sent.
+
+## Rights and collaboration measurement update — 28 October 2026
+
+The homepage review candidate previously exposed four Mixkit streams through its Options panel. Track-level licence evidence was not present in the permissions register. Playback and the remote audio references are now disabled in PR 55, and all four candidates are recorded as Blocked in `ASSET-RETURN.csv`. Scout must attach the exact track page, licence terms/snapshot, download date and intended website/social usage before any candidate is restored. A generic Mixkit category link or direct MP3 URL is not sufficient release evidence.
+
+The “A Powerful Collaboration” campaign is Steve | Burg Design with Adam | Youtopia Life and partner site `burgdesign.com.au`. Collaboration uplift cannot be calculated until Adam supplies the go-live date and Forge supplies comparable Netlify Web Analytics windows. The review package should preserve:
+
+- daily pageviews and IP-estimated visitors for the latest 7 and 30 days;
+- the preceding comparable windows;
+- top landing pages and referrers, keeping direct, Facebook variants and Burg referral traffic separate;
+- campaign UTM values where present;
+- a clear distinction between temporal association and attributable referral traffic.
+
+Do not describe a spike as caused by the collaboration without referral or campaign evidence.
+

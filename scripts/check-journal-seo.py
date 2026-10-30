@@ -1,7 +1,7 @@
 """Check canonical discovery and structured data against the actual journal HTML."""
 from pathlib import Path
 from html.parser import HTMLParser
-import json,xml.etree.ElementTree as ET,tomllib
+import json,re,xml.etree.ElementTree as ET,tomllib
 ROOT=Path(__file__).resolve().parents[1]
 class Page(HTMLParser):
  def __init__(self):
@@ -24,6 +24,7 @@ sitemap=ET.parse(ROOT/'sitemap.xml');urls=[x.text for x in sitemap.findall('.//{
 redirects=tomllib.loads((ROOT/'netlify.toml').read_text())['redirects'];titles=[]
 for p in sorted((ROOT/'articles').glob('*.html')):
  if p.stem=='index':continue
+ if re.search(r'<meta name="robots" content="noindex', p.read_text()):continue
  d=Page();d.feed(p.read_text());url='https://youtopialife.com/articles/'+p.name
  assert d.canonical==[url],(p.name,'canonical')
  assert urls.count(url)==1 and url.removesuffix('.html') not in urls,(p.name,'sitemap mismatch')
@@ -37,5 +38,5 @@ for p in sorted((ROOT/'articles').glob('*.html')):
  assert 1500<=article['wordCount']<=3000 and bread['itemListElement'][-1]['item']==url
  assert any(x['from']=='/articles/'+p.stem and x['to']=='/articles/'+p.name and x['status']==301 for x in redirects)
  titles.append(d.title)
-assert len(titles)==18 and len(set(titles))==18
-print('PASS: 18 unique search titles; canonical URLs, sitemap, redirects, visible attribution, citations and schema agree')
+assert len(titles)==20 and len(set(titles))==20
+print('PASS: 20 unique search titles; canonical URLs, sitemap, redirects, visible attribution, citations and schema agree')

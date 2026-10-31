@@ -37,6 +37,118 @@
   status = 404
   force = true
 
+
+# Repository-root publish hardening: block remaining non-public planning, audit,
+# campaign, merchandise and function-source artefacts until a public-only build exists.
+
+[[redirects]]
+  from = "/APPAREL_IP_PLAYBOOK.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/CONTENT_BUILD_ROADMAP.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/EDITORIAL_COMPLIANCE_REVIEW_2026-10-06.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/EDITORIAL_DEPTH_AUDIT.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/EDITORIAL_MAGAZINE_UPDATE_2026-10-17.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/JOURNAL_SOCIAL_LAUNCH_2026-10-17.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/LONG_FEATURE_AUDIT_2026-10-17.json"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/RESEARCH_ADDITIONS_2026-10-03.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/SEO_AI_AUDIT_2026-10-17.json"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/SITE_DESIGN_ROLLOUT_2026-10-17.json"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/SITE_DESIGN_ROLLOUT_2026-10-17.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/SITE_UPDATE_AUDIT_2026-10-03.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/editorial-catalogue-audit.json"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/netlify.toml"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/assets/social/journal-launch/campaign.json"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/campaigns/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/merch/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/netlify/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
 [[redirects]]
   from = "/package.json"
   to = "/404.html"

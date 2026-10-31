@@ -8,7 +8,8 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 MERCHANTS = {'69428': 'ultrahuman.com', '114180': 'sinocare.com',
              '59683': 'apebornfitness.com', '119813': 'willandbear.com',
-             '96299': 'otraeyewear.com', '82371': 'aeternum.site'}
+             '96299': 'otraeyewear.com', '82371': 'aeternum.site',
+             '105805': 'einstar.com'}
 
 class Page(HTMLParser):
     def __init__(self, path):
@@ -38,7 +39,7 @@ for path in ROOT.rglob('*.html'):
         assert dest.scheme == 'https' and (dest.netloc == MERCHANTS[mid] or dest.netloc.endswith('.' + MERCHANTS[mid])), (path, 'merchant/destination mismatch')
         assert q.get('clickref') and 'sponsored' in a.get('rel', '').split(), (path, 'missing attribution/disclosure attribute')
         seen.add(mid); count += 1
-    if str(path.relative_to(ROOT)) in ('index.html', 'shop/index.html', 'products/aeternum/index.html', 'products/otra/index.html', 'articles/otra-eyewear-style-guide.html'):
+    if str(path.relative_to(ROOT)) in ('index.html', 'shop/index.html', 'products/aeternum/index.html', 'products/otra/index.html', 'products/einstar/index.html', 'articles/otra-eyewear-style-guide.html'):
         assert len(p.ids) == len(set(p.ids)), (path, 'duplicate ID')
         for asset in p.assets:
             u = urlsplit(asset)
@@ -60,7 +61,18 @@ assert '<div class="ultra-film"' not in opening, 'old auto-playing film panel re
 assert '/assets/intro-highlight-reel.css' in home and '/assets/founder-editorial.css' in home
 intro_js = (ROOT / 'assets/ultrahuman-intro.js').read_text()
 assert '7600' in intro_js and 'schedule()' in intro_js and 'closeVideo()' in intro_js
-assert 'adam-founder-editorial-v3.webp' in home
+# Founder imagery must be original pixels from the supplied reference archive.
+opening_founder = home[home.index('id="founder-perspective"'):home.index('</section>', home.index('id="founder-perspective"'))]
+original_portraits = (
+    'founder-adam-original-formal.png',
+    'founder-adam-original-blue-shirt.png',
+    'founder-adam-ecoflow-event.png'
+)
+assert all(name in opening_founder for name in original_portraits), 'authentic founder photo missing'
+assert 'adam-founder-editorial-v3.webp' not in opening_founder, 'illustrative founder collage is disallowed'
+assert all((ROOT / 'assets' / name).is_file() for name in original_portraits)
+assert '/products/einstar/' in (ROOT / 'shop/index.html').read_text(), 'EINSTAR missing from directory'
+assert 'iherb' not in (ROOT / 'shop/index.html').read_text().lower(), 'iHerb must remain off public shop'
 assert '/products/sinocare/' in home and '/products/ape-born/' in home and '/products/aeternum/' in home
 assert 'href="https://www.ultrahuman.com/au/ring/"' not in home, 'untracked homepage buying link'
 sitemap = {x.text for x in ET.parse(ROOT / 'sitemap.xml').findall('.//{*}loc')}
@@ -71,4 +83,4 @@ for rel in ('products/otra/index.html', 'articles/otra-eyewear-style-guide.html'
 for rel in ('products/ultrahuman/index.html', 'index.html'):
     text = (ROOT / rel).read_text()
     assert not re.search(r'20\s*%\s*(?:off|discount)', text, re.I), (rel, 'unconfirmed discount')
-print(f'PASS: {count} affiliate links across six partners; publisher/destinations, click references, sponsored attributes, key assets, founder and draft guards')
+print(f'PASS: {count} affiliate links across seven partners; publisher/destinations, click references, sponsored attributes, key assets, founder and draft guards')

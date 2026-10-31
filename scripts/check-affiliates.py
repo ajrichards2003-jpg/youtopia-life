@@ -51,7 +51,15 @@ for path in ROOT.rglob('*.html'):
 assert seen == set(MERCHANTS), ('partner missing', seen)
 home = (ROOT / 'index.html').read_text()
 opening = home[home.index('<section class="intro-carousel ultra-intro"'):home.index('</section>', home.index('<section class="intro-carousel ultra-intro"'))]
-assert 'class="intro-pause"' not in opening and 'class="intro-replay"' not in opening
+# A user-controlled highlights reel replaces the old intrusive Ultrahuman film takeover.
+assert 'class="intro-pause"' in opening and 'class="intro-replay"' not in opening
+assert 'data-intro-video="-sDcFyZLxTY"' in opening, 'dire wolf film missing'
+assert len(re.findall(r'<article class="intro-slide', opening)) == 7, 'highlight reel should have seven slides'
+assert 'class="intro-video-overlay"' in opening and 'data-intro-video-close' in opening
+assert '<div class="ultra-film"' not in opening, 'old auto-playing film panel returned'
+assert '/assets/intro-highlight-reel.css' in home and '/assets/founder-editorial.css' in home
+intro_js = (ROOT / 'assets/ultrahuman-intro.js').read_text()
+assert '7600' in intro_js and 'schedule()' in intro_js and 'closeVideo()' in intro_js
 assert 'adam-founder-editorial-v3.webp' in home
 assert '/products/sinocare/' in home and '/products/ape-born/' in home and '/products/aeternum/' in home
 assert 'href="https://www.ultrahuman.com/au/ring/"' not in home, 'untracked homepage buying link'

@@ -73,7 +73,7 @@ if private:
     raise SystemExit("Non-public files included: " + str(private[:10]))
 
 # Do not make the retired founder photos publicly accessible.
-for retired in ("founder-adam-original-formal.png", "founder-adam-original-blue-shirt.png", "founder-adam-ecoflow-event.png"):
+for retired in ("founder-adam-original-formal.png", "founder-adam-original-blue-shirt.png", "founder-adam-ecoflow-event.png", "adam-founder-editorial-v3.webp"):
     if (PUBLIC / "assets" / retired).exists():
         raise SystemExit("Retired founder photograph still published: " + retired)
 

@@ -62,16 +62,15 @@ assert '<div class="ultra-film"' not in opening, 'old auto-playing film panel re
 assert '/assets/intro-highlight-reel.css' in home and '/assets/founder-editorial.css' in home
 intro_js = (ROOT / 'assets/ultrahuman-intro.js').read_text()
 assert '7600' in intro_js and 'schedule()' in intro_js and 'closeVideo()' in intro_js
-# Founder imagery must be original pixels from the supplied reference archive.
+# The founder-approved brand editorial replaces the old photo tiles.
 opening_founder = home[home.index('id="founder-perspective"'):home.index('</section>', home.index('id="founder-perspective"'))]
-original_portraits = (
-    'founder-adam-original-formal.png',
-    'founder-adam-original-blue-shirt.png',
-    'founder-adam-ecoflow-event.png'
-)
-assert all(name in opening_founder for name in original_portraits), 'authentic founder photo missing'
-assert 'adam-founder-editorial-v3.webp' not in opening_founder, 'illustrative founder collage is disallowed'
-assert all((ROOT / 'assets' / name).is_file() for name in original_portraits)
+approved_asset = 'adam-founder-lifestyle-branded-2026.webp'
+assert approved_asset in opening_founder, 'approved Youtopia lifestyle artwork missing'
+assert (ROOT / 'assets' / approved_asset).is_file(), 'approved lifestyle artwork asset not present'
+assert 'AI-assisted lifestyle editorial' in opening_founder, 'artwork must be described as a brand concept'
+assert 'Adam Richards' in opening_founder and 'Youtopia Life' in opening_founder
+for stale in ('founder-adam-original-formal.png', 'founder-adam-original-blue-shirt.png', 'founder-adam-ecoflow-event.png', 'adam-founder-editorial-v3.webp'):
+    assert stale not in opening_founder, ('old founder image still in feature', stale)
 assert '/products/einstar/' in (ROOT / 'shop/index.html').read_text(), 'EINSTAR missing from directory'
 assert 'iherb' not in (ROOT / 'shop/index.html').read_text().lower(), 'iHerb must remain off public shop'
 assert '/products/sinocare/' in home and '/products/ape-born/' in home and '/products/aeternum/' in home

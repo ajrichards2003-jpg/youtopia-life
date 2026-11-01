@@ -6,6 +6,126 @@
 # Preview hardening: deny known internal files and common scanner targets.
 # Interim control; migrate to a public-only publish directory next.
 
+
+[[redirects]]
+  from = "/blog"
+  to = "/articles/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/articles/"
+  status = 301
+
+# Unconfirmed affiliate partners (Ledger register 1 Nov: only Ultrahuman confirmed). Temporary 302 to /shop/.
+[[redirects]]
+  from = "/products/otra"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/products/otra/"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/products/otra/*"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/products/aeternum"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/products/aeternum/"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/products/aeternum/*"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/products/einstar"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/products/einstar/"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/products/einstar/*"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/products/ape-born"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/products/ape-born/"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/products/ape-born/*"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/products/sinocare"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/products/sinocare/"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/products/sinocare/*"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/articles/sinocare-home-monitoring.html"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/articles/ape-born-muscle-stimulation.html"
+  to = "/shop/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/articles/otra-eyewear-style-guide.html"
+  to = "/shop/"
+  status = 302
+  force = true
+
 [[redirects]]
   from = "/ULTRAHUMAN_LAUNCH.md"
   to = "/404.html"

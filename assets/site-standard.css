@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap');
+
 /* Shared editorial presentation. Product tools keep their own interaction geometry. */
 .site-standard{--bg:#f6f5ef;--panel:#fffefa;--panel2:#eef1e9;--ink:#15211e;--muted:#58665f;--a:#28694f;--mint:#28694f;--gold:#28694f;--line:#ccd3cb;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;line-height:1.8}
 .site-standard h1,.site-standard h2,.site-standard h3{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;letter-spacing:-.035em;text-transform:none}

@@ -54,9 +54,7 @@ for source in ROOT.rglob("*"):
 required = [
     "index.html", "404.html", "sitemap.xml",
     "assets/ultrahuman-intro.js", "assets/intro-highlight-reel.css",
-    "assets/founder-adam-original-formal.png",
-    "assets/founder-adam-original-blue-shirt.png",
-    "assets/founder-adam-ecoflow-event.png",
+    "assets/adam-founder-lifestyle-branded-2026.webp",
     "products/einstar/index.html", "body/index.html",
 ]
 missing = [p for p in required if not (PUBLIC / p).is_file()]
@@ -73,6 +71,11 @@ private = [
 ]
 if private:
     raise SystemExit("Non-public files included: " + str(private[:10]))
+
+# Do not make the retired founder photos publicly accessible.
+for retired in ("founder-adam-original-formal.png", "founder-adam-original-blue-shirt.png", "founder-adam-ecoflow-event.png"):
+    if (PUBLIC / "assets" / retired).exists():
+        raise SystemExit("Retired founder photograph still published: " + retired)
 
 class LocalAssets(HTMLParser):
     def __init__(self):

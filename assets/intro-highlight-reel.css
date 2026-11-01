@@ -53,3 +53,34 @@
 }
 @media(max-width:380px) { .ultra-intro .intro-controls .intro-counter { display:none; } }
 @media(prefers-reduced-motion:reduce) { .ultra-intro .intro-slide { transition:none; } }
+
+/* Editorial, original CSS artwork for EINSTAR technology highlight (not a product photo). */
+.ultra-intro .einstar-intro { background:#092019; }
+.ultra-intro .intro-einstar-art {
+  position:absolute; inset:0; z-index:-3; isolation:isolate; overflow:hidden;
+  background:radial-gradient(ellipse 48% 70% at 72% 46%,#2e7860 0%,#174533 42%,transparent 88%),linear-gradient(120deg,#06140f,#153727 55%,#081a15);
+}
+.ultra-intro .intro-einstar-art:before {
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(circle,#bafbe0 1px,transparent 1.5px);
+  background-size:17px 17px;
+  mask-image:radial-gradient(ellipse 36% 52% at 71% 48%,#000 38%,transparent 82%);
+  opacity:.65;transform:perspective(750px) rotateY(-15deg);
+}
+.ultra-intro .intro-einstar-art:after {
+  content:"";position:absolute;width:42%;aspect-ratio:1;right:9%;top:12%;
+  border:1px solid #8ee2ba69;border-radius:50%;
+  box-shadow:0 0 0 60px #6df1b00b,0 0 0 125px #6df1b008;
+  transform:rotateX(55deg) rotate(28deg);
+}
+.ultra-intro .intro-einstar-art span {
+  position:absolute;top:48%;right:11%;transform:translateY(-50%);
+  text-align:center;letter-spacing:.18em;line-height:1.7;font-weight:700;
+  color:#c8fbe1;opacity:.52;font-size:clamp(.7rem,1.6vw,1.15rem);
+}
+.ultra-intro .einstar-intro .intro-copy h2 span { color:#9af5d1; }
+@media(max-width:650px) {
+  .ultra-intro .intro-einstar-art:before { mask-image:radial-gradient(ellipse 65% 55% at 60% 30%,#000 25%,transparent 85%); }
+  .ultra-intro .intro-einstar-art:after { width:62%;top:10%;right:12%; }
+  .ultra-intro .intro-einstar-art span { top:23%;right:10%;width:80%;font-size:.7rem; }
+}

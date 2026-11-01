@@ -1,3 +1,8 @@
+[build]
+  command = "python3 scripts/build-public.py"
+  publish = "public-site"
+  functions = "netlify/functions"
+
 # Preview hardening: deny known internal files and common scanner targets.
 # Interim control; migrate to a public-only publish directory next.
 

@@ -199,10 +199,62 @@
 <div class="modal" id="aimodal"><div class="box"><div class="boxhead"><div><div class="eyebrow">Launch month access</div><h2 style="margin:5px 0">Ask Youtopia AI</h2></div><button class="close" onclick="closeAI()">×</button></div><p class="fine">Members receive 3 wishes — sorry, questions — per day during launch month. 🧞 Ask about Youtopia topics, evidence, Minds, resources and products.</p><div id="autharea"><div class="notice">Member access is being activated. Create/login controls will switch on when Netlify Identity is enabled for this project.</div></div><div id="chat" style="display:none"><div class="chatlog" id="chatlog"><div class="msg">Ask Youtopia: What are you curious about?</div></div><div class="chatrow"><input id="q" maxlength="600" placeholder="Ask about sleep, longevity, red light, peptides…"><button class="btn primary" onclick="ask()">Ask</button></div><p class="fine" id="quota"></p></div></div></div>
 <script type="module">
 const modal=document.getElementById('aimodal');window.openAI=()=>modal.classList.add('open');window.closeAI=()=>modal.classList.remove('open');
-async function bootIdentity(){try{const id=await import('https://esm.sh/@netlify/identity@2');await id.getSettings();await id.handleAuthCallback().catch(()=>null);let user=await id.getUser();const area=document.getElementById('autharea');const chat=document.getElementById('chat');
-const render=()=>{area.innerHTML=user?'<p>Signed in as <b>'+user.email+'</b></p><button class="btn" id="logout">Log out</button>':'<div class="fields"><input id="ae" type="email" placeholder="Email"><input id="ap" type="password" placeholder="Password (8+ characters)"></div><div class="actions"><button class="btn primary" id="login">Log in</button><button class="btn" id="signup">Create free account</button></div><p class="fine" id="amsg">Account creation does not automatically subscribe you to marketing email.</p>';chat.style.display=user?'block':'none';
-if(user)document.getElementById('logout').onclick=async()=>{await id.logout();user=null;render()};else{document.getElementById('login').onclick=async()=>{try{user=await id.login(ae.value,ap.value);render()}catch(e){amsg.textContent=e.message}};document.getElementById('signup').onclick=async()=>{try{await id.signup(ae.value,ap.value,{interests:[]});amsg.textContent='Check your email to confirm your account, then return and log in.'}catch(e){amsg.textContent=e.message}}}};render()}catch(e){console.warn('Identity awaiting activation',e)}}bootIdentity();
-window.ask=async()=>{const q=document.getElementById('q'),log=document.getElementById('chatlog'),quota=document.getElementById('quota');if(!q.value.trim())return;const text=q.value.trim();q.value='';log.innerHTML+='<div class="msg you">You: '+text.replace(/[<>]/g,'')+'</div>';log.scrollTop=log.scrollHeight;quota.textContent='Thinking…';try{const r=await fetch('/api/ask-youtopia',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({question:text})});const d=await r.json();if(!r.ok)throw new Error(d.error||'Unable to answer');log.innerHTML+='<div class="msg">Ask Youtopia: '+String(d.answer).replace(/[<>]/g,'')+'</div>';quota.textContent=d.remaining+' questions remaining today.';const answers=log.querySelectorAll('.msg:not(.you)');const latest=answers[answers.length-1];if(latest) latest.scrollIntoView({block:'start',behavior:'smooth'})}catch(e){quota.textContent=e.message}};
+async function bootIdentity(){
+  const area=document.getElementById('autharea');
+  const chat=document.getElementById('chat');
+  if(!area || !chat) return;
+  const notice=(message)=>{const p=document.createElement('div');p.className='notice';p.setAttribute('role','status');p.textContent=message;area.replaceChildren(p);chat.style.display='none';};
+  try {
+    const id=await import('https://esm.sh/@netlify/identity@2');
+    await id.getSettings();
+    await id.handleAuthCallback();
+    let user=await id.getUser();
+    function render(){
+      area.replaceChildren();
+      chat.style.display=user?'block':'none';
+      if(user){
+        const p=document.createElement('p');
+        p.append('Signed in as ');
+        const bold=document.createElement('b');bold.textContent=String(user.email||'member');p.append(bold);
+        const logout=document.createElement('button');logout.className='btn';logout.type='button';logout.textContent='Log out';
+        logout.onclick=async()=>{try{await id.logout();user=null;render();}catch(_){notice('Unable to sign out right now. Please try again.');}};
+        area.append(p,logout);return;
+      }
+      const fields=document.createElement('div');fields.className='fields';
+      const email=document.createElement('input');email.type='email';email.autocomplete='email';email.placeholder='Email';email.setAttribute('aria-label','Email address');
+      const password=document.createElement('input');password.type='password';password.autocomplete='current-password';password.placeholder='Password (8+ characters)';password.setAttribute('aria-label','Password');
+      fields.append(email,password);
+      const buttons=document.createElement('div');buttons.className='actions';
+      const login=document.createElement('button');login.type='button';login.className='btn primary';login.textContent='Log in';
+      const signup=document.createElement('button');signup.type='button';signup.className='btn';signup.textContent='Create free account';
+      const msg=document.createElement('p');msg.className='fine';msg.setAttribute('role','status');msg.textContent='Member access is separate from newsletter consent.';
+      const valid=()=>{if(!email.value.trim()||!password.value){msg.textContent='Enter your email and password first.';return false;}return true;};
+      login.onclick=async()=>{
+        if(!valid())return;
+        login.disabled=true;msg.textContent='Signing in…';
+        try{user=await id.login(email.value.trim(),password.value);render();}
+        catch(_){msg.textContent='Unable to sign in. Check the email and password, or create a free account if you have not registered yet.';}
+        finally{login.disabled=false;}
+      };
+      signup.onclick=async()=>{
+        if(!valid())return;
+        if(password.value.length<8){msg.textContent='Please use a password of at least 8 characters.';return;}
+        signup.disabled=true;msg.textContent='Creating your account…';
+        try{await id.signup(email.value.trim(),password.value,{interests:[]});msg.textContent='Please check your email for the confirmation link before signing in.';}
+        catch(_){msg.textContent='Account creation is not available right now. Please try again later.';}
+        finally{signup.disabled=false;}
+      };
+      buttons.append(login,signup);
+      area.append(fields,buttons,msg);
+    }
+    render();
+  }catch(error){
+    console.warn('Identity access is unavailable in this environment.');
+    notice('Member login is not available at the moment. You can still explore Youtopia Life and its free guides without an account.');
+  }
+}
+bootIdentity();
+window.ask=async()=>{const q=document.getElementById('q'),log=document.getElementById('chatlog'),quota=document.getElementById('quota');if(!q.value.trim())return;const text=q.value.trim();q.value='';{const message=document.createElement('div');message.className='msg you';message.textContent='You: '+text;log.append(message);}log.scrollTop=log.scrollHeight;quota.textContent='Thinking…';try{const r=await fetch('/api/ask-youtopia',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({question:text})});const d=await r.json();if(!r.ok)throw new Error(d.error||'Unable to answer');{const message=document.createElement('div');message.className='msg';message.textContent='Ask Youtopia: '+String(d.answer||'');log.append(message);}quota.textContent=d.remaining+' questions remaining today.';const answers=log.querySelectorAll('.msg:not(.you)');const latest=answers[answers.length-1];if(latest) latest.scrollIntoView({block:'start',behavior:'smooth'})}catch(e){quota.textContent=e.message}};
 </script><script>for(const rail of document.querySelectorAll('.carousel[id]')){const prev=document.querySelector(`[data-rail-prev="${rail.id}"]`),next=document.querySelector(`[data-rail-next="${rail.id}"]`),progress=document.querySelector(`[data-progress="${rail.id}"]`);function update(){const max=rail.scrollWidth-rail.clientWidth;const at=max?rail.scrollLeft/max:0;prev.disabled=at<.01;next.disabled=at>.99;progress.style.width=(max?Math.max(15,rail.clientWidth/rail.scrollWidth*100):100)+'%';progress.style.transform=`translateX(${max?at*(100/(rail.clientWidth/rail.scrollWidth)-100):0}%)`;}prev.onclick=()=>rail.scrollBy({left:-rail.clientWidth*.86,behavior:'smooth'});next.onclick=()=>rail.scrollBy({left:rail.clientWidth*.86,behavior:'smooth'});rail.addEventListener('scroll',update,{passive:true});window.addEventListener('resize',update);update();}</script><script>(()=>{const track=document.getElementById('hero-track');if(!track)return;const slides=[...track.children],count=document.getElementById('hero-count');let index=0,timer;const go=n=>{index=(n+slides.length)%slides.length;track.scrollTo({left:slides[index].offsetLeft-track.offsetLeft,behavior:'smooth'});count.textContent=String(index+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0')};document.getElementById('hero-prev').onclick=()=>go(index-1);document.getElementById('hero-next').onclick=()=>go(index+1);timer=setInterval(()=>{if(document.visibilityState==='visible'&&!track.querySelector('iframe'))go(index+1)},7500)})();</script><script defer src="/assets/ultrahuman-intro.js?v=20261101-highlight-reel"></script><!-- Optional ambient music disabled in review build pending track-specific rights evidence. --><script defer src="/assets/nutrition-intro.js?v=20261004-autoplay"></script><script defer src="/assets/video-hover.js"></script><script defer src="/assets/ultrahuman-film.js?v=20261004-video3"></script><div class="hosting-credit" aria-label="Website hosting"><span>YOUTOPIA LIFE</span><a href="https://www.netlify.com/" target="_blank" rel="noopener">Powered by Netlify <span aria-hidden="true">↗</span></a></div>
 <script>/* Campaign attribution is submitted only with newsletter consent. */
 (()=>{const form=document.querySelector('form[name="youtopia-weekly"]');if(!form)return;const params=new URLSearchParams(location.search);for(const name of ["utm_source","utm_medium","utm_campaign","utm_content"]){const field=form.elements.namedItem(name);if(field)field.value=(params.get(name)||"").slice(0,120);}})();

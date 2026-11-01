@@ -7,6 +7,16 @@
 # Interim control; migrate to a public-only publish directory next.
 
 
+[[redirects]]
+  from = "/blog"
+  to = "/articles/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/articles/"
+  status = 301
+
 # Unconfirmed affiliate partners (Ledger register 1 Nov: only Ultrahuman confirmed). Temporary 302 to /shop/.
 [[redirects]]
   from = "/products/otra"

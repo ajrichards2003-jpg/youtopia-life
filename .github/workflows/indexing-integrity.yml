@@ -7,6 +7,7 @@ on:
       - 'netlify.toml'
       - 'scripts/check-indexing.py'
       - 'scripts/check-affiliates.py'
+      - 'scripts/build-public.py'
       - '.github/workflows/indexing-integrity.yml'
   workflow_dispatch:
 jobs:
@@ -19,3 +20,5 @@ jobs:
           python-version: '3.12'
       - run: python scripts/check-indexing.py
       - run: python scripts/check-affiliates.py
+      - name: Verify public-only release output
+        run: python scripts/build-public.py

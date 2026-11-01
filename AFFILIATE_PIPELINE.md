@@ -1,6 +1,6 @@
 # Affiliate pipeline — 28 September 2026
 
-Ultrahuman is joined with an account-issued tracking link and verified Default 7% commission. Ordinary untracked product links on /store/ earn no commission. Do not call them affiliate links until accepted, and do not replace them with a personal referral code where public/business use is restricted.
+> **Current release instruction (1 Nov 2026): iHerb is paused at founder request.** It is not to be listed, linked, recommended as a partner or included in public Youtopia Life campaigns. Older iHerb entries below are retained only as historical notes and are superseded by this hold. EINSTAR is now a joined Awin partner; see the November addition at the end of this file.\n\nUltrahuman is joined with an account-issued tracking link and verified Default 7% commission. Ordinary untracked product links on /store/ earn no commission. Do not call them affiliate links until accepted, and do not replace them with a personal referral code where public/business use is restricted.
 
 | Priority | Partner | Fit / first product | Official application | Status and check |
 |---|---|---|---|---|
@@ -90,3 +90,28 @@ Prioritised by Adam after Ultrahuman. Official AU page points to Awin ROW advert
 
 ## iHerb Impact update — 3 October 2026
 Website connected confirmed by owner screenshot; Adam reports application complete. Approval and assigned contract terms not yet observed. Public default 5% is a planning assumption, not account confirmation. New 20-product editorial shortlist spans nine themes; ordinary supplier links only until account-issued links are verified. Keep Ultrahuman featured and iHerb in preview until owner reviews.
+
+
+## Sinocare — approved 25 October 2026
+- AWIN advertiser 114180; publisher 3106417. Welcome email: 8% base CPA, 30-day cookie; volume tiers available (thresholds unconfirmed).
+- Homepage product carousel, shop, wearables cross-link and /products/sinocare/ added.
+- Destination tested by Adam: https://en.sinocare.com; redirect carries AWIN click parameters. Sale attribution not independently confirmed.
+- Current prices/promotions remain supplier-controlled. Product-specific TGA status, Australian fulfilment, validation and hands-on review remain unverified.
+
+## APE BORN Fitness — joined 25 October 2026
+- AWIN advertiser 59683; publisher 3106417. Joined status evidenced by Adam’s screenshot; commission/cookie terms pending.
+- Partner introduction /products/ape-born/, homepage, shop and wearables entries prepared.
+- No independent hands-on testing, model-specific clearance or Australian regulatory/fulfilment confirmation. Performance claims not adopted. Optional membership terms require checking.
+
+
+## 1 November 2026 — EINSTAR joined; iHerb held
+
+Awin Link Builder screenshot supplied by founder: EINSTAR advertiser `105805`, Youtopia publisher `3106417`, joined on 30 October 2026, tracked destination `https://www.einstar.com`.
+
+- Standard program commission: **6%** on valid orders, per founder-supplied program terms.
+- KOL incentives: 8% following qualifying prior-month sales $5,000–$20,000; 10% when above $20,000, if approved into KOL program; not the default current rate.
+- Cookie attribution period: **90 days**. Auto-validation 50 days; dashboard showed average payment time 68 days, not guaranteed to the publisher.
+- Awin panel showed **US advertiser-network** conversion rate 4.94%, earnings per click USD 5.32 and average order value ~USD 1,399 in marketing copy. These are NOT Youtopia results or forecastable performance; do not put them in investor claims.
+- Creative technology fit: 3D capture, making, product design, digital archiving. It is NOT a medical or wellness device merely because Youtopia features it.
+- `/products/einstar/` and shop partner link added to preview branch. Verify merchant agreement, current AU shipping and checkout, approved usage of EINSTAR assets, disclosures and conversion attribution.
+- iHerb stays **paused**, including all previously proposed supplement affiliate content and tracked-link work, until a fresh founder instruction reactivates it.

@@ -81,7 +81,7 @@
     sound.setAttribute('aria-pressed', String(!muted));
   });
   skip.addEventListener('click', () => finish('skip'));
-  replay.addEventListener('click', () => {open(); track('play_request');});
+  replay?.addEventListener('click', () => {open(); track('play_request');});
   window.addEventListener('message', event => {
     if (event.origin !== 'https://www.youtube-nocookie.com' || event.source !== frame?.contentWindow) return;
     let data; try {data = typeof event.data === 'string' ? JSON.parse(event.data) : event.data;} catch (_) {return;}
@@ -93,5 +93,5 @@
   });
   document.addEventListener('visibilitychange', () => {if (document.hidden && frame) finish('hidden');});
   new IntersectionObserver(entries => {if (!entries[0].isIntersecting && started) finish('offscreen');}, {threshold:.1}).observe(host);
-  if (!reduced.matches) open();
+  // Film remains available through the product page; no unsolicited intro playback.
 })();

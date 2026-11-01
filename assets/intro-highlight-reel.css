@@ -1,0 +1,86 @@
+/* Curated, accessible Youtopia Life homepage highlight reel — November 2026 */
+.ultra-intro .intro-actions { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin:24px 0 10px; }
+.ultra-intro .intro-actions .btn { white-space:normal; text-align:center; }
+.ultra-intro .intro-watch { font-weight:800; border-radius:999px; }
+.ultra-intro .intro-controls {
+  display:flex; align-items:center; justify-content:center; gap:12px;
+  left:clamp(12px,3vw,40px); right:clamp(12px,3vw,40px); bottom:18px;
+  padding:10px 12px; border-radius:999px;
+  background:rgba(4,17,14,.78); backdrop-filter:blur(12px);
+  border:1px solid rgba(180,244,212,.22);
+  width:max-content; max-width:calc(100% - 24px); margin:auto;
+}
+.ultra-intro .intro-controls .intro-dots { display:flex; flex:1 1 auto; gap:7px; min-width:150px; max-width:330px; }
+.ultra-intro .intro-controls .intro-dot {
+  display:block; flex:1 1 0; min-width:18px; max-width:42px;
+  height:28px; border:0; border-bottom:3px solid rgba(248,255,251,.42);
+  border-radius:0; background:transparent; padding:0; cursor:pointer;
+}
+.ultra-intro .intro-controls .intro-dot.active { border-bottom-color:#63e6c1; background:transparent; }
+.ultra-intro .intro-controls .intro-counter { font-size:.8rem; font-weight:700; min-width:50px; text-align:center; color:#e6f9f0; }
+.ultra-intro .intro-step, .ultra-intro .intro-pause {
+  appearance:none; cursor:pointer; color:#f5fff9;
+  border:1px solid #718f80; background:rgba(2,16,11,.78);
+  border-radius:999px; line-height:1; min-height:36px;
+}
+.ultra-intro .intro-step { min-width:36px; font-size:24px; padding:4px 9px; }
+.ultra-intro .intro-pause { font-size:.82rem; padding:9px 14px; }
+.ultra-intro .intro-controls button:focus-visible,
+.ultra-intro .intro-watch:focus-visible,
+.ultra-intro .intro-video-close:focus-visible { outline:3px solid #f5fff9; outline-offset:4px; }
+.ultra-intro .intro-video-overlay {
+  position:absolute; inset:0; z-index:40; display:grid; place-items:center;
+  padding:clamp(16px,4vw,54px); background:rgba(1,9,7,.96);
+}
+.ultra-intro .intro-video-overlay[hidden] { display:none!important; }
+.ultra-intro .intro-video-shell { width:min(1080px,100%); }
+.ultra-intro .intro-video-top { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:15px; color:#9ef1cd; letter-spacing:.1em; font-size:.8rem; font-weight:800; }
+.ultra-intro .intro-video-close { background:transparent; color:#fff; border:1px solid #78998c; padding:10px 16px; border-radius:999px; cursor:pointer; }
+.ultra-intro .intro-video-screen { position:relative; aspect-ratio:16/9; background:#000; border:1px solid #2c4a40; border-radius:16px; overflow:hidden; }
+.ultra-intro .intro-video-screen iframe { width:100%; height:100%; border:0; display:block; }
+.ultra-intro .intro-video-shell p { font-size:.85rem; color:#bacac2; margin-top:14px; }
+.ultra-intro .intro-video-shell p a { color:#9ef1cd; text-decoration:underline; }
+.ultra-intro.intro-video-open .intro-controls { visibility:hidden; }
+@media(max-width:680px) {
+  .ultra-intro .intro-controls { gap:5px; padding:6px 8px; bottom:9px; }
+  .ultra-intro .intro-controls .intro-dots { min-width:110px; gap:3px; }
+  .ultra-intro .intro-controls .intro-dot { min-width:13px; max-width:22px; height:26px; }
+  .ultra-intro .intro-step { min-width:29px; min-height:32px; font-size:20px; padding:2px 6px; }
+  .ultra-intro .intro-pause { min-height:32px; font-size:.75rem; padding:8px; }
+  .ultra-intro .intro-controls .intro-counter { min-width:40px; font-size:.7rem; }
+  .ultra-intro .intro-actions .btn { font-size:.88rem; padding:10px 13px; }
+  .ultra-intro .intro-video-overlay { padding:10px; }
+}
+@media(max-width:380px) { .ultra-intro .intro-controls .intro-counter { display:none; } }
+@media(prefers-reduced-motion:reduce) { .ultra-intro .intro-slide { transition:none; } }
+
+/* Editorial, original CSS artwork for EINSTAR technology highlight (not a product photo). */
+.ultra-intro .einstar-intro { background:#092019; }
+.ultra-intro .intro-einstar-art {
+  position:absolute; inset:0; z-index:-3; isolation:isolate; overflow:hidden;
+  background:radial-gradient(ellipse 48% 70% at 72% 46%,#2e7860 0%,#174533 42%,transparent 88%),linear-gradient(120deg,#06140f,#153727 55%,#081a15);
+}
+.ultra-intro .intro-einstar-art:before {
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(circle,#bafbe0 1px,transparent 1.5px);
+  background-size:17px 17px;
+  mask-image:radial-gradient(ellipse 36% 52% at 71% 48%,#000 38%,transparent 82%);
+  opacity:.65;transform:perspective(750px) rotateY(-15deg);
+}
+.ultra-intro .intro-einstar-art:after {
+  content:"";position:absolute;width:42%;aspect-ratio:1;right:9%;top:12%;
+  border:1px solid #8ee2ba69;border-radius:50%;
+  box-shadow:0 0 0 60px #6df1b00b,0 0 0 125px #6df1b008;
+  transform:rotateX(55deg) rotate(28deg);
+}
+.ultra-intro .intro-einstar-art span {
+  position:absolute;top:48%;right:11%;transform:translateY(-50%);
+  text-align:center;letter-spacing:.18em;line-height:1.7;font-weight:700;
+  color:#c8fbe1;opacity:.52;font-size:clamp(.7rem,1.6vw,1.15rem);
+}
+.ultra-intro .einstar-intro .intro-copy h2 span { color:#9af5d1; }
+@media(max-width:650px) {
+  .ultra-intro .intro-einstar-art:before { mask-image:radial-gradient(ellipse 65% 55% at 60% 30%,#000 25%,transparent 85%); }
+  .ultra-intro .intro-einstar-art:after { width:62%;top:10%;right:12%; }
+  .ultra-intro .intro-einstar-art span { top:23%;right:10%;width:80%;font-size:.7rem; }
+}

@@ -1,0 +1,11 @@
+issue_id,priority,status,reviewer,device,operating_system,browser,viewport_css_pixels,real_device_or_emulation,page_url,steps,expected,actual,screenshot_or_recording,proposed_fix
+QA-001,P1,Not tested,,,,,,,Homepage and partner carousel,,,,,
+QA-002,P1,Not tested,,,,,,,Founder section,,,,,
+QA-003,P1,Not tested,,,,,,,Shop and Will & Bear,,,,,
+QA-004,P1,Not tested,,,,,,,Aeternum introduction,,,,,
+QA-005,P1,Not tested,,,,,,,Sinocare product and article,,,,,
+QA-006,P1,Not tested,,,,,,,APE BORN product and article,,,,,
+QA-007,P1,Not tested,,,,,,,OTRA draft and style guide,,,,,
+QA-008,P1,Not tested,,,,,,,NMN older Journal article,,,,,
+QA-009,P1,Not tested,,,,,,,Comparison worksheet,,,,,
+QA-010,P2,Not tested,,,,,,,Newsletter layout and keyboard navigation,,,,,

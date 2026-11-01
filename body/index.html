@@ -1,5 +1,174 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Body Explorer — Work in progress | Youtopia Life</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/assets/ultrahuman-launch.css"><link rel="stylesheet" href="/assets/experience-polish.css?v=20261005">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Body Explorer — Interactive Learning Preview | Youtopia Life</title>
+<meta name="description" content="A gentle, interactive introduction to human organs and how they work together. Educational preview for all ages.">
 <link rel="stylesheet" href="/assets/site-standard.css?v=20261017">
 <link rel="stylesheet" href="/assets/premium-opening.css?v=20261018">
-<link rel="stylesheet" href="/assets/luxury-edition.css?v=20261025-4"><link rel="stylesheet" href="/assets/site-luxury-polish.css?v=20261025-4"></head><body class="luxury-edition site-standard is-editorial page-body"><div class="site-masthead"><div class="site-masthead-inner"><a class="site-wordmark" href="/">YOUTOPIA <span>LIFE</span></a><nav class="site-global-links" aria-label="Youtopia sections"><a href="/articles/">The Journal</a><a href="/guides/">Field Guides</a><a href="/#minds">Minds</a><a href="/shop/">Explore products</a><a href="/kids/">Families</a><a href="/contact/">Contact</a></nav></div></div><div class="site-edition"><span>Youtopia Life</span><span>Curiosity · Evidence · Possibility</span></div><nav class="site-local-nav"><a href="/">YOUTOPIA LIFE</a><a href="/guides/">Field guides</a></nav><main class="wrap"><section><p class="eyebrow">Body Explorer · Work in progress</p><h1>Understand the body.<br><em>See the connections.</em></h1><p class="lede">We're taking time to build an interactive learning experience for young and old, with accurate anatomy and clear explanations of how the body works.</p><p>The interactive explorer is on hold while we develop and review the experience.</p></section><section><h2>What we're working towards.</h2><div class="grid"><article class="card"><h2>Follow a journey.</h2><p>Explore what happens after eating sugar: digestion, absorption, circulation and the roles of organs and hormones.</p></article><article class="card"><h2>Focus on an organ.</h2><p>See organs in their natural positions, then focus on their function and how they communicate with other systems.</p></article><article class="card"><h2>Understand a change.</h2><p>Learn how inflammation and impaired function can affect the body, with age-appropriate explanations and clear limits.</p></article></div><p>Planned content will use G-rated anatomy and distinguish normal physiology, possible symptoms and situations requiring medical assessment.</p><a class="btn" href="/guides/">Explore our current guides</a></section></main><div class="section-signoff"><span>Stay curious. Look closer.</span><a href="/articles/">Explore the Youtopia Journal →</a><a href="/guides/">Find an everyday guide →</a></div><div class="hosting-credit" aria-label="Website hosting"><span>YOUTOPIA LIFE</span><a href="https://www.netlify.com/" target="_blank" rel="noopener">Powered by Netlify <span aria-hidden="true">↗</span></a></div>
-</body></html>
+<script defer src="/assets/analytics-consent.js"></script>
+<style>
+:root{--night:#06130e;--panel:#10261c;--mint:#9af5d1;--ink:#f3f9f4;--soft:#c2d7c8;--border:#315342;color-scheme:dark}
+*,*:before,*:after{box-sizing:border-box}
+html{scroll-behavior:smooth}body{background:var(--night);color:var(--ink);margin:0;font:17px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+button,a{font:inherit}a{color:var(--mint)}button:focus-visible,a:focus-visible,[role=button]:focus-visible{outline:3px solid #fdfcef;outline-offset:4px}
+.ex-nav{border-bottom:1px solid var(--border);padding:18px 0}.ex-nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.ex-nav a{text-decoration:none}
+.wrap{max-width:1200px;padding-inline:24px;margin:auto}.ex-logo{font-weight:900;letter-spacing:.1em}.ex-logo b{color:var(--mint)}
+.ex-eyebrow{font-size:.73rem;letter-spacing:.18em;color:var(--mint);font-weight:800;text-transform:uppercase}
+.ex-heading{padding:60px 0 25px}.ex-heading h1{font-size:clamp(2.8rem,7vw,6.2rem);letter-spacing:-.065em;line-height:.98;max-width:940px;margin:16px 0 22px}.ex-heading h1 span{color:var(--mint)}
+.ex-heading .lead{font-size:clamp(1rem,2vw,1.25rem);color:var(--soft);max-width:820px}.ex-status{font-size:.82rem;color:#afd0bb}
+.ex-layout{display:grid;grid-template-columns:minmax(310px,1.05fr) minmax(320px,.95fr);gap:32px;padding:24px 0 65px;align-items:start}
+.ex-figure{background:radial-gradient(ellipse at 50% 40%,#214537 0%,#0b2319 49%,#071a12 80%);border:1px solid var(--border);border-radius:28px;position:relative;overflow:hidden;min-height:660px}
+.ex-figure .hint{position:absolute;top:18px;left:22px;right:22px;display:flex;gap:10px;justify-content:space-between;z-index:2;font-size:.77rem;color:#bcdfcd}
+#body-model{width:100%;height:660px;display:block;transition:filter .25s}
+#body-model .body-shell{fill:#2d5748;fill-opacity:.39;stroke:#a5d3b4;stroke-opacity:.34;stroke-width:2;transition:opacity .25s}
+#body-model .organ{cursor:pointer;outline:none;opacity:1;transition:opacity .2s,filter .2s}
+#body-model .organ path,#body-model .organ ellipse,#body-model .organ rect{stroke:#f2fff2;stroke-opacity:.32;stroke-width:1.3}
+#body-model .organ:hover,#body-model .organ:focus-visible{filter:drop-shadow(0 0 11px #d6ffdb)}
+#body-model .organ:focus-visible{outline:none}
+#body-model .organ:focus-visible path,#body-model .organ:focus-visible ellipse{stroke:#ffffff;stroke-width:3}
+#body-model.zoomed .organ:not(.selected){opacity:.12;pointer-events:none}
+#body-model.zoomed .body-shell{opacity:.08}
+#body-model .organ.selected{filter:drop-shadow(0 0 12px #a9f9be)}
+#body-model{overflow:visible}
+.ex-model-controls{position:absolute;bottom:16px;left:16px;right:16px;display:flex;justify-content:center;gap:12px;align-items:center;z-index:3}
+.ex-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--mint);border:1px solid var(--mint);color:#082218;border-radius:100px;font-size:.84rem;font-weight:800;padding:10px 18px;cursor:pointer}
+.ex-btn.secondary{background:#0c291d;color:var(--mint)}.ex-btn[hidden]{display:none}
+.ex-panel{border-top:1px solid var(--border);padding-top:22px}
+.ex-panel h2{font-size:clamp(2.1rem,4vw,3.7rem);letter-spacing:-.04em;line-height:1.05;margin:12px 0 18px}
+.ex-panel p{color:var(--soft)}
+.ex-prompt{color:#b7e8ca;font-size:.87rem;margin-bottom:14px}
+.ex-organs{display:flex;gap:8px;flex-wrap:wrap;margin:25px 0 32px}
+.ex-organs button{background:transparent;border:1px solid #527263;color:#e8f7ed;border-radius:40px;padding:8px 13px;cursor:pointer;font-size:.86rem}
+.ex-organs button:hover,.ex-organs button[aria-pressed=true]{background:#295944;border-color:var(--mint);color:white}
+.ex-detail{background:linear-gradient(135deg,#183d2b,#0e2218);border:1px solid #3a7252;border-radius:22px;padding:26px;min-height:330px}
+.ex-detail h3{font-size:clamp(1.5rem,3vw,2.4rem);margin:5px 0 14px;line-height:1.1}
+.ex-detail p{font-size:.99rem;margin:12px 0}
+.ex-fact{color:#d5ffdf;background:#153e2b;border-left:3px solid var(--mint);padding:12px 15px;margin-top:18px;font-size:.93rem}
+.ex-disclaimer{border-top:1px solid var(--border);color:#a4bdb0;padding:34px 0 60px;font-size:.86rem}
+.ex-disclaimer a{font-weight:700}
+@media(max-width:900px){.ex-layout{grid-template-columns:1fr}.ex-figure{min-height:590px}#body-model{height:590px}.ex-panel{border-top:0}}
+@media(max-width:580px){.wrap{padding-inline:16px}.ex-heading{padding-top:38px}.ex-layout{gap:20px}.ex-figure{min-height:525px}#body-model{height:525px}.ex-figure .hint{font-size:.7rem}.ex-detail{padding:20px}.ex-organs{gap:7px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#body-model .organ,#body-model .body-shell{transition:none}}
+</style>
+</head>
+<body class="site-standard is-editorial page-body">
+<nav class="ex-nav"><div class="wrap"><a href="/" class="ex-logo">YOUTOPIA <b>LIFE</b></a><div><a href="/guides/">Field Guides</a> &nbsp; · &nbsp; <a href="/kids/">For families</a></div></div></nav>
+<main class="wrap">
+<header class="ex-heading"><p class="ex-eyebrow">Discover / The human body / Interactive preview</p><h1>See how the body <span>works together.</span></h1><p class="lead">Explore the body's organs in their approximate positions. Choose an organ to zoom in past the outer body layer, then learn what it does and how it works with the rest of you.</p><p class="ex-status">G-rated learning experience · simplified anatomical illustration · not a diagnostic tool</p></header>
+<section class="ex-layout" aria-label="Interactive human organ explorer">
+<div class="ex-figure">
+<div class="hint"><span>FRONT VIEW / ANATOMICAL ILLUSTRATION</span><span id="model-mode">WHOLE BODY</span></div>
+<svg id="body-model" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Simplified human body with clickable brain, thyroid, lungs, heart, liver, stomach, pancreas, kidneys and intestines" viewBox="0 0 520 860" preserveAspectRatio="xMidYMid meet">
+<defs>
+<linearGradient id="skin" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#4e816a"/><stop offset=".7" stop-color="#234d3f"/><stop offset="1" stop-color="#163729"/></linearGradient>
+<radialGradient id="brain" cx="40%" cy="35%"><stop stop-color="#f5adba"/><stop offset="1" stop-color="#a95e80"/></radialGradient>
+<linearGradient id="lung" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ecb1b5"/><stop offset="1" stop-color="#ba667d"/></linearGradient>
+<radialGradient id="red"><stop stop-color="#f16a7b"/><stop offset="1" stop-color="#963c5e"/></radialGradient>
+<linearGradient id="liver" x1="0" x2="1"><stop stop-color="#a86f6c"/><stop offset="1" stop-color="#673c4a"/></linearGradient>
+<linearGradient id="gold" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f5d1a8"/><stop offset="1" stop-color="#b68765"/></linearGradient>
+<linearGradient id="kidney" x1="0" x2="1"><stop stop-color="#df8790"/><stop offset="1" stop-color="#985164"/></linearGradient>
+<linearGradient id="intestine" x1="0" x2="1"><stop stop-color="#f1c2b2"/><stop offset="1" stop-color="#c88683"/></linearGradient>
+</defs>
+<!-- Skin and body outline is semi-transparent so organs remain visible and clickable. -->
+<g class="body-shell" aria-hidden="true">
+<ellipse cx="260" cy="95" rx="59" ry="73" fill="url(#skin)"/>
+<path d="M228 156 L225 194 C200 194 164 206 143 232 L116 351 103 478 Q113 505 132 481 L166 374 171 495 183 669 205 819 Q219 848 232 815 L238 650 260 643 282 650 288 815 Q300 846 315 819 L337 669 348 495 354 374 388 481 Q406 499 417 478 L404 351 377 232 C355 207 320 194 295 194 L292 156 Z" fill="url(#skin)" />
+</g>
+<!-- All organs remain in anatomical position until the user selects a group. -->
+<g class="organ" id="organ-brain" data-organ="brain" role="button" tabindex="0" aria-label="Zoom to brain"><title>Brain</title><path d="M227 65 Q214 44 232 39 Q243 23 262 34 Q282 25 296 44 Q309 57 298 75 Q312 96 293 107 Q277 116 263 103 Q247 117 232 105 Q213 102 220 82 Z" fill="url(#brain)"/><path d="M238 50 C252 67 231 70 242 88 M266 37 Q254 58 271 72 Q257 88 271 104 M285 54 Q276 66 291 79" fill="none" stroke="#f6d2d7" stroke-width="3"/></g>
+<g class="organ" id="organ-thyroid" data-organ="thyroid" role="button" tabindex="0" aria-label="Zoom to thyroid"><title>Thyroid</title><path d="M247 180 Q231 171 230 188 Q232 205 249 200 Q262 192 271 200 Q292 205 292 184 Q289 170 273 181 L261 187 Z" fill="url(#gold)"/></g>
+<g class="organ" id="organ-lungs" data-organ="lungs" role="button" tabindex="0" aria-label="Zoom to lungs"><title>Lungs</title><path d="M238 230 Q212 204 194 230 Q180 257 174 308 Q169 350 188 372 Q210 385 244 362 L249 285 Q245 249 238 230Z" fill="url(#lung)"/><path d="M284 230 Q311 205 331 229 Q345 260 351 308 Q358 356 333 373 Q306 385 275 363 L270 286 Q275 249 284 230Z" fill="url(#lung)"/><path d="M260 207 L260 279 M260 255 L222 301 M260 255 L300 299 M222 301 L207 343 M300 299 L319 344" stroke="#f5d7cd" stroke-width="5" stroke-linecap="round" fill="none"/></g>
+<g class="organ" id="organ-heart" data-organ="heart" role="button" tabindex="0" aria-label="Zoom to heart"><title>Heart</title><path d="M265 308 C247 292 227 300 230 322 C233 344 258 359 269 373 C282 360 309 342 307 319 C304 295 280 295 265 308Z" fill="url(#red)"/><path d="M267 310 Q265 334 269 364 M279 309 Q291 318 285 336" stroke="#faabb1" stroke-width="2.5" fill="none"/></g>
+<g class="organ" id="organ-liver" data-organ="liver" role="button" tabindex="0" aria-label="Zoom to liver"><title>Liver</title><path d="M168 385 Q199 367 241 382 Q260 388 274 410 Q259 445 224 450 Q195 454 166 433 Q156 408 168 385Z" fill="url(#liver)"/><path d="M179 408 Q216 421 251 411" fill="none" stroke="#d9998e" stroke-width="2"/></g>
+<g class="organ" id="organ-stomach" data-organ="stomach" role="button" tabindex="0" aria-label="Zoom to stomach"><title>Stomach</title><path d="M291 389 Q311 377 330 396 Q334 408 321 422 Q345 434 331 454 Q313 480 283 460 Q276 451 281 436 Q297 412 291 389Z" fill="url(#gold)"/><path d="M298 410 Q310 423 320 429" stroke="#f8dfbd" stroke-width="2.5" fill="none"/></g>
+<g class="organ" id="organ-pancreas" data-organ="pancreas" role="button" tabindex="0" aria-label="Zoom to pancreas"><title>Pancreas</title><path d="M225 462 Q239 450 257 458 Q281 459 300 471 Q316 477 323 485 Q308 501 286 492 Q270 490 254 487 Q230 491 221 478Z" fill="#c99d75"/></g>
+<g class="organ" id="organ-kidneys" data-organ="kidneys" role="button" tabindex="0" aria-label="Zoom to kidneys"><title>Kidneys</title><path d="M206 490 Q178 477 176 507 Q176 537 195 543 Q215 545 216 524 Q205 514 216 505 Q222 494 206 490Z" fill="url(#kidney)"/><path d="M315 490 Q343 477 345 507 Q345 537 325 543 Q306 545 305 524 Q315 514 305 505 Q300 494 315 490Z" fill="url(#kidney)"/></g>
+<g class="organ" id="organ-intestines" data-organ="intestines" role="button" tabindex="0" aria-label="Zoom to intestines"><title>Intestines</title><path d="M213 511 Q252 500 300 516 Q330 528 330 554 L328 612 Q322 651 290 654 L230 654 Q192 650 189 613 L189 554 Q190 524 213 511Z" fill="#ba8175" fill-opacity=".84"/><path d="M226 535 C256 530 295 532 302 545 C313 559 279 565 236 559 C212 554 208 576 236 582 C275 590 306 583 304 598 C300 619 218 591 215 615 C215 630 244 635 271 625 M236 644 L288 644" stroke="#f7c7b0" stroke-width="15" stroke-linecap="round" fill="none"/><path d="M219 531 Q194 546 202 591 Q201 634 229 645 L295 645 Q320 623 314 579 L310 532" stroke="#9a545a" stroke-width="10" stroke-linecap="round" fill="none"/></g>
+</svg>
+<div class="ex-model-controls"><button type="button" id="reset-body" class="ex-btn secondary" hidden>← Back to whole body</button></div>
+</div>
+<div class="ex-panel">
+<p class="ex-eyebrow">Discover an organ</p><h2 id="organ-title">A world under your skin.</h2>
+<p id="organ-intro" class="ex-prompt">Select an organ on the body illustration, or choose one of the buttons below.</p>
+<div class="ex-organs" role="group" aria-label="Choose an organ">
+<button type="button" data-pick="brain" aria-pressed="false">Brain</button><button type="button" data-pick="thyroid" aria-pressed="false">Thyroid</button><button type="button" data-pick="lungs" aria-pressed="false">Lungs</button><button type="button" data-pick="heart" aria-pressed="false">Heart</button><button type="button" data-pick="liver" aria-pressed="false">Liver</button><button type="button" data-pick="stomach" aria-pressed="false">Stomach</button><button type="button" data-pick="pancreas" aria-pressed="false">Pancreas</button><button type="button" data-pick="kidneys" aria-pressed="false">Kidneys</button><button type="button" data-pick="intestines" aria-pressed="false">Intestines</button>
+</div>
+<div class="ex-detail" id="organ-detail" aria-live="polite"><p class="ex-eyebrow">How it works</p><h3>Everything is connected.</h3><p>Your body is made of systems that constantly work together. The brain sends signals, the lungs bring in oxygen, the heart moves blood, and the digestive organs make nutrients available.</p><div class="ex-fact">Try this: choose the heart, then the lungs, to see how two different organs support the same big job.</div></div>
+</div>
+</section>
+<section class="ex-disclaimer"><p><strong>Important:</strong> This is an early, G-rated educational preview, not a medically precise anatomy atlas. Illustrations show approximate organ locations, sizes and shapes and omit many structures. Explanations are general and are not medical advice. Children can explore with a parent or teacher. For personal medical questions, contact a qualified professional.</p><p><a href="/guides/">Explore the evidence-led Field Guides</a> · <a href="/editorial/">Our editorial standards</a></p></section>
+</main>
+<script>
+(() => {
+  'use strict';
+  const model = document.getElementById('body-model');
+  const resetButton = document.getElementById('reset-body');
+  const detail = document.getElementById('organ-detail');
+  const title = document.getElementById('organ-title');
+  const intro = document.getElementById('organ-intro');
+  const mode = document.getElementById('model-mode');
+  const organs = Array.from(document.querySelectorAll('#body-model .organ'));
+  const buttons = Array.from(document.querySelectorAll('[data-pick]'));
+  const defaultBox = '0 0 520 860';
+  const info = {
+    brain: {name:'Brain', box:'170 5 180 150', function:'The brain receives information and helps coordinate movement, memory, feelings and many automatic body functions.', connection:'It sends and receives signals through the nervous system. Signals also help coordinate breathing, heartbeat and digestion.', fact:'Did you know? Your brain keeps working even while you sleep.'},
+    thyroid:{name:'Thyroid',box:'200 140 120 95',function:'The thyroid is a small gland in the neck. It releases hormones that help regulate energy use and many body processes.',connection:'The brain and thyroid communicate through hormone signals. Thyroid hormones influence growth, temperature regulation and metabolism.',fact:'Its shape is often compared to a butterfly.'},
+    lungs:{name:'Lungs',box:'145 192 235 225',function:'The lungs move oxygen from inhaled air into the blood and help remove carbon dioxide when you breathe out.',connection:'The heart pumps oxygen-rich blood to the rest of the body. The brain and muscles coordinate your breathing.',fact:'Your two lungs are not identical; the left one makes room for the heart.'},
+    heart:{name:'Heart',box:'210 272 125 130',function:'The heart is a powerful muscle that pumps blood around the body.',connection:'Blood carries oxygen from the lungs, nutrients from digestion and other important substances to tissues throughout the body.',fact:'Your heartbeat changes throughout the day, including during play, exercise and rest.'},
+    liver:{name:'Liver',box:'145 340 155 150',function:'The liver helps process nutrients, makes important proteins and supports the body as it handles many substances.',connection:'Nutrients absorbed from the intestines travel to the liver. The liver also makes bile, which helps digest fats.',fact:'The liver can regenerate some of its tissue after injury, but it still needs protection.'},
+    stomach:{name:'Stomach',box:'250 355 125 150',function:'The stomach mixes food and liquid with digestive juices before gradually moving them into the small intestine.',connection:'The stomach, pancreas, liver and intestines all contribute to digestion in different ways.',fact:'Most nutrients are absorbed later in the small intestine, not the stomach.'},
+    pancreas:{name:'Pancreas',box:'198 431 152 100',function:'The pancreas makes digestive enzymes and hormones, including insulin, which helps regulate blood sugar.',connection:'It works with the liver and intestines after eating, while hormones help cells access and use nutrients.',fact:'One organ can help digestion and blood-sugar regulation at the same time.'},
+    kidneys:{name:'Kidneys',box:'143 462 230 112',function:'The kidneys filter the blood, help balance water and minerals, and produce urine.',connection:'The heart supplies the kidneys with blood. Kidney signals also contribute to blood-pressure regulation.',fact:'Most people have two kidneys, but a person can sometimes live well with one functioning kidney.'},
+    intestines:{name:'Intestines',box:'155 495 220 185',function:'The small intestine absorbs most nutrients from food. The large intestine absorbs water and helps form stool.',connection:'The intestines work with the stomach, liver, pancreas, bloodstream and nervous system to support digestion.',fact:'The small intestine is longer than the large intestine, despite their names.'}
+  };
+  function select(key){
+    const data = info[key]; if (!data) return;
+    model.setAttribute('viewBox',data.box);
+    model.classList.add('zoomed');
+    organs.forEach(item => {
+      const isSelected = item.dataset.organ === key;
+      item.classList.toggle('selected', isSelected);
+      item.setAttribute('aria-pressed', String(isSelected));
+    });
+    buttons.forEach(button => button.setAttribute('aria-pressed',String(button.dataset.pick === key)));
+    title.textContent = data.name;
+    intro.textContent = 'An organ in focus. Choose another organ to explore a new view.';
+    detail.replaceChildren();
+    const kicker = document.createElement('p'); kicker.className = 'ex-eyebrow'; kicker.textContent = 'What does it do?';
+    const heading = document.createElement('h3'); heading.textContent = data.name;
+    const body = document.createElement('p'); body.textContent = data.function;
+    const connecting = document.createElement('p'); connecting.textContent = data.connection;
+    const fact = document.createElement('div'); fact.className = 'ex-fact'; fact.textContent = data.fact;
+    detail.append(kicker,heading,body,connecting,fact);
+    resetButton.hidden = false;
+    mode.textContent = data.name.toUpperCase() + ' / CLOSE VIEW';
+  }
+  function reset(){
+    model.setAttribute('viewBox',defaultBox);
+    model.classList.remove('zoomed');
+    organs.forEach(el => {el.classList.remove('selected');el.setAttribute('aria-pressed','false')});
+    buttons.forEach(b => b.setAttribute('aria-pressed','false'));
+    title.textContent = 'A world under your skin.';
+    intro.textContent = 'Select an organ on the body illustration, or choose one of the buttons below.';
+    detail.replaceChildren();
+    const kicker = document.createElement('p'); kicker.className = 'ex-eyebrow'; kicker.textContent = 'How it works';
+    const heading = document.createElement('h3'); heading.textContent = 'Everything is connected.';
+    const desc = document.createElement('p'); desc.textContent = 'Your body is made of systems that constantly work together. The brain sends signals, the lungs bring in oxygen, the heart moves blood, and the digestive organs make nutrients available.';
+    const fact = document.createElement('div'); fact.className = 'ex-fact'; fact.textContent = 'Try this: choose the heart, then the lungs, to see how two different organs support the same big job.';
+    detail.append(kicker,heading,desc,fact);
+    resetButton.hidden = true;
+    mode.textContent = 'WHOLE BODY';
+  }
+  organs.forEach(el => {
+    el.setAttribute('aria-pressed','false');
+    el.addEventListener('click',() => select(el.dataset.organ));
+    el.addEventListener('keydown',event => {if(event.key==='Enter'||event.key===' '){event.preventDefault();select(el.dataset.organ)}});
+  });
+  buttons.forEach(el => el.addEventListener('click',() => select(el.dataset.pick)));
+  resetButton.addEventListener('click',reset);
+})();
+</script>
+</body>
+</html>

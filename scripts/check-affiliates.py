@@ -55,7 +55,8 @@ opening = home[home.index('<section class="intro-carousel ultra-intro"'):home.in
 # A user-controlled highlights reel replaces the old intrusive Ultrahuman film takeover.
 assert 'class="intro-pause"' in opening and 'class="intro-replay"' not in opening
 assert 'data-intro-video="-sDcFyZLxTY"' in opening, 'dire wolf film missing'
-assert len(re.findall(r'<article class="intro-slide', opening)) == 7, 'highlight reel should have seven slides'
+assert len(re.findall(r'<article class="intro-slide', opening)) == 8, 'highlight reel should have eight slides'
+assert 'Discover EINSTAR 3D scanning' in opening and 'href="/products/einstar/"' in opening
 assert 'class="intro-video-overlay"' in opening and 'data-intro-video-close' in opening
 assert '<div class="ultra-film"' not in opening, 'old auto-playing film panel returned'
 assert '/assets/intro-highlight-reel.css' in home and '/assets/founder-editorial.css' in home

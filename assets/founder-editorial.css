@@ -34,27 +34,45 @@
   .founder-spread { grid-template-columns: 1fr; }
 }
 
-/* Authentic founder photo triptych. Original PNG pixels are never regenerated. */
-.founder-photos { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,.65fr); gap:12px; align-items:stretch; }
-.founder-photos figure { margin:0; min-width:0; overflow:hidden; border-radius:14px; background:#162922; }
-.founder-photos a { display:block; position:relative; height:100%; min-height:175px; color:#f8fff9; }
-.founder-photos img { display:block; width:100%; height:100%; object-fit:cover; object-position:center; filter:none; transform:none; }
-.founder-photo-main { min-height:430px; }
-.founder-photo-main img { object-position:52% center; }
-.founder-photo-side { display:grid; grid-template-rows:1fr 1fr; gap:12px; min-width:0; }
-.founder-photo-side figure { min-height:205px; }
-.founder-photo-side img { object-position:center 30%; }
-.founder-zoom { position:absolute; bottom:0; right:0; left:0; padding:12px 14px; text-align:right; font-weight:700; font-size:.77rem; background:linear-gradient(0deg,rgba(0,9,6,.9),transparent); }
-.founder-image-note { grid-column:1 / -1; font-size:.75rem; line-height:1.6; color:#abbfb4; margin:2px 0 0; }
-.founder-photos a:focus-visible { outline:3px solid #9af5d1; outline-offset:-3px; }
-@media(max-width:960px) {
-  .founder-photos { grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr); }
-  .founder-photo-main { min-height:365px; }
-  .founder-photo-side figure { min-height:175px; }
+/* November 2026: founder-approved Youtopia Life lifestyle editorial artwork. */
+.founder-spread.founder-lifestyle-feature {
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:clamp(20px,3vw,38px);
+  max-width:1320px;
 }
-@media(max-width:520px) {
-  .founder-photos { grid-template-columns:1fr 1fr; }
-  .founder-photo-main { grid-column:1 / -1; min-height:350px; }
-  .founder-photo-side { grid-column:1 / -1; grid-template-columns:1fr 1fr; grid-template-rows:none; }
-  .founder-photo-side figure { min-height:165px; }
+.founder-lifestyle-art {margin:0;position:relative;max-width:100%;}
+.founder-lifestyle-art>a {
+  display:block;position:relative;overflow:hidden;border-radius:16px;
+  border:1px solid rgba(154,245,209,.28);
+  background:#030b08;
+  box-shadow:0 30px 80px #0007;
 }
+.founder-spread .founder-lifestyle-art img {
+  display:block;width:100%;height:auto;object-fit:contain;
+  filter:none;transform:none;
+}
+.founder-lifestyle-art a:focus-visible {outline:3px solid #9af5d1;outline-offset:5px;}
+.founder-lifestyle-zoom {
+  position:absolute;bottom:0;right:0;left:0;display:block;
+  background:linear-gradient(0deg,#030d0acc,transparent);
+  padding:38px 20px 14px;text-align:right;font-size:.78rem;
+  font-weight:800;letter-spacing:.045em;color:#ecfff5;
+}
+.founder-spread .founder-lifestyle-art figcaption {
+  margin-top:12px;max-width:940px;font-size:.75rem;color:#a9bdb2;
+}
+.founder-lifestyle-story{
+  display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  gap:clamp(25px,6vw,80px);align-items:start;
+  padding:clamp(10px,2vw,28px) 0 0;
+}
+.founder-lifestyle-story h2{margin:14px 0;letter-spacing:-.04em;max-width:620px;}
+.founder-lifestyle-story p{margin:0 0 14px;max-width:700px;}
+.founder-lifestyle-story .btn{margin-top:12px;}
+@media(max-width:740px){
+  .founder-lifestyle-story{grid-template-columns:1fr;gap:16px;}
+  .founder-lifestyle-zoom{padding:28px 12px 10px;font-size:.7rem;}
+  .founder-lifestyle-art>a{border-radius:8px;}
+}
+@media(prefers-reduced-motion:reduce){.founder-lifestyle-art *{transition:none!important;}}

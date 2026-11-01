@@ -83,5 +83,16 @@ for path in ("body/index.html", "store/index.html", "contact/thanks/index.html",
              "newsletter/thanks/index.html", "store/thanks/index.html", "store/thanks.html"):
     assert any("noindex" in value for value in Page(ROOT / path).robots), path
 
+# G-rated Body Explorer must include organ geometry, real click-to-zoom behaviour,
+# accessible text controls, a reset path, and noindex while anatomy is in review.
+body_explorer = (ROOT / 'body/index.html').read_text()
+assert '<svg id="body-model"' in body_explorer
+assert 'model.setAttribute(\'viewBox\',data.box)' in body_explorer
+assert 'id="reset-body"' in body_explorer
+assert 'G-rated learning experience' in body_explorer
+assert 'noindex, nofollow' in body_explorer
+for organ in ('brain', 'thyroid', 'lungs', 'heart', 'liver', 'stomach', 'pancreas', 'kidneys', 'intestines'):
+    assert f'id="organ-{organ}"' in body_explorer and f'data-pick="{organ}"' in body_explorer, organ
+
 print(f"PASS: {len(urls)} canonical/indexable sitemap URLs; ten legacy URL forms; "
       "redirect destinations/loops; internal page links; intentional noindex pages")

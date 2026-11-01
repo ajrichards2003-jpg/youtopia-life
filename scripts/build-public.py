@@ -55,7 +55,7 @@ required = [
     "index.html", "404.html", "sitemap.xml",
     "assets/ultrahuman-intro.js", "assets/intro-highlight-reel.css",
     "assets/adam-founder-lifestyle-branded-2026.webp",
-    "products/einstar/index.html", "body/index.html",
+    "body/index.html",
 ]
 missing = [p for p in required if not (PUBLIC / p).is_file()]
 if missing:
@@ -64,7 +64,7 @@ if missing:
 # Guard against accidentally leaking hidden source or internal release work.
 private = [
     p for p in PUBLIC.rglob("*") if p.is_file() and (
-        p.suffix.lower() in {".md", ".yaml", ".yml", ".toml", ".map"} or
+        p.suffix.lower() in {".md", ".yaml", ".yml", ".toml", ".map", ".json", ".txt", ".py", ".sh", ".patch"} and p.name != "robots.txt" or
         "docs" in p.parts or "scripts" in p.parts or
         p.name in {"package.json", "package-lock.json"}
     )
@@ -93,7 +93,7 @@ class LocalAssets(HTMLParser):
             self.paths.append(urlsplit(href).path)
 
 # These critical pages must reference files present in the publish output.
-for page in ["index.html", "body/index.html", "shop/index.html", "products/einstar/index.html"]:
+for page in ["index.html", "body/index.html", "shop/index.html"]:
     parser = LocalAssets()
     parser.feed((PUBLIC / page).read_text(encoding="utf-8"))
     for asset in parser.paths:

@@ -27,6 +27,10 @@ PUBLIC_EXTS = {
     ".ogg", ".webmanifest", ".pdf",
 }
 
+# Unconfirmed partner pages are not published (302 to /shop/ in netlify.toml).
+GATED = ("products/otra/", "products/aeternum/", "products/einstar/", "products/ape-born/", "products/sinocare/",
+         "articles/sinocare-home-monitoring.html", "articles/ape-born-muscle-stimulation.html", "articles/otra-eyewear-style-guide.html")
+
 if PUBLIC.exists():
     rmtree(PUBLIC)
 PUBLIC.mkdir(parents=True)
@@ -45,6 +49,8 @@ for source in ROOT.rglob("*"):
         if source.name not in ROOT_ALLOWED:
             continue
     elif source.suffix.lower() not in PUBLIC_EXTS:
+        continue
+    if rel.as_posix().startswith(GATED):
         continue
     target = PUBLIC / rel
     target.parent.mkdir(parents=True, exist_ok=True)

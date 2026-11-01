@@ -6,10 +6,9 @@ import re
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-MERCHANTS = {'69428': 'ultrahuman.com', '114180': 'sinocare.com',
-             '59683': 'apebornfitness.com', '119813': 'willandbear.com',
-             '96299': 'otraeyewear.com', '82371': 'aeternum.site',
-             '105805': 'einstar.com'}
+MERCHANTS = {'69428': 'ultrahuman.com'}  # Ledger register 1 Nov: only confirmed partner
+GATED = ('products/otra/', 'products/aeternum/', 'products/einstar/', 'products/ape-born/', 'products/sinocare/',
+         'articles/sinocare-home-monitoring.html', 'articles/ape-born-muscle-stimulation.html', 'articles/otra-eyewear-style-guide.html')
 
 class Page(HTMLParser):
     def __init__(self, path):
@@ -27,6 +26,7 @@ class Page(HTMLParser):
 count = 0
 seen = set()
 for path in ROOT.rglob('*.html'):
+    if path.relative_to(ROOT).as_posix().startswith(GATED + ('public-site/',)): continue
     p = Page(path); p.feed(path.read_text())
     for a in p.links:
         u = urlsplit(a.get('href', ''))
@@ -39,7 +39,7 @@ for path in ROOT.rglob('*.html'):
         assert dest.scheme == 'https' and (dest.netloc == MERCHANTS[mid] or dest.netloc.endswith('.' + MERCHANTS[mid])), (path, 'merchant/destination mismatch')
         assert q.get('clickref') and 'sponsored' in a.get('rel', '').split(), (path, 'missing attribution/disclosure attribute')
         seen.add(mid); count += 1
-    if str(path.relative_to(ROOT)) in ('index.html', 'shop/index.html', 'products/aeternum/index.html', 'products/otra/index.html', 'products/einstar/index.html', 'articles/otra-eyewear-style-guide.html'):
+    if str(path.relative_to(ROOT)) in ('index.html', 'shop/index.html', 'products/ultrahuman/index.html'):
         assert len(p.ids) == len(set(p.ids)), (path, 'duplicate ID')
         for asset in p.assets:
             u = urlsplit(asset)
@@ -55,8 +55,7 @@ opening = home[home.index('<section class="intro-carousel ultra-intro"'):home.in
 # A user-controlled highlights reel replaces the old intrusive Ultrahuman film takeover.
 assert 'class="intro-pause"' in opening and 'class="intro-replay"' not in opening
 assert 'data-intro-video="-sDcFyZLxTY"' in opening, 'dire wolf film missing'
-assert len(re.findall(r'<article class="intro-slide', opening)) == 8, 'highlight reel should have eight slides'
-assert 'Discover EINSTAR 3D scanning' in opening and 'href="/products/einstar/"' in opening
+assert len(re.findall(r'<article class="intro-slide', opening)) == 5, 'highlight reel should have five slides'
 assert 'class="intro-video-overlay"' in opening and 'data-intro-video-close' in opening
 assert '<div class="ultra-film"' not in opening, 'old auto-playing film panel returned'
 assert '/assets/intro-highlight-reel.css' in home and '/assets/founder-editorial.css' in home
@@ -71,16 +70,16 @@ assert 'AI-assisted lifestyle editorial' in opening_founder, 'artwork must be de
 assert 'Adam Richards' in opening_founder and 'Youtopia Life' in opening_founder
 for stale in ('founder-adam-original-formal.png', 'founder-adam-original-blue-shirt.png', 'founder-adam-ecoflow-event.png', 'adam-founder-editorial-v3.webp'):
     assert stale not in opening_founder, ('old founder image still in feature', stale)
-assert '/products/einstar/' in (ROOT / 'shop/index.html').read_text(), 'EINSTAR missing from directory'
 assert 'iherb' not in (ROOT / 'shop/index.html').read_text().lower(), 'iHerb must remain off public shop'
-assert '/products/sinocare/' in home and '/products/ape-born/' in home and '/products/aeternum/' in home
+for page in ('index.html', 'shop/index.html', 'wearables/index.html', 'articles/index.html'):
+    t = (ROOT / page).read_text()
+    for g in ('/products/sinocare/', '/products/ape-born/', '/products/aeternum/', '/products/otra/', '/products/einstar/', 'willandbear'):
+        assert g not in t, (page, 'unconfirmed partner linked', g)
 assert 'href="https://www.ultrahuman.com/au/ring/"' not in home, 'untracked homepage buying link'
 sitemap = {x.text for x in ET.parse(ROOT / 'sitemap.xml').findall('.//{*}loc')}
-for rel in ('products/otra/index.html', 'articles/otra-eyewear-style-guide.html'):
-    path = ROOT / rel; p = Page(path); p.feed(path.read_text())
-    assert 'noindex' in p.robots and 'not approved for promotion' in path.read_text().lower(), (rel, 'draft guard missing')
-    assert p.canonicals and all(u not in sitemap for u in p.canonicals), (rel, 'draft indexed')
+for g in GATED:
+    assert all(g not in u for u in sitemap), (g, 'gated page in sitemap')
 for rel in ('products/ultrahuman/index.html', 'index.html'):
     text = (ROOT / rel).read_text()
     assert not re.search(r'20\s*%\s*(?:off|discount)', text, re.I), (rel, 'unconfirmed discount')
-print(f'PASS: {count} affiliate links across seven partners; publisher/destinations, click references, sponsored attributes, key assets, founder and draft guards')
+print(f'PASS: {count} affiliate links (Ultrahuman only); publisher/destinations, click references, sponsored attributes, key assets, founder and draft guards')

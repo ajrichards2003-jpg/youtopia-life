@@ -123,17 +123,24 @@
   show(0);
   schedule();
 
-  /* Size the hero to the real nav + disclosure stack instead of a fixed guess. */
+  /* Size the hero to the visible screen, including iOS toolbar changes and the disclosure strip. */
   function setAboveHero() {
     const top = document.getElementById('top');
     if (!top) return;
     const above = Math.ceil(top.getBoundingClientRect().top + window.scrollY);
-    document.documentElement.style.setProperty('--above-hero', above + 'px');
+    const visible = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+    const fit = Math.max(0, Math.floor(visible - above));
+    const root = document.documentElement.style;
+    root.setProperty('--above-hero', above + 'px');
+    root.setProperty('--hero-fit', fit + 'px');
   }
   setAboveHero();
   window.addEventListener('load', setAboveHero);
   window.addEventListener('resize', setAboveHero);
+  window.visualViewport?.addEventListener('resize', setAboveHero);
+  window.visualViewport?.addEventListener('scroll', setAboveHero);
   document.fonts?.ready?.then(setAboveHero);
+  document.querySelector('.affiliate-short')?.addEventListener('toggle', setAboveHero);
   if (window.ResizeObserver) {
     const watcher = new ResizeObserver(setAboveHero);
     const nav = document.querySelector('.nav');

@@ -122,4 +122,23 @@
 
   show(0);
   schedule();
+
+  /* Size the hero to the real nav + disclosure stack instead of a fixed guess. */
+  function setAboveHero() {
+    const top = document.getElementById('top');
+    if (!top) return;
+    const above = Math.ceil(top.getBoundingClientRect().top + window.scrollY);
+    document.documentElement.style.setProperty('--above-hero', above + 'px');
+  }
+  setAboveHero();
+  window.addEventListener('load', setAboveHero);
+  window.addEventListener('resize', setAboveHero);
+  document.fonts?.ready?.then(setAboveHero);
+  if (window.ResizeObserver) {
+    const watcher = new ResizeObserver(setAboveHero);
+    const nav = document.querySelector('.nav');
+    const banner = document.querySelector('.affiliate-banner');
+    if (nav) watcher.observe(nav);
+    if (banner) watcher.observe(banner);
+  }
 })();

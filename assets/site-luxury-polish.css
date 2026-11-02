@@ -31,7 +31,7 @@ body.luxury-edition #top .intro-controls{justify-content:flex-end;align-items:ce
 body.luxury-edition .premium-masthead .premium-title small{color:#fff!important}
 
 /* Mobile (<=768px): carousel first, full-bleed; curiosity panel follows. Desktop unchanged. */
-@media(max-width:768px){body.is-home #top.ultra-intro{display:block!important;position:relative!important;height:calc(100svh - 120px)!important;min-height:560px!important;max-height:760px!important;overflow:hidden!important}
+@media(max-width:768px){body.is-home #top.ultra-intro{display:block!important;position:relative!important;height:calc(100svh - var(--above-hero, 168px))!important;min-height:0!important;max-height:none!important;overflow:hidden!important}
 body.is-home #top.ultra-intro .intro-slide{position:absolute;inset:0}
 body.is-home #top.ultra-intro .intro-slide>img{width:100%;height:100%;object-fit:cover}
 body.is-home #start-here{order:2}}

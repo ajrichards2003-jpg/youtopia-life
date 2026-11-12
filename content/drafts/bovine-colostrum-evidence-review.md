@@ -94,7 +94,13 @@ No product recommendation, purchase button or affiliate link should be added unt
 - [ ] Affiliate relationship, samples and disclosure confirmed.
 - [ ] Claims/compliance review completed.
 - [ ] Editorial approval recorded.
-- [ ] Preview and accessibility QA completed.
+- [x] Draft content structure, heading hierarchy and reference-link accessibility reviewed.
+- [ ] Final rendered-page, mobile and assistive-technology QA completed after template integration.
+
+
+## Preview QA note
+
+The PR57 Netlify deploy preview built successfully on 12 November 2026. This Markdown file is intentionally held in `content/drafts/` and is not exposed as a public article route, so the successful build does not constitute visual, mobile or assistive-technology QA of a rendered article. Complete those checks only after an approved page template is added in this review branch.
 
 ## The Youtopia Standard
 

@@ -73,7 +73,7 @@
 
   function openVideo(trigger) {
     const id = trigger.getAttribute('data-intro-video');
-    if (!modal || !player || !closeButton || id !== '-sDcFyZLxTY') return;
+    if (!modal || !player || !closeButton || id !== 'iGMujrDlkKA') return;
     window.clearTimeout(timer);
     focusReturn = trigger;
     videoOpen = true;

@@ -78,3 +78,32 @@ Uses existing AI-generated algae/laboratory illustrations and the already docume
 | `assets/youtopia-family-noface.jpg` / `.webp` (option C: eucalyptus trail) | Text-to-image prompt written by Picasso (Youtopia art direction); no reference image or photo input. Runway task `082af706-17a5-4092-90c1-fd600b6fe3d3` | Runway `generate_image`, Nano Banana Pro, 2K (2752×1536 master), cropped to 2:1, downscaled, colour-graded in PIL. A small brand-like emblem the model generated on the adult's jacket was retouched out, so no third-party mark remains | 27 Oct 2026 | Original AI-generated, no real persons, no faces | Youtopia Life (Adam Richards) |
 
 Provenance (master PNG, prompt, crop manifest, grade script) is kept in the Picasso design archive outside the repo. Do not use this image to depict a specific real family or in health-outcome claims.
+
+## 14 November 2026 — BiVACOR hero still and embedded films
+
+Preview-only editorial change. No production use is authorised by this note alone.
+
+### Hero still
+
+| File | What it is | Source | Rights |
+|---|---|---|---|
+| `assets/bivacor-titanium-heart.webp` (1400×788) | Original Youtopia graphic: mint `#63e6c1` type on black, plus a rotary-heart schematic drawn in code | Drawn by the site (Pillow), from a written description of a generic magnetically levitated rotary pump. No reference photo, no trace of a BiVACOR press image, no people and no faces | Original Youtopia Life artwork. It is not a photograph of the BiVACOR device and must not be captioned as one |
+
+No official BiVACOR press photograph is hosted. Product photographs found in public archives were either surgical scenes, or licensed only for non-commercial use. Australian Government film frames were not downloaded.
+
+### Films
+
+Embedded in YouTube’s player only (`youtube-nocookie.com`). Not downloaded, rehosted, recut or used in advertising.
+
+| Film | Where | Rights |
+|---|---|---|
+| Department of Industry, Science and Resources, “Plumbing the heart with BiVACOR and OneVentures” — https://www.youtube.com/watch?v=iGMujrDlkKA | Homepage hero, id `iGMujrDlkKA` | YouTube Standard Licence, embedding on. Australian Government material: embed only, no download, rehost or recut. BiVACOR is an investigational device; the page makes no patient-specific claim |
+| Colossal Biosciences, “What’s a Thylacine or Tasmanian Tiger? \| Episode 1” — https://www.youtube.com/watch?v=a6_Ljvm4KRo | Homepage Pulse and `/pulse/` | YouTube embed of Colossal’s official film. Not downloaded or rehosted |
+
+### Thylacine thumbnail
+
+| File | What it is | Rights |
+|---|---|---|
+| `assets/thylacine-editorial.webp` | Typographic graphic (“The Tasmanian Tiger”) on black. No animal, no AI reconstruction presented as a thylacine | Original Youtopia Life artwork |
+
+`assets/dire-wolf-editorial.webp` is no longer referenced. The file remains in the repository and is not preloaded.

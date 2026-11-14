@@ -1,6 +1,6 @@
-/* Netlify provides server-side analytics. No cookies, browser storage,
- * identifiers, tracking pixels or additional analytics requests are used here.
- * Carry only public campaign labels through the current navigation journey. */
+/* Cookieless PostHog analytics is used. It stores no cookies and no
+ * identifiers on this device. Carry only public campaign labels through
+ * the current navigation journey. */
 (() => {
   'use strict';
   const keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
@@ -11,6 +11,7 @@
     // Public campaign tokens only; never copy free text, emails or arbitrary queries.
     if (/^[a-z0-9_-]{1,120}$/i.test(value)) campaign[key] = value;
   }
+  window.youtopiaCampaign = campaign;
   function prepare() {
     for (const anchor of document.querySelectorAll('a[href]')) {
       const raw = anchor.getAttribute('href');

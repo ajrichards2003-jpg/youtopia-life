@@ -45,7 +45,7 @@ button,a{font:inherit}a{color:var(--mint)}button:focus-visible,a:focus-visible,[
 .ex-detail{background:linear-gradient(135deg,#183d2b,#0e2218);border:1px solid #3a7252;border-radius:22px;padding:26px;min-height:330px}
 .ex-detail h3{font-size:clamp(1.5rem,3vw,2.4rem);margin:5px 0 14px;line-height:1.1}
 .ex-detail p{font-size:.99rem;margin:12px 0}
-.ex-fact{color:#d5ffdf;background:#153e2b;border-left:3px solid var(--mint);padding:12px 15px;margin-top:18px;font-size:.93rem}
+.ex-reading{margin-top:20px;padding-top:16px;border-top:1px solid #3a7252}.ex-reading h4{color:#f3f9f4;font-size:1rem;margin:0 0 8px}.ex-reading ul{margin:0;padding-left:22px}.ex-reading li{margin:5px 0}.ex-reading a{color:#9af5d1}.ex-fact{color:#d5ffdf;background:#153e2b;border-left:3px solid var(--mint);padding:12px 15px;margin-top:18px;font-size:.93rem}
 .ex-disclaimer{border-top:1px solid var(--border);color:#a4bdb0;padding:34px 0 60px;font-size:.86rem}
 .ex-disclaimer a{font-weight:700}
 @media(max-width:900px){.ex-layout{grid-template-columns:1fr}.ex-figure{min-height:590px}#body-model{height:590px}.ex-panel{border-top:0}}
@@ -123,6 +123,36 @@ button,a{font:inherit}a{color:var(--mint)}button:focus-visible,a:focus-visible,[
     kidneys:{name:'Kidneys',box:'143 462 230 112',function:'The kidneys filter the blood, help balance water and minerals, and produce urine.',connection:'The heart supplies the kidneys with blood. Kidney signals also contribute to blood-pressure regulation.',fact:'Most people have two kidneys, but a person can sometimes live well with one functioning kidney.'},
     intestines:{name:'Intestines',box:'155 495 220 185',function:'The small intestine absorbs most nutrients from food. The large intestine absorbs water and helps form stool.',connection:'The intestines work with the stomach, liver, pancreas, bloodstream and nervous system to support digestion.',fact:'The small intestine is longer than the large intestine, despite their names.'}
   };
+  // Educational links are deliberately phrased as topics, never a diagnosis.
+  const reading = {
+    brain: [['Memory and cognition research','/articles/memory-clarity-evidence.html'],['Sleep and the brain','/guides/sleep.html']],
+    thyroid: [['Circadian rhythms and hormone signalling','/guides/circadian-rhythm.html'],['Explore more health research','/articles/']],
+    lungs: [['Movement and everyday fitness','/guides/15-minute-workout.html'],['Explore evidence-led guides','/guides/']],
+    heart: [['Circulation and ageing evidence','/articles/circulation-ageing-evidence.html'],['Movement and heart health habits','/guides/15-minute-workout.html']],
+    liver: [['Nutrition and metabolic research','/articles/'],['Explore the evidence library','/research/']],
+    stomach: [['Gut–brain research','/articles/research-watch-gut-brain.html'],['Akkermansia and gut research','/articles/akkermansia-gut-evidence.html']],
+    pancreas: [['Blood-glucose monitoring explained','/articles/sinocare-home-monitoring.html'],['Explore nutrition research','/articles/']],
+    kidneys: [['Circulation and blood-pressure research','/articles/circulation-ageing-evidence.html'],['Explore the evidence library','/research/']],
+    intestines: [['Akkermansia and gut research','/articles/akkermansia-gut-evidence.html'],['Gut–brain research','/articles/research-watch-gut-brain.html']]
+  };
+  function appendReading(key){
+    const entries = reading[key] || [];
+    if (!entries.length) return;
+    const section = document.createElement('section'); section.className = 'ex-reading';
+    section.setAttribute('aria-label','Related educational reading');
+    const heading = document.createElement('h4'); heading.textContent = 'Explore related topics';
+    const list = document.createElement('ul');
+    entries.forEach(([label,url]) => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = url; a.textContent = label;
+      li.append(a); list.append(li);
+    });
+    const caveat = document.createElement('p');
+    caveat.textContent = 'Related topics are for learning, not a list of conditions you may have.';
+    caveat.style.fontSize = '.83rem';
+    section.append(heading,list,caveat); detail.append(section);
+  }
   function select(key){
     const data = info[key]; if (!data) return;
     model.setAttribute('viewBox',data.box);
@@ -142,6 +172,7 @@ button,a{font:inherit}a{color:var(--mint)}button:focus-visible,a:focus-visible,[
     const connecting = document.createElement('p'); connecting.textContent = data.connection;
     const fact = document.createElement('div'); fact.className = 'ex-fact'; fact.textContent = data.fact;
     detail.append(kicker,heading,body,connecting,fact);
+    appendReading(key);
     resetButton.hidden = false;
     mode.textContent = data.name.toUpperCase() + ' / CLOSE VIEW';
   }

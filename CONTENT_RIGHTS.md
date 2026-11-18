@@ -78,3 +78,36 @@ Uses existing AI-generated algae/laboratory illustrations and the already docume
 | `assets/youtopia-family-noface.jpg` / `.webp` (option C: eucalyptus trail) | Text-to-image prompt written by Picasso (Youtopia art direction); no reference image or photo input. Runway task `082af706-17a5-4092-90c1-fd600b6fe3d3` | Runway `generate_image`, Nano Banana Pro, 2K (2752×1536 master), cropped to 2:1, downscaled, colour-graded in PIL. A small brand-like emblem the model generated on the adult's jacket was retouched out, so no third-party mark remains | 27 Oct 2026 | Original AI-generated, no real persons, no faces | Youtopia Life (Adam Richards) |
 
 Provenance (master PNG, prompt, crop manifest, grade script) is kept in the Picasso design archive outside the repo. Do not use this image to depict a specific real family or in health-outcome claims.
+
+
+## 16 November 2026 — operational release gate for social, supplier media and merchandise
+
+This section records the current release state of unfinished campaign work. It does not grant new rights. A caption, narration draft, repository file, Library item, review pack or earlier preview is not evidence that the included media is cleared for publication.
+
+| Asset or workstream | Verified state | Permitted use now | Release blocker |
+|---|---|---|---|
+| `Two-Week-Social-Review.md` (5–18 October) | 112 caption drafts and 56 narration drafts; final video production, visuals, evidence checks and review remain open | Private production and review | Caption drafts are not Reels. Attach a finished 9:16 video, complete evidence review and obtain final approval before scheduling |
+| Ring AIR review or supplier footage | Reuse clearance remains unverified in the saved production pack | Original Youtopia graphics and evidence-led explanation only | Preserve written permission or programme terms for the exact footage and separate website, organic-social and paid-media scope |
+| Ring AIR claims and affiliate presentation | Educational copy may describe current documented features with a visible affiliate disclosure | Evidence-led editorial explanation and approved tracked links | Recheck current label/features, destination and programme status immediately before release; affiliate approval does not clear supplier media |
+| Locally hosted social Reels and campaign films | Source, voice, music and visual rights vary by file | Private preview unless an individual record confirms otherwise | Record the exact export, component sources, music/audio licence, likeness/brand review and channel scope |
+| BiVACOR hero and thylacine Pulse work in PR #66 | Preview uses original typographic artwork and embed-only official films; not production-approved | Deploy preview only | Adam editorial approval, final preview QA and the restrictions recorded in that PR. Do not download, recut or rehost the embedded films |
+| `assets/adam-founder-lifestyle-branded-2026.webp` | Live editorial artwork with an on-page concept-image disclosure; full source archive is not in this repository | Existing editorial placement only | Preserve the original generation/edit archive before reuse; no merchandise, paid ad or claimed documentary/health outcome use |
+| Collection 01 concepts and merchandise mock-ups | Interest preview only; no verified genuine merch-interest submission in the latest connected form read | Private review and clearly labelled non-transactional preview | Final owner-created print files, trade-mark/name clearance, mock-up licence, physical sample approval and Adam launch approval |
+| Generated animal, product or lifestyle concepts | A generated image can still contain a third-party mark, packaging resemblance or identifiable likeness | Private preview until file-level review | Preserve tool/account, prompt or project ID, original export and commercial-use terms; inspect logos, people and product packaging |
+| Embedded YouTube films | Embed-only editorial use where the owner has enabled embedding | Official player with source context | No download, edit, rehost or advertising clip use without separate permission |
+| Cardinia Tigers media | Only authentic supplied club media and approved club graphics may represent players, coaches or appointments | Private registration, volunteer, community and AGM material review | Confirm every named person, current fact and public-release approval; do not infer dates, fees, eligibility or election outcomes |
+
+### File-level clearance record required before release
+
+For every finished asset, preserve:
+
+1. exact filename and version;
+2. source/creator and creation or acquisition date;
+3. licence, permission or programme evidence location;
+4. permitted channels separately for website, organic social, paid media and merchandise;
+5. visual/footage, music, voice, font, logo, likeness and packaging checks;
+6. evidence and product-claim review date;
+7. final visible-preview reviewer and approval date;
+8. scheduled/published status recorded separately from draft or preview status.
+
+Missing evidence means **Pending**, not permission. Supplier affiliation or an affiliate disclosure does not grant media rights. No pending asset should be scheduled, advertised, sold or deployed to production.

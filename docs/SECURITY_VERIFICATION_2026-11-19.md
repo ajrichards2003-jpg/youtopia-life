@@ -17,10 +17,10 @@
 - This browser evidence verifies the rendered response body, not the exact HTTP status or response headers.
 
 ### Security regression and dependencies
-- The existing pull-request security-regression run for the original PR #74 commit completed successfully.
-- Draft PR #74 now adds `package-lock.json`, resolving `@netlify/identity` 2.0.1, `@netlify/blobs` 9.1.6 and `openai` 7.61.0 for reproducible installs.
+- Security-regression workflow run `44636496152` passed after the lockfile and dependency-audit steps were added.
+- Draft PR #74 adds `package-lock.json`, resolving `@netlify/identity` 2.0.1, `@netlify/blobs` 9.1.6 and `openai` 7.61.0 for reproducible installs.
 - A fresh `npm audit --audit-level=high --omit=dev` against that generated lockfile on 20 November 2026 found 0 known vulnerabilities.
-- The PR workflow now uses Node 24, installs locked production dependencies with lifecycle scripts disabled, and fails on high or critical npm audit findings before running the existing public-build checks.
+- The PR workflow uses Node 24, installs locked production dependencies with lifecycle scripts disabled, and fails on high or critical npm audit findings before running the existing public-build checks.
 - Dependabot PR #73 proposes the separate major `@netlify/blobs` 9.1.6 → 11.1.9 upgrade. It remains unmerged and needs compatibility testing; the draft security PR does not silently adopt it.
 
 ### Existing source controls
@@ -34,7 +34,6 @@
 - Recovery codes must remain outside the repository, PR comments and ChatGPT. Store them in an established password manager or encrypted offline recovery location.
 
 ## Still outstanding
-- **New CI result:** confirm the updated PR #74 workflow passes after the lockfile and audit steps.
 - **HTTP headers:** verify production HSTS, nosniff, frame, referrer, permissions-policy and CSP report-only response headers using an HTTP-capable external checker. Static Netlify header rules do not cover function responses.
 - **CSP:** keep report-only until violations are reviewed; do not switch to enforcement blindly.
 - **AI endpoint:** perform controlled, low-volume preview tests for allowed/disallowed origins, oversized and malformed bodies, and unauthenticated requests. Do not stress-test production.
@@ -44,9 +43,9 @@
 - **External:** obtain a scoped passive vulnerability assessment if stronger assurance is required; do not run intrusive scans without authorization.
 
 ## Release gate
-Do not claim the site is “fully secure” or “Fort Knox.” Merge PR #74 only after its updated workflow passes and the review is accepted. Production deployment remains a separate deliberate decision.
+Do not claim the site is “fully secure” or “Fort Knox.” Merge PR #74 only after review acceptance. Production deployment remains a separate deliberate decision.
 
 ## Decisions for Adam
 1. Keep the GitHub recovery codes in a trusted password manager or encrypted offline backup; do not attach them here.
 2. Confirm Netlify MFA and review who has repository and deploy access.
-3. Decide whether PR #74 should be merged after CI passes.
+3. Decide whether PR #74 should be merged.

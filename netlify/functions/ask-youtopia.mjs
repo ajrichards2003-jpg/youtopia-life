@@ -3,16 +3,29 @@ import { getUser } from "@netlify/identity";
 import { getStore } from "@netlify/blobs";
 
 const DAILY_LIMIT = 3;
+const MAX_BODY_BYTES = 2048;
+const ALLOWED_ORIGINS = new Set(['https://youtopialife.com', 'https://www.youtopialife.com']);
 const json = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: { "content-type": "application/json", "cache-control": "no-store", "x-robots-tag": "noindex, nofollow" } });
 
 export default async (req) => {
   if (req.method !== "POST") return json({ error: "Method not allowed" }, 405);
+  const contentType = req.headers.get('content-type') || '';
+  if (!/^application\/json(?:\s*;|$)/i.test(contentType)) return json({ error: 'JSON required' }, 415);
+  const claimedLength = Number(req.headers.get('content-length'));
+  if (Number.isFinite(claimedLength) && claimedLength > MAX_BODY_BYTES) return json({ error: 'Request too large' }, 413);
+  const origin = req.headers.get('origin');
+  if (origin && !ALLOWED_ORIGINS.has(origin) && !origin.endsWith('--playful-basbousa-781f5f.netlify.app')) return json({ error: 'Origin not allowed' }, 403);
   try {
     const user = await getUser();
     if (!user?.id) return json({ error: "Please sign in to Ask Youtopia." }, 401);
 
-    const body = await req.json().catch(() => ({}));
-    const question = String(body.question || "").trim().slice(0, 600);
+    const raw = await req.text();
+    if (new TextEncoder().encode(raw).length > MAX_BODY_BYTES) return json({ error: 'Request too large' }, 413);
+    let body;
+    try { body = JSON.parse(raw); } catch { return json({ error: 'Invalid JSON' }, 400); }
+    if (!body || typeof body !== 'object' || Array.isArray(body) || typeof body.question !== 'string') return json({ error: 'A question is required' }, 400);
+    const question = body.question.trim();
+    if (question.length > 600) return json({ error: 'Question must be 600 characters or fewer' }, 400);
     if (!question) return json({ error: "Ask a question first." }, 400);
 
     const day = new Date().toISOString().slice(0, 10);
@@ -35,7 +48,12 @@ export default async (req) => {
     await store.setJSON(key, { used, day });
     return json({ answer, remaining: DAILY_LIMIT - used });
   } catch (error) {
-    console.error("Ask Youtopia failed", error);
+    console.error("Ask Youtopia request failed");
     return json({ error: "Ask Youtopia is temporarily unavailable. Please try again later." }, 503);
   }
+};
+// One canonical endpoint avoids bypassing the edge limit through the default function URL.
+export const config = {
+  path: "/api/ask-youtopia",
+  rateLimit: { windowLimit: 20, windowSize: 60, aggregateBy: ["ip", "domain"] },
 };

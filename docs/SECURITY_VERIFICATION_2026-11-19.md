@@ -1,4 +1,4 @@
-# Youtopia Life security verification — updated 20 November 2026
+# Youtopia Life security verification — updated 21 November 2026
 
 **Status: materially improved, but not a penetration-test sign-off.** Changes remain isolated in draft PR #74; nothing has been merged or published from this branch.
 
@@ -8,6 +8,9 @@
 - Netlify project `c5dbb66c-397a-4579-b8ca-a92a1e05e438` reports production deploy `6afe48b814858c41a7b1a76d` ready and published from main commit `154be29688f295177de647aeabe58811ff2c05a2` on 19 November 2026.
 - The deploy validation report scanned 5,317 files and reported no standard or enhanced secret-scan matches.
 - The deployed `ask-youtopia` function exposes only `/api/ask-youtopia` and Netlify reports the configured sliding-window limit of 20 requests per 60 seconds, aggregated by IP and domain.
+- Draft PR #74 now gives every Ask Youtopia JSON response explicit no-store, CSP deny-all, same-origin resource, no-referrer, nosniff, frame-deny and noindex headers; the regression check fails if these controls are removed.
+- Deploy Preview `6b00da04683df2378d64e63b` built successfully from commit `9ce69e204da9f1d44628c09e212098f808b6cd39`. A direct preview read verified the expected function headers and a 405 response to GET.
+- Controlled preview-only rejection checks returned 415 for non-JSON content, 403 for a disallowed origin and 413 for a 2,050-byte body. No production requests or authenticated AI calls were made.
 - Netlify processed 73 redirect rules and one static header rule without deployment errors.
 
 ### Public-only site
@@ -34,9 +37,9 @@
 - Recovery codes must remain outside the repository, PR comments and ChatGPT. Store them in an established password manager or encrypted offline recovery location.
 
 ## Still outstanding
-- **HTTP headers:** verify production HSTS, nosniff, frame, referrer, permissions-policy and CSP report-only response headers using an HTTP-capable external checker. Static Netlify header rules do not cover function responses.
+- **HTTP headers:** function headers are verified on the deploy preview. Production static-page HSTS, nosniff, frame, referrer, permissions-policy and CSP report-only headers still require a direct HTTP verification after an approved merge/deploy.
 - **CSP:** keep report-only until violations are reviewed; do not switch to enforcement blindly.
-- **AI endpoint:** perform controlled, low-volume preview tests for allowed/disallowed origins, oversized and malformed bodies, and unauthenticated requests. Do not stress-test production.
+- **AI endpoint:** disallowed-origin, oversized-body, content-type and method rejection are verified on the preview. Authenticated quota behaviour and malformed/unauthenticated request paths remain for a separately approved controlled test; do not stress-test production.
 - **Forms:** verify spam/bot protection in Netlify and use only a clearly labelled controlled test with approval.
 - **Access:** owner still needs to verify Netlify MFA, GitHub/Netlify collaborator least privilege, branch protection/required checks, deploy permissions, and API-token scope/rotation.
 - **Dependencies:** test Dependabot PR #73's major Blobs upgrade before any merge.

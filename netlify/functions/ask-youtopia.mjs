@@ -5,7 +5,18 @@ import { getStore } from "@netlify/blobs";
 const DAILY_LIMIT = 3;
 const MAX_BODY_BYTES = 2048;
 const ALLOWED_ORIGINS = new Set(['https://youtopialife.com', 'https://www.youtopialife.com']);
-const json = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: { "content-type": "application/json", "cache-control": "no-store", "x-robots-tag": "noindex, nofollow" } });
+const JSON_HEADERS = Object.freeze({
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "content-security-policy": "default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+  "cross-origin-resource-policy": "same-origin",
+  "referrer-policy": "no-referrer",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "x-robots-tag": "noindex, nofollow",
+});
+const json = (body, status = 200) =>
+  new Response(JSON.stringify(body), { status, headers: JSON_HEADERS });
 
 export default async (req) => {
   if (req.method !== "POST") return json({ error: "Method not allowed" }, 405);

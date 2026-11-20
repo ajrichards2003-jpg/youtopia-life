@@ -17,6 +17,18 @@ assert re.search(r"windowLimit:\s*20\b", api)
 assert "MAX_BODY_BYTES" in api and "ALLOWED_ORIGINS" in api
 assert "getUser()" in api and "DAILY_LIMIT" in api
 assert 'max_output_tokens: 500' in api
+for key, value in {
+    "content-type": "application/json; charset=utf-8",
+    "cache-control": "no-store",
+    "content-security-policy": "default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+    "cross-origin-resource-policy": "same-origin",
+    "referrer-policy": "no-referrer",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "x-robots-tag": "noindex, nofollow",
+}.items():
+    expected = f'"{key}": "{value}"'
+    assert expected in api, f"Missing function response security header: {key}"
 
 routes = config.get("redirects", [])
 assert not any(x.get("from") == "/api/ask-youtopia" for x in routes), "Don't reintroduce a redirect bypass"

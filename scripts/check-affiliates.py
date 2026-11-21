@@ -54,7 +54,7 @@ home = (ROOT / 'index.html').read_text()
 opening = home[home.index('<section class="intro-carousel ultra-intro"'):home.index('</section>', home.index('<section class="intro-carousel ultra-intro"'))]
 # A user-controlled highlights reel replaces the old intrusive Ultrahuman film takeover.
 assert 'class="intro-pause"' in opening and 'class="intro-replay"' not in opening
-assert 'data-intro-video="-sDcFyZLxTY"' in opening, 'dire wolf film missing'
+assert 'data-intro-video="iGMujrDlkKA"' in opening, 'BiVACOR film missing from the opening reel'
 assert len(re.findall(r'<article class="intro-slide', opening)) == 5, 'highlight reel should have five slides'
 assert 'class="intro-video-overlay"' in opening and 'data-intro-video-close' in opening
 assert '<div class="ultra-film"' not in opening, 'old auto-playing film panel returned'

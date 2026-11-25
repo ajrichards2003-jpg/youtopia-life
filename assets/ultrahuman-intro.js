@@ -18,7 +18,7 @@
 
   let index = 0;
   let timer = null;
-  let paused = reducedMotion.matches;
+  let paused = true;
   let videoOpen = false;
   let focusReturn = null;
 
@@ -73,7 +73,7 @@
 
   function openVideo(trigger) {
     const id = trigger.getAttribute('data-intro-video');
-    if (!modal || !player || !closeButton || id !== '-sDcFyZLxTY') return;
+    if (!modal || !player || !closeButton || id !== 'iGMujrDlkKA') return false;
     window.clearTimeout(timer);
     focusReturn = trigger;
     videoOpen = true;
@@ -82,6 +82,7 @@
     player.src = 'https://www.youtube-nocookie.com/embed/' + id +
       '?autoplay=1&rel=0&playsinline=1';
     closeButton.focus();
+    return true;
   }
 
   dots.forEach((dot, i) => dot.addEventListener('click', () => go(i)));
@@ -94,10 +95,7 @@
 
   host.addEventListener('click', event => {
     const watch = event.target.closest('[data-intro-video]');
-    if (watch) {
-      event.preventDefault();
-      openVideo(watch);
-    }
+    if (watch && openVideo(watch)) event.preventDefault();
   });
   closeButton?.addEventListener('click', closeVideo);
   modal?.addEventListener('click', event => {
@@ -121,5 +119,6 @@
   });
 
   show(0);
+  host.classList.add('intro-ready');
   schedule();
 })();

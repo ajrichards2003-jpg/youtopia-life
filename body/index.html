@@ -51,6 +51,14 @@ button,a{font:inherit}a{color:var(--mint)}button:focus-visible,a:focus-visible,[
 @media(max-width:900px){.ex-layout{grid-template-columns:1fr}.ex-figure{min-height:590px}#body-model{height:590px}.ex-panel{border-top:0}}
 @media(max-width:580px){.wrap{padding-inline:16px}.ex-heading{padding-top:38px}.ex-layout{gap:20px}.ex-figure{min-height:525px}#body-model{height:525px}.ex-figure .hint{font-size:.7rem}.ex-detail{padding:20px}.ex-organs{gap:7px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#body-model .organ,#body-model .body-shell{transition:none}}
+/* Focused organ mode: remove the shell rather than merely fading it. */
+#body-model.zoomed .body-shell{opacity:0;visibility:hidden;pointer-events:none}
+#body-model.zoomed .organ:not(.selected){opacity:.055;pointer-events:none}
+#body-model.zoomed .organ.selected{opacity:1;filter:drop-shadow(0 0 18px rgba(154,245,209,.5))}
+#organ-detail[aria-live]{scroll-margin-top:20px}
+.ex-related{margin-top:22px;padding-top:17px;border-top:1px solid #3a7252}
+.ex-related strong{display:block;color:#d4ffe9;font-size:.86rem;letter-spacing:.04em}
+.ex-related ul{margin:8px 0 0;padding-left:20px;color:var(--soft);font-size:.9rem}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Libre+Caslon+Display&amp;display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Libre+Caslon+Display&amp;display=swap"></noscript></head>
 <body class="site-standard is-editorial page-body">
@@ -112,6 +120,18 @@ button,a{font:inherit}a{color:var(--mint)}button:focus-visible,a:focus-visible,[
   const organs = Array.from(document.querySelectorAll('#body-model .organ'));
   const buttons = Array.from(document.querySelectorAll('[data-pick]'));
   const defaultBox = '0 0 520 860';
+  detail.setAttribute('aria-live', 'polite');
+  const related = {
+    brain:['Memory, sleep and attention','Headaches and neurological health'],
+    thyroid:['Thyroid hormone balance','Iodine as a nutrient'],
+    lungs:['Asthma and airways','Breathing and air quality'],
+    heart:['Blood pressure and circulation','Physical activity and heart health'],
+    liver:['Liver health and metabolism','Alcohol and medication safety'],
+    stomach:['Reflux and indigestion','Food movement through digestion'],
+    pancreas:['Insulin and glucose regulation','Diabetes education'],
+    kidneys:['Hydration and kidney function','Blood pressure and kidney health'],
+    intestines:['Fibre and digestive health','Gut microbiome research']
+  };
   const info = {
     brain: {name:'Brain', box:'170 5 180 150', function:'The brain receives information and helps coordinate movement, memory, feelings and many automatic body functions.', connection:'It sends and receives signals through the nervous system. Signals also help coordinate breathing, heartbeat and digestion.', fact:'Did you know? Your brain keeps working even while you sleep.'},
     thyroid:{name:'Thyroid',box:'200 140 120 95',function:'The thyroid is a small gland in the neck. It releases hormones that help regulate energy use and many body processes.',connection:'The brain and thyroid communicate through hormone signals. Thyroid hormones influence growth, temperature regulation and metabolism.',fact:'Its shape is often compared to a butterfly.'},
@@ -134,14 +154,19 @@ button,a{font:inherit}a{color:var(--mint)}button:focus-visible,a:focus-visible,[
     });
     buttons.forEach(button => button.setAttribute('aria-pressed',String(button.dataset.pick === key)));
     title.textContent = data.name;
-    intro.textContent = 'An organ in focus. Choose another organ to explore a new view.';
+    intro.textContent = 'Close-up view of the selected organ. Choose another organ or select Whole body to return.';
     detail.replaceChildren();
     const kicker = document.createElement('p'); kicker.className = 'ex-eyebrow'; kicker.textContent = 'What does it do?';
     const heading = document.createElement('h3'); heading.textContent = data.name;
     const body = document.createElement('p'); body.textContent = data.function;
     const connecting = document.createElement('p'); connecting.textContent = data.connection;
     const fact = document.createElement('div'); fact.className = 'ex-fact'; fact.textContent = data.fact;
-    detail.append(kicker,heading,body,connecting,fact);
+    const topics = document.createElement('section'); topics.className = 'ex-related';
+    const topicsTitle = document.createElement('strong'); topicsTitle.textContent = 'Related health topics to explore';
+    const topicList = document.createElement('ul');
+    (related[key] || []).forEach(label => { const li = document.createElement('li'); li.textContent = label; topicList.append(li); });
+    topics.append(topicsTitle,topicList);
+    detail.append(kicker,heading,body,connecting,fact,topics);
     resetButton.hidden = false;
     mode.textContent = data.name.toUpperCase() + ' / CLOSE VIEW';
   }

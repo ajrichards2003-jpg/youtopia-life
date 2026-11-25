@@ -83,3 +83,8 @@ Provenance (master PNG, prompt, crop manifest, grade script) is kept in the Pica
 
 - `assets/bivacor-titanium-heart.webp`: original Youtopia artwork from the 14 November preview. The rotary-pump schematic is illustrative.
 - “Plumbing the heart with BiVACOR and OneVentures”: Department of Industry, Science and Resources. The homepage embeds the [official YouTube film](https://www.youtube.com/watch?v=iGMujrDlkKA) on request and links to the [department’s transcript](https://www.industry.gov.au/news/plumbing-heart-bivacor).
+
+### Homepage carousel artwork revision
+
+- `assets/hero-titanium-rotor.png`: original AI-generated editorial rendering of an imagined titanium rotor to accompany the BiVACOR film. It does not depict the BiVACOR device, and uses no third-party image as a reference.
+- `assets/hero-wearable-recovery.png`: original AI-generated lifestyle scene with an unbranded ring. It is an illustration of wearables, not a depiction of the Ultrahuman Ring AIR or a supplier packshot. The slide retains an affiliate disclosure.

@@ -78,3 +78,8 @@ Uses existing AI-generated algae/laboratory illustrations and the already docume
 | `assets/youtopia-family-noface.jpg` / `.webp` (option C: eucalyptus trail) | Text-to-image prompt written by Picasso (Youtopia art direction); no reference image or photo input. Runway task `082af706-17a5-4092-90c1-fd600b6fe3d3` | Runway `generate_image`, Nano Banana Pro, 2K (2752×1536 master), cropped to 2:1, downscaled, colour-graded in PIL. A small brand-like emblem the model generated on the adult's jacket was retouched out, so no third-party mark remains | 27 Oct 2026 | Original AI-generated, no real persons, no faces | Youtopia Life (Adam Richards) |
 
 Provenance (master PNG, prompt, crop manifest, grade script) is kept in the Picasso design archive outside the repo. Do not use this image to depict a specific real family or in health-outcome claims.
+
+## 25 November 2026 — BiVACOR homepage opening
+
+- `assets/bivacor-titanium-heart.webp`: original Youtopia artwork from the 14 November preview. The rotary-pump schematic is illustrative.
+- “Plumbing the heart with BiVACOR and OneVentures”: Department of Industry, Science and Resources. The homepage embeds the [official YouTube film](https://www.youtube.com/watch?v=iGMujrDlkKA) on request and links to the [department’s transcript](https://www.industry.gov.au/news/plumbing-heart-bivacor).
